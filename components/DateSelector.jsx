@@ -22,7 +22,10 @@ const DateSelector = () => {
   today.setHours(0, 0, 0, 0);
 
   const handleArrivalDateChange = (date) => {
-    if (date < today) {
+    if (
+      date < today ||
+      (dateOfDeparture && date >= new Date(dateOfDeparture))
+    ) {
       setError({
         ...error,
         arrival: "Invalid Arrival date",

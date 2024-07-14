@@ -1,45 +1,78 @@
-import { StyleSheet, Text, View, Pressable, TextInput } from "react-native";
 import React, { useState } from "react";
+import { StyleSheet, Text, View, Pressable, TextInput } from "react-native";
 import { colorsDefault } from "@/constants/Colors";
 
 const AgeTravelers = () => {
-  const [minAge, setMinAge] = useState(1);
-  const [maxAge, setMaxAge] = useState(1);
+  const [minAge, setMinAge] = useState("6");
+  const [maxAge, setMaxAge] = useState("6");
+
+  const isValidAge = (value) => {
+    // Verificar si el valor es un número válido o está vacío
+    return /^\d*$/.test(value);
+  };
+
+  const handleMinAgeChange = (value) => {
+    if (isValidAge(value)) {
+      setMinAge(value);
+    }
+  };
+
+  const handleMaxAgeChange = (value) => {
+    if (isValidAge(value)) {
+      setMaxAge(value);
+    }
+  };
+
+  const decreaseMinAge = () => {
+    const newValue = parseInt(minAge) > 12 ? parseInt(minAge) - 1 : 12;
+    setMinAge(newValue.toString());
+  };
+
+  const increaseMinAge = () => {
+    const newValue = parseInt(minAge) + 1;
+    setMinAge(newValue.toString());
+  };
+
+  const decreaseMaxAge = () => {
+    const newValue = parseInt(maxAge) > 12 ? parseInt(maxAge) - 1 : 12;
+    setMaxAge(newValue.toString());
+  };
+
+  const increaseMaxAge = () => {
+    const newValue = parseInt(maxAge) + 1;
+    setMaxAge(newValue.toString());
+  };
 
   return (
     <View>
       <Text style={styles.mainText}>Age range</Text>
       <View style={styles.ageRangeContainer}>
         <Text style={{ fontSize: 16 }}>From</Text>
-        <Pressable
-          onPress={() => {
-            setMinAge(minAge > 1 ? minAge - 1 : 1);
-          }}
-        >
+        <Pressable onPress={decreaseMinAge}>
           <Text style={styles.ageController}>-</Text>
         </Pressable>
         <TextInput
           style={styles.inputAgeRange}
           keyboardType="numeric"
-          value={minAge.toString()}
+          value={minAge}
+          onChangeText={handleMinAgeChange}
         />
-        <Pressable onPress={() => setMinAge(minAge + 1)}>
+        <Pressable onPress={increaseMinAge}>
           <Text style={styles.ageController}>+</Text>
         </Pressable>
       </View>
       <View style={styles.ageRangeContainer}>
         <Text style={{ fontSize: 16, paddingRight: 20 }}>To</Text>
-        <Pressable
-          onPress={() => setMaxAge(maxAge && maxAge > 1 ? maxAge - 1 : 1)}
-        >
+        <Pressable onPress={decreaseMaxAge}>
           <Text style={styles.ageController}>-</Text>
         </Pressable>
         <TextInput
           style={styles.inputAgeRange}
           keyboardType="numeric"
-          value={maxAge.toString() ?? 1}
+          value={maxAge}
+          onChangeText={handleMaxAgeChange}
         />
-        <Pressable onPress={() => setMaxAge(maxAge ? maxAge + 1 : 1)}>
+        <Pressable onPress={increaseMaxAge}>
           <Text style={styles.ageController}>+</Text>
         </Pressable>
       </View>

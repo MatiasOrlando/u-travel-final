@@ -27,8 +27,7 @@ const RangeSliderCustom = () => {
           value={sliderBudgetValue}
           step={100}
           onValueChange={(value) => dispatch(setBudgetValue(value))}
-          minimumTrackTintColor={"rgba(194, 172, 147, 0.8)"}
-          maximumTrackTintColor={"rgba(194, 172, 147, 0.8)"}
+          minimumTrackTintColor={colorsDefault.green.primary}
         />
         <Text style={styles.priceRange}>{`$500 - $${sliderBudgetValue}`}</Text>
       </View>
