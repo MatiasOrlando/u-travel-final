@@ -2,7 +2,7 @@ import { Pressable, StyleSheet, Text } from "react-native";
 import React from "react";
 import { colorsDefault } from "../constants/Colors";
 
-const ButtonPrimary = ({ title, handlePress, style, ...rest }) => {
+const ButtonPrimary = ({ title, handlePress, style, fontSize, ...rest }) => {
   return (
     <Pressable
       style={({ pressed }) => [
@@ -18,7 +18,7 @@ const ButtonPrimary = ({ title, handlePress, style, ...rest }) => {
           textAlign: "center",
           color: colorsDefault.secondary,
           paddingVertical: 15,
-          fontSize: 18,
+          fontSize: fontSize ? fontSize : 18,
         }}
       >
         {title}

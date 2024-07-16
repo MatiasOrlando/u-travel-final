@@ -18,13 +18,19 @@ export default function HomeScreen() {
           <Text style={{ color: colorsDefault.vanilla.dark, fontSize: 30 }}>
             ¡Welcome to U travel!
           </Text>
-          <View style={{ marginTop: 20, width: "100%", padding: 30 }}>
+          <View
+            style={{
+              marginTop: 20,
+              width: "100%",
+              padding: 30,
+            }}
+          >
             <ButtonPrimary
               style={{
                 alignItems: "center",
                 borderRadius: 8,
                 paddingVertical: 7,
-                width: 335,
+                width: "100%",
               }}
               onPress={() =>
                 router.push({
@@ -56,7 +62,7 @@ export default function HomeScreen() {
             >
               <Text
                 style={{
-                  fontSize: 18,
+                  fontSize: 20,
                   color: "black",
                 }}
               >
