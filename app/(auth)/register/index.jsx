@@ -200,7 +200,7 @@ const styles = StyleSheet.create({
   },
   signUpSignInContainer: {
     flexDirection: "row",
-    marginTop: 20,
+    marginTop: 10,
     alignItems: "center",
     width: "100%",
     justifyContent: "center",

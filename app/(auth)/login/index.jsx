@@ -9,6 +9,7 @@ import CustomModal from "@/components/CustomModal";
 import { setUser } from "@/features/Auth/AuthSlice";
 import { useDispatch } from "react-redux";
 import { AntDesign } from "@expo/vector-icons";
+import { useDB } from "@/hooks/useDB";
 
 const index = () => {
   const [isModalVisible, setModalVisible] = useState(false);
@@ -25,6 +26,8 @@ const index = () => {
     password: "",
   });
 
+  const { insertSession } = useDB();
+
   const handleChange = (key, value) => {
     setFormData({
       ...formData,
@@ -35,7 +38,16 @@ const index = () => {
   useEffect(() => {
     if (isError) {
       setModalVisible(!isModalVisible);
-    } else if (isSuccessSignIn) {
+    } else if (isSuccessSignIn && !isLoading) {
+      try {
+        insertSession({
+          email: data.email,
+          localId: data.localId,
+          token: data.idToken,
+        });
+      } catch (error) {
+        console.error(error);
+      }
       dispatch(
         setUser({
           email: data.email,

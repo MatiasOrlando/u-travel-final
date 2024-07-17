@@ -5,9 +5,41 @@ import { Link, router } from "expo-router";
 import SocialIcons from "@/components/SocialIcons";
 import ButtonPrimary from "@/components/ButtonPrimary";
 import { en, registerTranslation } from "react-native-paper-dates";
+import { useDB } from "@/hooks/useDB";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { setUser } from "@/features/Auth/AuthSlice";
+
 registerTranslation("en", en);
 
 export default function HomeScreen() {
+  const { user } = useSelector((state) => state.auth.value);
+  const dispatch = useDispatch();
+  const { initDB, getSession } = useDB();
+
+  useEffect(() => {
+    initDB();
+
+    (async () => {
+      try {
+        const session = await getSession();
+        if (session) {
+          const userData = session;
+          dispatch(
+            setUser({
+              email: userData.email,
+              localId: userData.localId,
+              idToken: userData.token,
+            })
+          );
+          router.replace("/explore");
+        }
+      } catch (error) {
+        console.error(error);
+      }
+    })();
+  }, []);
+
   return (
     <View style={styles.container}>
       <View style={styles.imgContainer}>

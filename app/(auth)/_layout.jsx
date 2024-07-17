@@ -18,7 +18,7 @@ const _layoutAuth = () => {
           backgroundColor: "#D4D4D4",
           alignItems: "center",
           paddingTop: pathname === "/register" ? 20 : 60,
-          height: pathname === "/register" ? 330 : 392,
+          height: pathname === "/register" ? 300 : 392,
           width: 590,
           borderBottomRightRadius: 300,
           borderBottomLeftRadius: 300,
@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
   },
   signUpAuth: {
     height: 150,
-    width: 370,
-    marginTop: 80,
+    width: 365,
+    marginTop: 60,
   },
 });
