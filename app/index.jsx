@@ -7,32 +7,19 @@ import ButtonPrimary from "@/components/ButtonPrimary";
 import { en, registerTranslation } from "react-native-paper-dates";
 import { useDB } from "@/hooks/useDB";
 import { useEffect } from "react";
-import { useDispatch } from "react-redux";
-import { setUser } from "@/features/Auth/AuthSlice";
+import { useAuth } from "@/hooks/useAuth";
 
 registerTranslation("en", en);
 
 export default function HomeScreen() {
-  const dispatch = useDispatch();
-  const { initDB, getSession } = useDB();
+  const { initDB } = useDB();
+  const authUser = useAuth("explore");
 
   useEffect(() => {
     initDB();
-
     (async () => {
       try {
-        const session = await getSession();
-        if (session) {
-          const userData = session;
-          dispatch(
-            setUser({
-              email: userData.email,
-              localId: userData.localId,
-              idToken: userData.token,
-            })
-          );
-          router.replace("/explore");
-        }
+        await authUser();
       } catch (error) {
         console.error(error);
       }
