@@ -110,7 +110,7 @@ export default function HomeScreen() {
                 style={{
                   marginTop: 40,
                 }}
-                href={"/(tabs)/explore/bookingconfirmation"}
+                href={"/(tabs)/explore"}
               >
                 <Text
                   style={{
