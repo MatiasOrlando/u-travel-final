@@ -62,6 +62,13 @@ export const shopApi = createApi({
       }),
       invalidatesTags: ["locationGet"],
     }),
+    postBookingOrder: builder.mutation({
+      query: ({ ...order }) => ({
+        url: `orders.json`,
+        method: "POST",
+        body: order,
+      }),
+    }),
   }),
 });
 
@@ -74,4 +81,5 @@ export const {
   usePostProfileImageMutation,
   useGetLocationQuery,
   usePostLocationMutation,
+  usePostBookingOrderMutation,
 } = shopApi;

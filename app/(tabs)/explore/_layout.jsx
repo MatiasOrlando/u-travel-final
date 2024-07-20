@@ -32,6 +32,18 @@ const _layout = () => {
           headerTransparent: true,
         }}
       />
+      <Stack.Screen
+        name="resultstrip"
+        options={{
+          headerTitle: "",
+          headerLeft: () => (
+            <Pressable onPress={router.back}>
+              <Ionicons name="arrow-back" size={24} color="black" />
+            </Pressable>
+          ),
+          headerTransparent: true,
+        }}
+      />
     </Stack>
   );
 };

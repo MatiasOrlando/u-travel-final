@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { StyleSheet, Text, View, Image, ScrollView } from "react-native";
-import { useLocalSearchParams } from "expo-router";
+import { router, useLocalSearchParams } from "expo-router";
 import { colorsDefault } from "@/constants/Colors";
 import RangeSliderCustom from "@/components/RangeSliderCustom";
 import FilterCard from "@/components/FilterCard";
@@ -10,21 +10,17 @@ import TravelingCompany from "@/components/TravelingCompany";
 import AgeTravelers from "@/components/AgeTravelers";
 import DateSelector from "@/components/DateSelector";
 import ButtonPrimary from "@/components/ButtonPrimary";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { filteredActivities } from "@/utils/filteringRules";
+import { setResultsFilteredActivities } from "@/features/FilteredActivities/FilteredActivitesSlice";
 
 const CityDetail = () => {
   const { id } = useLocalSearchParams();
   const { data: selectedCity, isLoading } = useGetCityByIdQuery(id);
   const [cityDisplay, setCityDisplay] = useState({});
+  const dispatch = useDispatch();
 
   //Redux Filter Values
-  const dateOfArrival = useSelector(
-    (state) => state.datesPicker.value.dateOfArrival
-  );
-  const dateOfDeparture = useSelector(
-    (state) => state.datesPicker.value.dateOfDeparture
-  );
   const minAge = useSelector((state) => state.ageRangeFilter.ageValues.minAge);
   const maxAge = useSelector((state) => state.ageRangeFilter.ageValues.maxAge);
 
@@ -34,10 +30,10 @@ const CityDetail = () => {
   const travelerCompany = useSelector(
     (state) => state.travelersCompanyFilter.value
   );
-
   const travelerInterests = useSelector(
     (state) => state.interestsFilter.travelerInterests
   );
+  //
 
   useEffect(() => {
     if (!isLoading && selectedCity) {
@@ -47,13 +43,18 @@ const CityDetail = () => {
   }, [id, selectedCity]);
 
   const filterActivitiesResults = () => {
-    return filteredActivities(selectedCity.activities, {
-      budget: sliderBudgetValue,
-      travelingCompany: travelerCompany,
-      interests: travelerInterests,
-      minAge: minAge,
-      maxAge: maxAge,
-    });
+    const resultsFilteredActivities = filteredActivities(
+      selectedCity.activities,
+      {
+        budget: sliderBudgetValue,
+        travelingCompany: travelerCompany,
+        interests: travelerInterests,
+        minAge: minAge,
+        maxAge: maxAge,
+      }
+    );
+    dispatch(setResultsFilteredActivities(resultsFilteredActivities));
+    router.push("/explore/resultstrip");
   };
 
   return (

@@ -13,7 +13,6 @@ import { setUser } from "@/features/Auth/AuthSlice";
 registerTranslation("en", en);
 
 export default function HomeScreen() {
-  const { user } = useSelector((state) => state.auth.value);
   const dispatch = useDispatch();
   const { initDB, getSession } = useDB();
 
@@ -111,7 +110,7 @@ export default function HomeScreen() {
                 style={{
                   marginTop: 40,
                 }}
-                href={"/(tabs)/explore"}
+                href={"/(tabs)/explore/bookingconfirmation"}
               >
                 <Text
                   style={{
