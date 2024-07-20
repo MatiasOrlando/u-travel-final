@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { StyleSheet, Text, View, Pressable, TextInput } from "react-native";
 import { colorsDefault } from "@/constants/Colors";
+import { setMaxAge, setMinAge } from "@/features/AgeRange/AgeRangeSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 const AgeTravelers = () => {
-  const [minAge, setMinAge] = useState("6");
-  const [maxAge, setMaxAge] = useState("6");
+  const minAge = useSelector((state) => state.ageRangeFilter.ageValues.minAge);
+  const maxAge = useSelector((state) => state.ageRangeFilter.ageValues.maxAge);
+  const dispatch = useDispatch();
 
   const isValidAge = (value) => {
     // Verificar si el valor es un número válido o está vacío
@@ -13,34 +16,34 @@ const AgeTravelers = () => {
 
   const handleMinAgeChange = (value) => {
     if (isValidAge(value)) {
-      setMinAge(value);
+      dispatch(setMinAge(value));
     }
   };
 
   const handleMaxAgeChange = (value) => {
     if (isValidAge(value)) {
-      setMaxAge(value);
+      dispatch(setMaxAge(value));
     }
   };
 
   const decreaseMinAge = () => {
-    const newValue = parseInt(minAge) > 12 ? parseInt(minAge) - 1 : 12;
-    setMinAge(newValue.toString());
+    const newValue = parseInt(minAge) > 6 ? parseInt(minAge) - 1 : 6;
+    dispatch(setMinAge(newValue.toString()));
   };
 
   const increaseMinAge = () => {
     const newValue = parseInt(minAge) + 1;
-    setMinAge(newValue.toString());
+    dispatch(setMinAge(newValue.toString()));
   };
 
   const decreaseMaxAge = () => {
-    const newValue = parseInt(maxAge) > 12 ? parseInt(maxAge) - 1 : 12;
-    setMaxAge(newValue.toString());
+    const newValue = parseInt(maxAge) > 6 ? parseInt(maxAge) - 1 : 6;
+    dispatch(setMaxAge(newValue.toString()));
   };
 
   const increaseMaxAge = () => {
     const newValue = parseInt(maxAge) + 1;
-    setMaxAge(newValue.toString());
+    dispatch(setMaxAge(newValue.toString()));
   };
 
   return (
@@ -54,7 +57,7 @@ const AgeTravelers = () => {
         <TextInput
           style={styles.inputAgeRange}
           keyboardType="numeric"
-          value={minAge}
+          value={minAge.toString()}
           onChangeText={handleMinAgeChange}
         />
         <Pressable onPress={increaseMinAge}>
@@ -69,7 +72,7 @@ const AgeTravelers = () => {
         <TextInput
           style={styles.inputAgeRange}
           keyboardType="numeric"
-          value={maxAge}
+          value={maxAge.toString()}
           onChangeText={handleMaxAgeChange}
         />
         <Pressable onPress={increaseMaxAge}>

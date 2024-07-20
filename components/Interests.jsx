@@ -1,19 +1,16 @@
 import { StyleSheet, Text, View, Image, Pressable } from "react-native";
-import React, { useState } from "react";
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { setTravelerInterests } from "@/features/Interests/InterestsSlice";
 
 const Interests = () => {
-  const [travelerInterests, setTravelerInterests] = useState([]);
-  const userInterests = [
-    "Art",
-    "Adventure",
-    "Gastronomy",
-    "Culture",
-    "Sightseeing",
-    "City",
-    "Sports",
-    "Relax",
-    "Nature",
-  ];
+  const travelerInterests = useSelector(
+    (state) => state.interestsFilter.travelerInterests
+  );
+  const userInterests = useSelector(
+    (state) => state.interestsFilter.userInterests
+  );
+  const dispatch = useDispatch();
 
   const imageInterestsMap = {
     Art: require("../assets/images/art.png"),
@@ -27,14 +24,8 @@ const Interests = () => {
     Nature: require("../assets/images/nature.png"),
   };
 
-  const handlePress = (el, index) => {
-    setTravelerInterests((prevInterests) => {
-      if (prevInterests.find((interest) => interest.el === el)) {
-        return prevInterests.filter((interest) => interest.el !== el);
-      } else {
-        return [...prevInterests, { el, index }];
-      }
-    });
+  const handlePress = (interest, index) => {
+    dispatch(setTravelerInterests({ interest, index }));
   };
 
   return (

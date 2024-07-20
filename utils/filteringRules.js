@@ -1,65 +1,64 @@
-export const budgetAssignation = (budget) => {
+const budgetAssignation = (budget) => {
   if (budget >= 500 && budget <= 1500) return "$";
   if (budget > 1500 && budget <= 2500) return "$$";
   if (budget > 2500 && budget <= 3500) return "$$$";
 };
 
-export const filterByBudget = (arr, budget) => {
+const filterByBudget = (arr, budget) => {
   const budgetType = budgetAssignation(budget);
-  return arr.filter((activity) => activity.budget.includes(budgetType));
+  return arr.filter((activity) => activity.budget === budgetType);
 };
 
-export const filterByTravelingCompany = (arr, travelingCompany) => {
+const filterByTravelingCompany = (arr, travelingCompany) => {
   return arr.filter((activity) => {
     const groupTypes = activity.groupType
       .toLowerCase()
       .split(",")
       .map((type) => type.trim());
     return (
-      groupTypes.includes(travelingCompany.toLowerCase()) ||
-      groupTypes.includes("all")
+      groupTypes.includes(
+        travelingCompany.travelersCompany.split("_")[0].toLowerCase()
+      ) || groupTypes.includes("all")
     );
   });
 };
 
-export const filterByInterests = (arr, arrOfInterests) =>
+const filterByInterests = (arr, arrOfInterests) =>
   arr.filter((activity) =>
     activity.interests.some((interest) =>
       arrOfInterests
-        .map((el) => el.toLowerCase())
+        .map((el) => el.interest.toLowerCase())
         .includes(interest.toLowerCase())
     )
   );
 
-export const ageRangeAssignation = (minAge, maxAge) => {
-  if (minAge >= 6 && maxAge <= 13) return "kids";
-  if (minAge >= 14 && maxAge <= 17) return "teens";
-  if (minAge >= 18) return "adults";
-  return null;
+const ageRangeAssignation = (minAge, maxAge) => {
+  let ageCategories = [];
+
+  if (minAge >= 6 && maxAge <= 13) {
+    ageCategories.push("kids");
+  }
+  if (minAge >= 14 && maxAge <= 17) {
+    ageCategories.push("teens");
+  }
+  if (minAge >= 18) {
+    ageCategories.push("adults");
+  }
+
+  return ageCategories;
 };
 
-export const filterByAgeRange = (arr, minAge, maxAge) => {
+const filterByAgeRange = (arr, minAge, maxAge) => {
+  const userAgeCategories = ageRangeAssignation(minAge, maxAge);
+
   return arr.filter((activity) => {
     if (activity.ageRange === "all ages") {
       return true;
     } else {
       const activityAgeRange = activity.ageRange.split(", ");
-      for (let range of activityAgeRange) {
-        if (range.includes("kids")) {
-          if (ageRangeAssignation(minAge, maxAge) === "kids") {
-            return true;
-          }
-        } else if (range.includes("teens")) {
-          if (ageRangeAssignation(minAge, maxAge) === "teens") {
-            return true;
-          }
-        } else if (range.includes("adults")) {
-          if (ageRangeAssignation(minAge, maxAge) === "adults") {
-            return true;
-          }
-        }
-      }
-      return false;
+      return activityAgeRange.some((range) =>
+        userAgeCategories.includes(range)
+      );
     }
   });
 };

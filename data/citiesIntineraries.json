@@ -1,48 +1,272 @@
 [
-  { 
+  {
     "countryId": 1,
     "city": "Tokyo",
     "cityImage": "https://cdn.pixabay.com/photo/2020/01/31/07/23/tokyo-4807294_1280.jpg",
-    "activities":[
-        { "name": "Visit Tokyo Tower", "type": "sightseeing", "interests": ["Sightseeing", "Culture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-        { "name": "Explore Akihabara", "type": "shopping", "interests": ["City", "Culture"], "ageRange": "teens, adults", "budget": "$$", "groupType": "solo, friends, couple" },
-        { "name": "Tokyo Disneyland", "type": "theme park", "interests": ["Adventure"], "ageRange": "kids, teens, adults", "budget": "$$$", "groupType": "family, friends" },
-        { "name": "Shibuya Crossing", "type": "sightseeing", "interests": ["City", "Sightseeing"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-        { "name": "Senso-ji Temple", "type": "cultural", "interests": ["Culture", "Sightseeing"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-        { "name": "Tokyo National Museum", "type": "museum", "interests": ["Art", "Culture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-        { "name": "Ueno Zoo", "type": "zoo", "interests": ["Nature", "Relax"], "ageRange": "all ages", "budget": "$", "groupType": "family" },
-        { "name": "Sumida Aquarium", "type": "aquarium", "interests": ["Nature", "Culture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-        { "name": "Odaiba Seaside Park", "type": "park", "interests": ["Relax", "Nature"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-        { "name": "Roppongi Hills", "type": "sightseeing", "interests": ["City", "Sightseeing"], "ageRange": "teens, adults", "budget": "$$$", "groupType": "all" },
-        { "name": "Ghibli Museum", "type": "museum", "interests": ["Art", "Culture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-        { "name": "Meiji Shrine", "type": "cultural", "interests": ["Culture", "Sightseeing"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-        { "name": "Yoyogi Park", "type": "park", "interests": ["Relax", "Sports"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-        { "name": "Tsukiji Outer Market", "type": "market", "interests": ["Gastronomy", "Culture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-        { "name": "Tokyo Dome City", "type": "amusement park", "interests": ["Adventure", "Sports"], "ageRange": "kids, teens, adults", "budget": "$$$", "groupType": "family, friends" }
-      ]
+    "activities": [
+      {
+        "name": "Visit Tokyo Tower",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Explore Akihabara",
+        "type": "shopping",
+        "interests": ["City", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "solo, friends, couple"
+      },
+      {
+        "name": "Tokyo Disneyland",
+        "type": "theme park",
+        "interests": ["Adventure"],
+        "ageRange": "kids, teens, adults",
+        "budget": "$$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Shibuya Crossing",
+        "type": "sightseeing",
+        "interests": ["City", "Sightseeing"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Senso-ji Temple",
+        "type": "cultural",
+        "interests": ["Culture", "Sightseeing"],
+        "ageRange": "adults",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Tokyo National Museum",
+        "type": "museum",
+        "interests": ["Art", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Ueno Zoo",
+        "type": "zoo",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "kids, teens",
+        "budget": "$",
+        "groupType": "family"
+      },
+      {
+        "name": "Sumida Aquarium",
+        "type": "aquarium",
+        "interests": ["Nature", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Odaiba Seaside Park",
+        "type": "park",
+        "interests": ["Relax", "Nature"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Roppongi Hills",
+        "type": "sightseeing",
+        "interests": ["City", "Sightseeing"],
+        "ageRange": "teens, adults",
+        "budget": "$$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Ghibli Museum",
+        "type": "museum",
+        "interests": ["Art", "Culture"],
+        "ageRange": "kids, teens",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Meiji Shrine",
+        "type": "cultural",
+        "interests": ["Culture", "Sightseeing"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Yoyogi Park",
+        "type": "park",
+        "interests": ["Relax", "Sports"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Tsukiji Outer Market",
+        "type": "market",
+        "interests": ["Gastronomy", "Culture"],
+        "ageRange": "adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Tokyo Dome City",
+        "type": "amusement park",
+        "interests": ["Adventure", "Sports"],
+        "ageRange": "kids, teens, adults",
+        "budget": "$$$",
+        "groupType": "family, friends"
+      }
+    ]
   },
-  {  
-    "countryId": 1, 
+  {
+    "countryId": 1,
     "city": "Kyoto",
     "cityImage": "https://images.unsplash.com/photo-1624253321171-1be53e12f5f4?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "activities": [
-      { "name": "Visit Kinkaku-ji", "type": "sightseeing", "interests": ["Culture", "Sightseeing"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Tea Ceremony Experience", "type": "cultural", "interests": ["Culture", "Gastronomy"], "ageRange": "adults", "budget": "$$", "groupType": "couple, solo" },
-      { "name": "Gion Walking Tour", "type": "sightseeing", "interests": ["Culture", "Sightseeing"], "ageRange": "teens, adults", "budget": "$", "groupType": "all" },
-      { "name": "Fushimi Inari Shrine", "type": "sightseeing", "interests": ["Adventure", "Nature"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Arashiyama Bamboo Grove", "type": "nature", "interests": ["Nature", "Relax"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Kyoto Imperial Palace", "type": "historical", "interests": ["Culture", "History"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Nishiki Market", "type": "market", "interests": ["Gastronomy", "Culture"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Philosopher's Path", "type": "walking", "interests": ["Nature", "Relax"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Kyoto International Manga Museum", "type": "museum", "interests": ["Art", "Culture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Toei Kyoto Studio Park", "type": "theme park", "interests": ["Adventure", "Culture"], "ageRange": "kids, teens, adults", "budget": "$$$", "groupType": "family, friends" },
-      { "name": "Mount Hiei Hike", "type": "hiking", "interests": ["Adventure", "Nature"], "ageRange": "teens, adults", "budget": "$", "groupType": "solo, friends" },
-      { "name": "Kyoto Botanical Gardens", "type": "garden", "interests": ["Nature", "Relax"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Nijo Castle", "type": "historical", "interests": ["History", "Culture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Kyoto Tower", "type": "sightseeing", "interests": ["City", "Sightseeing"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Kiyomizu-dera", "type": "temple", "interests": ["Culture", "Sightseeing"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Kyoto Cooking Class", "type": "culinary", "interests": ["Gastronomy", "Culture"], "ageRange": "adults", "budget": "$$$", "groupType": "solo, couple" },
-      { "name": "Kyoto Cycling Tour", "type": "sports", "interests": ["Adventure", "Sports"], "ageRange": "teens, adults", "budget": "$$", "groupType": "friends, couple" }
+      {
+        "name": "Visit Kinkaku-ji",
+        "type": "sightseeing",
+        "interests": ["Culture", "Sightseeing"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Tea Ceremony Experience",
+        "type": "cultural",
+        "interests": ["Culture", "Gastronomy"],
+        "ageRange": "adults",
+        "budget": "$$",
+        "groupType": "couple, solo"
+      },
+      {
+        "name": "Gion Walking Tour",
+        "type": "sightseeing",
+        "interests": ["Culture", "Sightseeing"],
+        "ageRange": "teens, adults",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Fushimi Inari Shrine",
+        "type": "sightseeing",
+        "interests": ["Adventure", "Nature"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Arashiyama Bamboo Grove",
+        "type": "nature",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Kyoto Imperial Palace",
+        "type": "historical",
+        "interests": ["Culture", "History"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Nishiki Market",
+        "type": "market",
+        "interests": ["Gastronomy", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Philosopher's Path",
+        "type": "walking",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Kyoto International Manga Museum",
+        "type": "museum",
+        "interests": ["Art", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Toei Kyoto Studio Park",
+        "type": "theme park",
+        "interests": ["Adventure", "Culture"],
+        "ageRange": "kids, teens, adults",
+        "budget": "$$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Mount Hiei Hike",
+        "type": "hiking",
+        "interests": ["Adventure", "Nature"],
+        "ageRange": "teens, adults",
+        "budget": "$",
+        "groupType": "solo, friends"
+      },
+      {
+        "name": "Kyoto Botanical Gardens",
+        "type": "garden",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Nijo Castle",
+        "type": "historical",
+        "interests": ["History", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Kyoto Tower",
+        "type": "sightseeing",
+        "interests": ["City", "Sightseeing"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Kiyomizu-dera",
+        "type": "temple",
+        "interests": ["Culture", "Sightseeing"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Kyoto Cooking Class",
+        "type": "culinary",
+        "interests": ["Gastronomy", "Culture"],
+        "ageRange": "adults",
+        "budget": "$$$",
+        "groupType": "solo, couple"
+      },
+      {
+        "name": "Kyoto Cycling Tour",
+        "type": "sports",
+        "interests": ["Adventure", "Sports"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "friends, couple"
+      }
     ]
   },
   {
@@ -50,50 +274,309 @@
     "city": "Osaka",
     "cityImage": "https://images.unsplash.com/photo-1589452271712-64b8a66c7b71?q=80&w=2971&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "activities": [
-      { "name": "Osaka Castle", "type": "sightseeing", "interests": ["Culture", "Architecture"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Dotonbori District", "type": "shopping", "interests": ["Gastronomy", "City"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-      { "name": "Universal Studios Japan", "type": "theme park", "interests": ["Adventure", "City"], "ageRange": "kids, teens, adults", "budget": "$$$", "groupType": "family, friends" },
-      { "name": "Osaka Aquarium Kaiyukan", "type": "indoor", "interests": ["Nature", "Culture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Shinsekai District", "type": "sightseeing", "interests": ["City", "Gastronomy"], "ageRange": "teens, adults", "budget": "$", "groupType": "all" },
-      { "name": "Umeda Sky Building", "type": "architecture", "interests": ["Architecture", "Sightseeing"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Namba Yasaka Shrine", "type": "cultural", "interests": ["Culture", "Sightseeing"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Osaka Museum of History", "type": "museum", "interests": ["Culture", "History"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Sumiyoshi Taisha Shrine", "type": "cultural", "interests": ["Culture", "Sightseeing"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Spa World", "type": "relaxation", "interests": ["Relax", "Gastronomy"], "ageRange": "adults", "budget": "$$$", "groupType": "solo, couple" },
-      { "name": "Osaka Science Museum", "type": "museum", "interests": ["Science", "Education"], "ageRange": "all ages", "budget": "$$", "groupType": "family, school" },
-      { "name": "Tempozan Ferris Wheel", "type": "recreational", "interests": ["Sightseeing", "Relax"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Minoo Park", "type": "nature", "interests": ["Nature", "Relax"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Abeno Harukas", "type": "sightseeing", "interests": ["City", "Sightseeing"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Osaka Tennoji Zoo", "type": "outdoor", "interests": ["Nature", "Education"], "ageRange": "all ages", "budget": "$", "groupType": "family" },
-      { "name": "Kuromon Ichiba Market", "type": "market", "interests": ["Gastronomy", "Culture"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Rikuro's Cheesecake Factory Tour", "type": "culinary", "interests": ["Gastronomy", "Culture"], "ageRange": "all ages", "budget": "$$", "groupType": "family, couple" },
-      { "name": "Osaka Nightlife Tour", "type": "nightlife", "interests": ["City", "Gastronomy"], "ageRange": "adults", "budget": "$$", "groupType": "friends, solo" }
+      {
+        "name": "Osaka Castle",
+        "type": "sightseeing",
+        "interests": ["Culture", "Architecture"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Dotonbori District",
+        "type": "shopping",
+        "interests": ["Gastronomy", "City"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Universal Studios Japan",
+        "type": "theme park",
+        "interests": ["Adventure", "City"],
+        "ageRange": "kids, teens, adults",
+        "budget": "$$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Osaka Aquarium Kaiyukan",
+        "type": "indoor",
+        "interests": ["Nature", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Shinsekai District",
+        "type": "sightseeing",
+        "interests": ["City", "Gastronomy"],
+        "ageRange": "teens, adults",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Umeda Sky Building",
+        "type": "architecture",
+        "interests": ["Architecture", "Sightseeing"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Namba Yasaka Shrine",
+        "type": "cultural",
+        "interests": ["Culture", "Sightseeing"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Osaka Museum of History",
+        "type": "museum",
+        "interests": ["Culture", "History"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Sumiyoshi Taisha Shrine",
+        "type": "cultural",
+        "interests": ["Culture", "Sightseeing"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Spa World",
+        "type": "relaxation",
+        "interests": ["Relax", "Gastronomy"],
+        "ageRange": "adults",
+        "budget": "$$$",
+        "groupType": "solo, couple"
+      },
+      {
+        "name": "Osaka Science Museum",
+        "type": "museum",
+        "interests": ["Science", "Education"],
+        "ageRange": "kids, teens",
+        "budget": "$$",
+        "groupType": "family, friends, solo"
+      },
+      {
+        "name": "Tempozan Ferris Wheel",
+        "type": "recreational",
+        "interests": ["Sightseeing", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Minoo Park",
+        "type": "nature",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Abeno Harukas",
+        "type": "sightseeing",
+        "interests": ["City", "Sightseeing"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Osaka Tennoji Zoo",
+        "type": "outdoor",
+        "interests": ["Nature", "Education"],
+        "ageRange": "kids, teens",
+        "budget": "$",
+        "groupType": "family"
+      },
+      {
+        "name": "Kuromon Ichiba Market",
+        "type": "market",
+        "interests": ["Gastronomy", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Rikuro's Cheesecake Factory Tour",
+        "type": "culinary",
+        "interests": ["Gastronomy", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, couple"
+      },
+      {
+        "name": "Osaka Nightlife Tour",
+        "type": "nightlife",
+        "interests": ["City", "Gastronomy"],
+        "ageRange": "adults",
+        "budget": "$$",
+        "groupType": "friends, solo"
+      }
     ]
   },
-  {  
+  {
     "countryId": 2,
     "city": "Rome",
     "cityImage": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=2896&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "activities": [
-      { "name": "Colosseum Tour", "type": "sightseeing", "interests": ["History", "Architecture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Vatican Museums", "type": "museum", "interests": ["Art", "History"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-      { "name": "Gelato Tasting", "type": "food", "interests": ["Gastronomy"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Trevi Fountain", "type": "sightseeing", "interests": ["Culture", "Photography"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Roman Forum", "type": "sightseeing", "interests": ["History", "Archaeology"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-      { "name": "Pantheon Visit", "type": "sightseeing", "interests": ["Architecture", "History"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Cooking Class in Trastevere", "type": "culinary", "interests": ["Gastronomy", "Culture"], "ageRange": "adults", "budget": "$$", "groupType": "couple, solo" },
-      { "name": "Biking along the Appian Way", "type": "sports", "interests": ["Adventure", "Nature"], "ageRange": "teens, adults", "budget": "$$", "groupType": "friends, solo" },
-      { "name": "Exploring Trastevere", "type": "walking tour", "interests": ["City", "Culture"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Castel Sant'Angelo", "type": "historical", "interests": ["History", "Architecture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Villa Borghese Gardens", "type": "nature", "interests": ["Nature", "Relax"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Pasta Making Class", "type": "culinary", "interests": ["Gastronomy", "Culture"], "ageRange": "teens, adults", "budget": "$$", "groupType": "friends, couple" },
-      { "name": "Tiber River Cruise", "type": "sightseeing", "interests": ["Sightseeing", "Relax"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Galleria Borghese", "type": "museum", "interests": ["Art", "Culture"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-      { "name": "St. Peter's Basilica Tour", "type": "religious", "interests": ["Culture", "Architecture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Campo de' Fiori Market", "type": "market", "interests": ["Gastronomy", "Culture"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Exploring Piazza Navona", "type": "sightseeing", "interests": ["City", "Culture"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Baths of Caracalla", "type": "historical", "interests": ["History", "Architecture"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-      { "name": "Testaccio Food Tour", "type": "food tour", "interests": ["Gastronomy", "Culture"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" }
+      {
+        "name": "Colosseum Tour",
+        "type": "sightseeing",
+        "interests": ["History", "Architecture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Vatican Museums",
+        "type": "museum",
+        "interests": ["Art", "History"],
+        "ageRange": "adults",
+        "budget": "$$",
+        "groupType": "couple, solo"
+      },
+      {
+        "name": "Gelato Tasting",
+        "type": "food",
+        "interests": ["Gastronomy"],
+        "ageRange": "kids, teens",
+        "budget": "$",
+        "groupType": "family"
+      },
+      {
+        "name": "Trevi Fountain",
+        "type": "sightseeing",
+        "interests": ["Culture", "Photography"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Roman Forum",
+        "type": "sightseeing",
+        "interests": ["History", "Archaeology"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "friends"
+      },
+      {
+        "name": "Pantheon Visit",
+        "type": "sightseeing",
+        "interests": ["Architecture", "History"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Cooking Class in Trastevere",
+        "type": "culinary",
+        "interests": ["Gastronomy", "Culture"],
+        "ageRange": "adults",
+        "budget": "$$",
+        "groupType": "couple, solo"
+      },
+      {
+        "name": "Biking along the Appian Way",
+        "type": "sports",
+        "interests": ["Adventure", "Nature"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "friends, solo"
+      },
+      {
+        "name": "Exploring Trastevere",
+        "type": "walking tour",
+        "interests": ["City", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Castel Sant'Angelo",
+        "type": "historical",
+        "interests": ["History", "Architecture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Villa Borghese Gardens",
+        "type": "nature",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "family, couple"
+      },
+      {
+        "name": "Pasta Making Class",
+        "type": "culinary",
+        "interests": ["Gastronomy", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "friends, couple"
+      },
+      {
+        "name": "Tiber River Cruise",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Galleria Borghese",
+        "type": "museum",
+        "interests": ["Art", "Culture"],
+        "ageRange": "adults",
+        "budget": "$$",
+        "groupType": "solo, couple"
+      },
+      {
+        "name": "St. Peter's Basilica Tour",
+        "type": "religious",
+        "interests": ["Culture", "Architecture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Campo de' Fiori Market",
+        "type": "market",
+        "interests": ["Gastronomy", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Exploring Piazza Navona",
+        "type": "sightseeing",
+        "interests": ["City", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Baths of Caracalla",
+        "type": "historical",
+        "interests": ["History", "Architecture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Testaccio Food Tour",
+        "type": "food tour",
+        "interests": ["Gastronomy", "Culture"],
+        "ageRange": "adults",
+        "budget": "$$",
+        "groupType": "friends"
+      }
     ]
   },
   {
@@ -101,23 +584,142 @@
     "city": "Florence",
     "cityImage": "https://images.unsplash.com/photo-1526721360960-dd1fca4f5148?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "activities": [
-      { "name": "Duomo Cathedral", "type": "sightseeing", "interests": ["History", "Architecture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Uffizi Gallery", "type": "museum", "interests": ["Art", "Culture"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-      { "name": "Ponte Vecchio", "type": "sightseeing", "interests": ["History", "City"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Gelato Tasting Tour", "type": "food tour", "interests": ["Gastronomy", "Culture"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Boboli Gardens", "type": "nature", "interests": ["Nature", "Relax"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Accademia Gallery", "type": "museum", "interests": ["Art", "History"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-      { "name": "Florence Cathedral Climb", "type": "adventure", "interests": ["Adventure", "Architecture"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-      { "name": "Olive Oil Tasting", "type": "food", "interests": ["Gastronomy"], "ageRange": "adults", "budget": "$$", "groupType": "couple, friends" },
-      { "name": "San Lorenzo Market", "type": "market", "interests": ["Gastronomy", "Culture"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Piazza della Signoria", "type": "sightseeing", "interests": ["City", "History"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Vespa Tour of Tuscan Countryside", "type": "adventure", "interests": ["Adventure", "Nature"], "ageRange": "adults", "budget": "$$$", "groupType": "couple, friends" },
-      { "name": "Palazzo Pitti", "type": "museum", "interests": ["Art", "History"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-      { "name": "Fiesole Hilltop Village", "type": "sightseeing", "interests": ["City", "Nature"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Opera at Teatro del Maggio Musicale Fiorentino", "type": "arts", "interests": ["Culture", "Music"], "ageRange": "teens, adults", "budget": "$$$", "groupType": "all" },
-      { "name": "Florence Bike Tour", "type": "sports", "interests": ["Adventure", "City"], "ageRange": "teens, adults", "budget": "$$", "groupType": "friends, solo" },
-      { "name": "Secret Florence Walking Tour", "type": "walking tour", "interests": ["City", "History"], "ageRange": "adults", "budget": "$$", "groupType": "couple, friends" },
-      { "name": "Gucci Garden Museum", "type": "fashion", "interests": ["Art", "Fashion"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" }
+      {
+        "name": "Duomo Cathedral",
+        "type": "sightseeing",
+        "interests": ["History", "Architecture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Uffizi Gallery",
+        "type": "museum",
+        "interests": ["Art", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "friends, solo"
+      },
+      {
+        "name": "Ponte Vecchio",
+        "type": "sightseeing",
+        "interests": ["History", "City"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "family, couple"
+      },
+      {
+        "name": "Gelato Tasting Tour",
+        "type": "food tour",
+        "interests": ["Gastronomy", "Culture"],
+        "ageRange": "kids, teens, adults",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Boboli Gardens",
+        "type": "nature",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Accademia Gallery",
+        "type": "museum",
+        "interests": ["Art", "History"],
+        "ageRange": "adults",
+        "budget": "$$",
+        "groupType": "couple, solo"
+      },
+      {
+        "name": "Florence Cathedral Climb",
+        "type": "adventure",
+        "interests": ["Adventure", "Architecture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "friends, solo"
+      },
+      {
+        "name": "Olive Oil Tasting",
+        "type": "food",
+        "interests": ["Gastronomy"],
+        "ageRange": "adults",
+        "budget": "$$",
+        "groupType": "couple, friends"
+      },
+      {
+        "name": "San Lorenzo Market",
+        "type": "market",
+        "interests": ["Gastronomy", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Piazza della Signoria",
+        "type": "sightseeing",
+        "interests": ["City", "History"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "family, couple"
+      },
+      {
+        "name": "Vespa Tour of Tuscan Countryside",
+        "type": "adventure",
+        "interests": ["Adventure", "Nature"],
+        "ageRange": "adults",
+        "budget": "$$$",
+        "groupType": "couple, friends"
+      },
+      {
+        "name": "Palazzo Pitti",
+        "type": "museum",
+        "interests": ["Art", "History"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "friends, solo"
+      },
+      {
+        "name": "Fiesole Hilltop Village",
+        "type": "sightseeing",
+        "interests": ["City", "Nature"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, couple"
+      },
+      {
+        "name": "Opera at Teatro del Maggio Musicale Fiorentino",
+        "type": "arts",
+        "interests": ["Culture", "Music"],
+        "ageRange": "adults",
+        "budget": "$$$",
+        "groupType": "couple, solo"
+      },
+      {
+        "name": "Florence Bike Tour",
+        "type": "sports",
+        "interests": ["Adventure", "City"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "friends, solo"
+      },
+      {
+        "name": "Secret Florence Walking Tour",
+        "type": "walking tour",
+        "interests": ["City", "History"],
+        "ageRange": "adults",
+        "budget": "$$",
+        "groupType": "couple, friends"
+      },
+      {
+        "name": "Gucci Garden Museum",
+        "type": "fashion",
+        "interests": ["Art", "Fashion"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      }
     ]
   },
   {
@@ -125,21 +727,126 @@
     "city": "Venice",
     "cityImage": "https://images.unsplash.com/photo-1558271736-cd043ef2e855?q=80&w=3131&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "activities": [
-      { "name": "Gondola Ride", "type": "sightseeing", "interests": ["Nature", "Scenery"], "ageRange": "all ages", "budget": "$$$", "groupType": "couple, family" },
-      { "name": "St. Mark's Basilica", "type": "sightseeing", "interests": ["Architecture", "Religion"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Doge's Palace", "type": "museum", "interests": ["History", "Architecture"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-      { "name": "Rialto Bridge", "type": "sightseeing", "interests": ["Scenery", "Sightseeing"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Murano Glass Factory Tour", "type": "shopping", "interests": ["Art", "Crafts"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Venetian Mask Making Workshop", "type": "arts", "interests": ["Art", "Culture"], "ageRange": "teens, adults", "budget": "$$", "groupType": "friends, couple" },
-      { "name": "Biennale Art Exhibition", "type": "festival", "interests": ["Art", "Culture"], "ageRange": "adults", "budget": "$$", "groupType": "all" },
-      { "name": "Cicchetti Tasting Tour", "type": "food tour", "interests": ["Gastronomy", "Culture"], "ageRange": "adults", "budget": "$$", "groupType": "friends, couple" },
-      { "name": "Venetian Lagoon Kayaking", "type": "sports", "interests": ["Adventure", "Nature"], "ageRange": "teens, adults", "budget": "$$", "groupType": "friends, couple" },
-      { "name": "Teatro La Fenice Opera House Tour", "type": "arts", "interests": ["Culture", "Music"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Ghetto Vecchio Walking Tour", "type": "walking tour", "interests": ["History", "Culture"], "ageRange": "adults", "budget": "$$", "groupType": "friends, couple" },
-      { "name": "Venice Carnival Mask Parade", "type": "festival", "interests": ["Culture", "Celebration"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Venetian Gondolier Rowing Class", "type": "sports", "interests": ["Adventure", "Sports"], "ageRange": "adults", "budget": "$$$", "groupType": "couple, friends" },
-      { "name": "Burano Island Photography Tour", "type": "photography", "interests": ["Art", "Scenery"], "ageRange": "adults", "budget": "$$", "groupType": "friends, couple" },
-      { "name": "Venetian Opera Performance", "type": "arts", "interests": ["Culture", "Music"], "ageRange": "adults", "budget": "$$", "groupType": "all" }
+      {
+        "name": "Gondola Ride",
+        "type": "sightseeing",
+        "interests": ["Nature", "Scenery"],
+        "ageRange": "all ages",
+        "budget": "$$$",
+        "groupType": "couple, family"
+      },
+      {
+        "name": "St. Mark's Basilica",
+        "type": "sightseeing",
+        "interests": ["Architecture", "Religion"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Doge's Palace",
+        "type": "museum",
+        "interests": ["History", "Architecture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Rialto Bridge",
+        "type": "sightseeing",
+        "interests": ["Scenery", "Sightseeing"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Murano Glass Factory Tour",
+        "type": "shopping",
+        "interests": ["Art", "Crafts"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Venetian Mask Making Workshop",
+        "type": "arts",
+        "interests": ["Art", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "friends, couple"
+      },
+      {
+        "name": "Biennale Art Exhibition",
+        "type": "festival",
+        "interests": ["Art", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Cicchetti Tasting Tour",
+        "type": "food tour",
+        "interests": ["Gastronomy", "Culture"],
+        "ageRange": "adults",
+        "budget": "$$",
+        "groupType": "friends, couple"
+      },
+      {
+        "name": "Venetian Lagoon Kayaking",
+        "type": "sports",
+        "interests": ["Adventure", "Nature"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "friends, couple"
+      },
+      {
+        "name": "Teatro La Fenice Opera House Tour",
+        "type": "arts",
+        "interests": ["Culture", "Music"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Ghetto Vecchio Walking Tour",
+        "type": "walking tour",
+        "interests": ["History", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "friends, couple"
+      },
+      {
+        "name": "Venice Carnival Mask Parade",
+        "type": "festival",
+        "interests": ["Culture", "Celebration"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Venetian Gondolier Rowing Class",
+        "type": "sports",
+        "interests": ["Adventure", "Sports"],
+        "ageRange": "adults",
+        "budget": "$$$",
+        "groupType": "couple, friends"
+      },
+      {
+        "name": "Burano Island Photography Tour",
+        "type": "photography",
+        "interests": ["Art", "Scenery"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "friends, solo"
+      },
+      {
+        "name": "Venetian Opera Performance",
+        "type": "arts",
+        "interests": ["Culture", "Music"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      }
     ]
   },
   {
@@ -147,21 +854,150 @@
     "city": "Sydney",
     "cityImage": "https://images.unsplash.com/photo-1516941064643-74aacd84843c?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "activities": [
-      { "name": "Sydney Opera House Tour", "type": "sightseeing", "interests": ["Architecture", "Performing Arts"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Bondi Beach", "type": "outdoor", "interests": ["Beach", "Surfing"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Taronga Zoo", "type": "outdoor", "interests": ["Animals", "Nature"], "ageRange": "kids, teens, adults", "budget": "$$", "groupType": "family, friends" },
-      { "name": "Sydney Harbour Bridge Climb", "type": "adventure", "interests": ["Views", "Thrill"], "ageRange": "teens, adults", "budget": "$$$", "groupType": "all" },
-      { "name": "Manly Beach", "type": "outdoor", "interests": ["Beach", "Relaxation"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Royal Botanic Garden", "type": "nature", "interests": ["Nature", "Gardens"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Sydney Harbour Dinner Cruise", "type": "cruise", "interests": ["Sightseeing", "Dining"], "ageRange": "adults", "budget": "$$$", "groupType": "couple, friends" },
-      { "name": "Art Gallery of New South Wales", "type": "museum", "interests": ["Art", "Culture"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-      { "name": "Blue Mountains Day Trip", "type": "adventure", "interests": ["Nature", "Hiking"], "ageRange": "all ages", "budget": "$$", "groupType": "family, friends" },
-      { "name": "Sydney Fish Market Tour", "type": "food tour", "interests": ["Gastronomy", "Seafood"], "ageRange": "adults", "budget": "$$", "groupType": "friends, couple" },
-      { "name": "Australian Museum", "type": "museum", "interests": ["History", "Science"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Coogee to Bondi Coastal Walk", "type": "outdoor", "interests": ["Adventure", "Nature"], "ageRange": "teens, adults", "budget": "$", "groupType": "friends, couple" },
-      { "name": "Sydney Tower Eye Observation Deck", "type": "sightseeing", "interests": ["Views", "City"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Museum of Contemporary Art Australia", "type": "museum", "interests": ["Art", "Culture"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-      { "name": "Sydney Kayaking Adventure", "type": "sports", "interests": ["Adventure", "Water Sports"], "ageRange": "teens, adults", "budget": "$$", "groupType": "friends, couple" }
+      {
+        "name": "Sydney Opera House Tour",
+        "type": "sightseeing",
+        "interests": ["Architecture", "Sightseeing"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Bondi Beach",
+        "type": "outdoor",
+        "interests": ["Beach", "Nature"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Taronga Zoo",
+        "type": "outdoor",
+        "interests": ["Animals", "Nature"],
+        "ageRange": "kids, teens, adults",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Sydney Harbour Bridge Climb",
+        "type": "adventure",
+        "interests": ["Sightseeing", "Thrill"],
+        "ageRange": "teens, adults",
+        "budget": "$$$",
+        "groupType": "friends, solo"
+      },
+      {
+        "name": "Manly Beach",
+        "type": "outdoor",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Royal Botanic Garden",
+        "type": "nature",
+        "interests": ["Nature", "Gardens"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Sydney Harbour Dinner Cruise",
+        "type": "cruise",
+        "interests": ["Sightseeing", "Dining"],
+        "ageRange": "adults",
+        "budget": "$$$",
+        "groupType": "couple, friends"
+      },
+      {
+        "name": "Art Gallery of New South Wales",
+        "type": "museum",
+        "interests": ["Art", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Blue Mountains Day Trip",
+        "type": "adventure",
+        "interests": ["Nature", "Hiking"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Sydney Fish Market Tour",
+        "type": "food tour",
+        "interests": ["Gastronomy", "Seafood"],
+        "ageRange": "adults",
+        "budget": "$$",
+        "groupType": "friends, couple"
+      },
+      {
+        "name": "Australian Museum",
+        "type": "museum",
+        "interests": ["History", "Science"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Coogee to Bondi Coastal Walk",
+        "type": "outdoor",
+        "interests": ["Adventure", "Nature"],
+        "ageRange": "teens, adults",
+        "budget": "$",
+        "groupType": "friends, solo"
+      },
+      {
+        "name": "Sydney Tower Eye Observation Deck",
+        "type": "sightseeing",
+        "interests": ["Views", "City"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Museum of Contemporary Art Australia",
+        "type": "museum",
+        "interests": ["Art", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Sydney Kayaking Adventure",
+        "type": "sports",
+        "interests": ["Adventure", "Water Sports"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "friends, couple"
+      },
+      {
+        "name": "Luna Park",
+        "type": "amusement park",
+        "interests": ["Entertainment", "Culture"],
+        "ageRange": "kids, teens, adults",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Sydney Wildlife World",
+        "type": "zoo",
+        "interests": ["Animals", "Nature"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family"
+      },
+      {
+        "name": "Surry Hills Food and Drink Tour",
+        "type": "food tour",
+        "interests": ["Gastronomy", "Culture"],
+        "ageRange": "adults",
+        "budget": "$$",
+        "groupType": "friends, solo"
+      }
     ]
   },
   {
@@ -169,21 +1005,158 @@
     "city": "Melbourne",
     "cityImage": "https://images.unsplash.com/photo-1545044846-351ba102b6d5?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "activities": [
-      { "name": "Great Ocean Road", "type": "adventure", "interests": ["Adventure", "Nature"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Melbourne Zoo", "type": "nature", "interests": ["Nature", "Animals"], "ageRange": "kids, teens, adults", "budget": "$$", "groupType": "family, friends" },
-      { "name": "Federation Square", "type": "city", "interests": ["City", "Culture"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Royal Botanic Gardens", "type": "nature", "interests": ["Nature", "Relax"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Queen Victoria Market", "type": "gastronomy", "interests": ["Gastronomy", "Culture"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "National Gallery of Victoria", "type": "art", "interests": ["Art", "Culture"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-      { "name": "Yarra River Cruise", "type": "sightseeing", "interests": ["Sightseeing", "Relax"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Phillip Island Penguin Parade", "type": "nature", "interests": ["Nature", "Adventure"], "ageRange": "all ages", "budget": "$$", "groupType": "family, friends" },
-      { "name": "Eureka Skydeck 88", "type": "sightseeing", "interests": ["Sightseeing", "Adventure"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Street Art Tour in Hosier Lane", "type": "art", "interests": ["Art", "City"], "ageRange": "teens, adults", "budget": "$", "groupType": "friends, couple" },
-      { "name": "Melbourne Cricket Ground Tour", "type": "sports", "interests": ["Sports", "Adventure"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "St. Kilda Beach", "type": "nature", "interests": ["Nature", "Relax"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Melbourne Food Tour", "type": "gastronomy", "interests": ["Gastronomy", "Culture"], "ageRange": "adults", "budget": "$$", "groupType": "friends, couple" },
-      { "name": "Australian Centre for the Moving Image (ACMI)", "type": "art", "interests": ["Art", "Culture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Hot Air Balloon Ride over Yarra Valley", "type": "adventure", "interests": ["Adventure", "Nature"], "ageRange": "adults", "budget": "$$$", "groupType": "couple, friends" }
+      {
+        "name": "Great Ocean Road",
+        "type": "adventure",
+        "interests": ["Adventure", "Nature"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Melbourne Zoo",
+        "type": "nature",
+        "interests": ["Nature", "Animals"],
+        "ageRange": "kids, teens, adults",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Federation Square",
+        "type": "city",
+        "interests": ["City", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Royal Botanic Gardens",
+        "type": "nature",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Queen Victoria Market",
+        "type": "gastronomy",
+        "interests": ["Gastronomy", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "National Gallery of Victoria",
+        "type": "art",
+        "interests": ["Art", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Yarra River Cruise",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Phillip Island Penguin Parade",
+        "type": "nature",
+        "interests": ["Nature", "Adventure"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Eureka Skydeck 88",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "Adventure"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Street Art Tour in Hosier Lane",
+        "type": "art",
+        "interests": ["Art", "City"],
+        "ageRange": "teens, adults",
+        "budget": "$",
+        "groupType": "friends, couple"
+      },
+      {
+        "name": "Melbourne Cricket Ground Tour",
+        "type": "sports",
+        "interests": ["Sports", "Adventure"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "St. Kilda Beach",
+        "type": "nature",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Melbourne Food Tour",
+        "type": "gastronomy",
+        "interests": ["Gastronomy", "Culture"],
+        "ageRange": "adults",
+        "budget": "$$",
+        "groupType": "friends, couple"
+      },
+      {
+        "name": "Australian Centre for the Moving Image (ACMI)",
+        "type": "art",
+        "interests": ["Art", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Hot Air Balloon Ride over Yarra Valley",
+        "type": "adventure",
+        "interests": ["Adventure", "Nature"],
+        "ageRange": "adults",
+        "budget": "$$$",
+        "groupType": "couple, friends"
+      },
+      {
+        "name": "Melbourne Museum",
+        "type": "museum",
+        "interests": ["History", "Science"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Luna Park Melbourne",
+        "type": "amusement park",
+        "interests": ["Entertainment", "Family Fun"],
+        "ageRange": "kids, teens, adults",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Southbank Promenade",
+        "type": "city",
+        "interests": ["City", "Dining"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Yarra Valley Wine Tour",
+        "type": "food tour",
+        "interests": ["Gastronomy", "Wine"],
+        "ageRange": "adults",
+        "budget": "$$$",
+        "groupType": "couple, friends"
+      }
     ]
   },
   {
@@ -191,20 +1164,150 @@
     "city": "Brisbane",
     "cityImage": "https://images.unsplash.com/photo-1617364799141-3f2d5c0d89b0?q=80&w=2951&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "activities": [
-      { "name": "Lone Pine Koala Sanctuary", "type": "nature", "interests": ["Nature", "Wildlife"], "ageRange": "all ages", "budget": "$$", "groupType": "family, friends" },
-      { "name": "Story Bridge Adventure Climb", "type": "adventure", "interests": ["Adventure", "Thrill"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-      { "name": "Brisbane River Cruise", "type": "sightseeing", "interests": ["Sightseeing", "Relax"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Eat Street Northshore", "type": "gastronomy", "interests": ["Gastronomy", "City"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "South Bank Parklands", "type": "nature", "interests": ["Nature", "Relax"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Queensland Art Gallery & Gallery of Modern Art (QAGOMA)", "type": "art", "interests": ["Art", "Culture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Mount Coot-tha Lookout", "type": "sightseeing", "interests": ["Sightseeing", "Nature"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "XXXX Brewery Tour", "type": "gastronomy", "interests": ["Gastronomy", "Culture"], "ageRange": "adults", "budget": "$$", "groupType": "friends, couple" },
-      { "name": "Moreton Island Day Trip", "type": "adventure", "interests": ["Adventure", "Nature"], "ageRange": "all ages", "budget": "$$", "groupType": "family, friends" },
-      { "name": "City Botanic Gardens", "type": "nature", "interests": ["Nature", "Relax"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Queensland Museum", "type": "culture", "interests": ["Culture", "History"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Riverlife Adventure Centre", "type": "adventure", "interests": ["Adventure", "Sports"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-      { "name": "CityCat Ferry Ride", "type": "sightseeing", "interests": ["Sightseeing", "Relax"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Brisbane Powerhouse", "type": "culture", "interests": ["Culture", "Art"], "ageRange": "all ages", "budget": "$$", "groupType": "all" }
+      {
+        "name": "Lone Pine Koala Sanctuary",
+        "type": "nature",
+        "interests": ["Nature", "Wildlife"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Story Bridge Adventure Climb",
+        "type": "adventure",
+        "interests": ["Adventure", "Thrill"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "friends, couple"
+      },
+      {
+        "name": "Brisbane River Cruise",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, friends, solo"
+      },
+      {
+        "name": "Eat Street Northshore",
+        "type": "gastronomy",
+        "interests": ["Gastronomy", "City"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "family, friends, solo"
+      },
+      {
+        "name": "South Bank Parklands",
+        "type": "nature",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "family, friends, solo"
+      },
+      {
+        "name": "Queensland Art Gallery & Gallery of Modern Art (QAGOMA)",
+        "type": "art",
+        "interests": ["Art", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Mount Coot-tha Lookout",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "Nature"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "family, friends, solo"
+      },
+      {
+        "name": "XXXX Brewery Tour",
+        "type": "gastronomy",
+        "interests": ["Gastronomy", "Culture"],
+        "ageRange": "adults",
+        "budget": "$$",
+        "groupType": "friends, couple"
+      },
+      {
+        "name": "Moreton Island Day Trip",
+        "type": "adventure",
+        "interests": ["Adventure", "Nature"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "City Botanic Gardens",
+        "type": "nature",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "family, solo"
+      },
+      {
+        "name": "Queensland Museum",
+        "type": "culture",
+        "interests": ["Culture", "History"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, solo"
+      },
+      {
+        "name": "Riverlife Adventure Centre",
+        "type": "adventure",
+        "interests": ["Adventure", "Sports"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "friends, couple"
+      },
+      {
+        "name": "CityCat Ferry Ride",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "family, friends, solo"
+      },
+      {
+        "name": "Brisbane Powerhouse",
+        "type": "culture",
+        "interests": ["Culture", "Art"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Gondwana Rainforests Day Trip",
+        "type": "adventure",
+        "interests": ["Nature", "Hiking"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Brisbane Art Gallery Tour",
+        "type": "art",
+        "interests": ["Art", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Suncorp Stadium Tour",
+        "type": "sports",
+        "interests": ["Sports", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Theatre Show at Brisbane's Lyric Theatre",
+        "type": "arts",
+        "interests": ["Culture", "Performing Arts"],
+        "ageRange": "teens, adults",
+        "budget": "$$$",
+        "groupType": "friends, couple"
+      }
     ]
   },
   {
@@ -212,20 +1315,150 @@
     "city": "Vancouver",
     "cityImage": "https://images.unsplash.com/photo-1544161513-0179fe746fd5?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "activities": [
-      { "name": "Stanley Park", "type": "nature", "interests": ["Nature", "Cycling"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Granville Island", "type": "gastronomy", "interests": ["Gastronomy", "City"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Capilano Suspension Bridge", "type": "adventure", "interests": ["Adventure", "Nature"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-      { "name": "Vancouver Aquarium", "type": "nature", "interests": ["Nature", "Marine Life"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Grouse Mountain", "type": "adventure", "interests": ["Adventure", "Views"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Vancouver Art Gallery", "type": "art", "interests": ["Art", "Culture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Whale Watching Tour", "type": "adventure", "interests": ["Adventure", "Nature"], "ageRange": "all ages", "budget": "$$$", "groupType": "family, friends" },
-      { "name": "Science World at TELUS World of Science", "type": "science", "interests": ["Science", "Culture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Chinatown Vancouver", "type": "culture", "interests": ["Culture", "History"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Sea-to-Sky Gondola", "type": "adventure", "interests": ["Adventure", "Views"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Robson Street Shopping", "type": "shopping", "interests": ["City", "Gastronomy"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "VanDusen Botanical Garden", "type": "nature", "interests": ["Nature", "Relax"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Museum of Anthropology", "type": "culture", "interests": ["Culture", "History"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "FlyOver Canada", "type": "adventure", "interests": ["Adventure", "Sightseeing"], "ageRange": "all ages", "budget": "$$$", "groupType": "all" }
+      {
+        "name": "Stanley Park",
+        "type": "nature",
+        "interests": ["Nature", "Cycling"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "family, friends, solo"
+      },
+      {
+        "name": "Granville Island",
+        "type": "gastronomy",
+        "interests": ["Gastronomy", "City"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "couple, friends, family"
+      },
+      {
+        "name": "Capilano Suspension Bridge",
+        "type": "adventure",
+        "interests": ["Adventure", "Nature"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "friends, couple"
+      },
+      {
+        "name": "Vancouver Aquarium",
+        "type": "nature",
+        "interests": ["Nature", "Marine Life"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, solo"
+      },
+      {
+        "name": "Grouse Mountain",
+        "type": "adventure",
+        "interests": ["Adventure", "Views"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, friends, couple"
+      },
+      {
+        "name": "Vancouver Art Gallery",
+        "type": "art",
+        "interests": ["Art", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Whale Watching Tour",
+        "type": "adventure",
+        "interests": ["Adventure", "Nature"],
+        "ageRange": "all ages",
+        "budget": "$$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Science World at TELUS World of Science",
+        "type": "science",
+        "interests": ["Science", "Culture"],
+        "ageRange": "kids, teens, adults",
+        "budget": "$$",
+        "groupType": "family, solo"
+      },
+      {
+        "name": "Chinatown Vancouver",
+        "type": "culture",
+        "interests": ["Culture", "History"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Sea-to-Sky Gondola",
+        "type": "adventure",
+        "interests": ["Adventure", "Views"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Robson Street Shopping",
+        "type": "shopping",
+        "interests": ["City", "Gastronomy"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "friends, solo"
+      },
+      {
+        "name": "VanDusen Botanical Garden",
+        "type": "nature",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Museum of Anthropology",
+        "type": "culture",
+        "interests": ["Culture", "History"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "FlyOver Canada",
+        "type": "adventure",
+        "interests": ["Adventure", "Sightseeing"],
+        "ageRange": "all ages",
+        "budget": "$$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Capilano River Regional Park",
+        "type": "nature",
+        "interests": ["Nature", "Hiking"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "friends, couple"
+      },
+      {
+        "name": "Vancouver Maritime Museum",
+        "type": "museum",
+        "interests": ["History", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, solo"
+      },
+      {
+        "name": "Kitsilano Beach",
+        "type": "nature",
+        "interests": ["Beach", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "friends, family"
+      },
+      {
+        "name": "VanCity Theatre",
+        "type": "arts",
+        "interests": ["Film", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "couple, friends"
+      }
     ]
   },
   {
@@ -233,17 +1466,126 @@
     "city": "Toronto",
     "cityImage": "https://images.unsplash.com/photo-1470181942237-78ce33fec141?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "activities": [
-      { "name": "CN Tower", "type": "sightseeing", "interests": ["Architecture", "Views"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Ripley's Aquarium", "type": "indoor", "interests": ["Marine Life"], "ageRange": "kids, teens, adults", "budget": "$$", "groupType": "family, friends" },
-      { "name": "Toronto Islands", "type": "outdoor", "interests": ["Nature", "Beach"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Royal Ontario Museum", "type": "museum", "interests": ["History", "Art"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "St. Lawrence Market", "type": "shopping", "interests": ["Food", "Local Products"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "High Park", "type": "outdoor", "interests": ["Nature", "Sightseeing"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Art Gallery of Ontario", "type": "museum", "interests": ["Art", "Culture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Toronto Zoo", "type": "outdoor", "interests": ["Animals", "Nature"], "ageRange": "all ages", "budget": "$$", "groupType": "family, friends" },
-      { "name": "Distillery District", "type": "culture", "interests": ["History", "Urban Life"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Toronto Botanical Garden", "type": "nature", "interests": ["Nature", "Relax"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "EdgeWalk at the CN Tower", "type": "adventure", "interests": ["Adventure", "Thrill"], "ageRange": "adults", "budget": "$$$", "groupType": "solo, couple" }
+      {
+        "name": "CN Tower",
+        "type": "sightseeing",
+        "interests": ["Architecture", "Views"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Ripley's Aquarium",
+        "type": "indoor",
+        "interests": ["Marine Life", "Nature"],
+        "ageRange": "kids, teens, adults",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Toronto Islands",
+        "type": "outdoor",
+        "interests": ["Nature", "Beach"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Royal Ontario Museum",
+        "type": "museum",
+        "interests": ["History", "Art"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "St. Lawrence Market",
+        "type": "shopping",
+        "interests": ["Food", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "High Park",
+        "type": "outdoor",
+        "interests": ["Nature", "Sightseeing"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "family, friends, solo"
+      },
+      {
+        "name": "Art Gallery of Ontario",
+        "type": "museum",
+        "interests": ["Art", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Toronto Zoo",
+        "type": "outdoor",
+        "interests": ["Animals", "Nature"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Distillery District",
+        "type": "culture",
+        "interests": ["History", "Urban Life"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Toronto Botanical Garden",
+        "type": "nature",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, solo"
+      },
+      {
+        "name": "EdgeWalk at the CN Tower",
+        "type": "adventure",
+        "interests": ["Adventure", "Thrill"],
+        "ageRange": "adults",
+        "budget": "$$$",
+        "groupType": "solo, couple"
+      },
+      {
+        "name": "Hockey Hall of Fame",
+        "type": "museum",
+        "interests": ["Sports", "History"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Kensington Market",
+        "type": "shopping",
+        "interests": ["Food", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Royal Conservatory of Music",
+        "type": "arts",
+        "interests": ["Music", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "friends, couple"
+      },
+      {
+        "name": "Toronto Symphony Orchestra",
+        "type": "arts",
+        "interests": ["Music", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$$$",
+        "groupType": "all"
+      }
     ]
   },
   {
@@ -251,17 +1593,126 @@
     "city": "Montreal",
     "cityImage": "https://images.unsplash.com/photo-1532299039866-065669a2d5df?q=80&w=3076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "activities": [
-      { "name": "Old Montreal", "type": "sightseeing", "interests": ["History", "Culture"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Mont Royal Park", "type": "outdoor", "interests": ["Nature", "Hiking"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Notre-Dame Basilica", "type": "sightseeing", "interests": ["Architecture", "Religion"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Biodome", "type": "indoor", "interests": ["Nature"], "ageRange": "all ages", "budget": "$$", "groupType": "family, friends" },
-      { "name": "Jean-Talon Market", "type": "shopping", "interests": ["Food", "Local Products"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Montreal Museum of Fine Arts", "type": "museum", "interests": ["Art", "Culture"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-      { "name": "Mount Royal Observatory", "type": "sightseeing", "interests": ["Scenery", "City"], "ageRange": "adults", "budget": "$", "groupType": "all" },
-      { "name": "La Ronde Amusement Park", "type": "theme park", "interests": ["Amusement Parks", "Adventure"], "ageRange": "kids, teens, adults", "budget": "$$", "groupType": "family, friends" },
-      { "name": "Pointe-à-Callière Museum", "type": "museum", "interests": ["History", "Archaeology"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Montreal Botanical Garden", "type": "nature", "interests": ["Nature", "Relax"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Plateau Mont-Royal", "type": "city", "interests": ["Urban Life", "Culture"], "ageRange": "all ages", "budget": "$", "groupType": "all" }
+      {
+        "name": "Old Montreal",
+        "type": "sightseeing",
+        "interests": ["History", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Mont Royal Park",
+        "type": "outdoor",
+        "interests": ["Nature", "Hiking"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Notre-Dame Basilica",
+        "type": "sightseeing",
+        "interests": ["Architecture", "Religion", "Sightseeing"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Biodome",
+        "type": "indoor",
+        "interests": ["Nature"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Jean-Talon Market",
+        "type": "shopping",
+        "interests": ["Food", "Local Products"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Montreal Museum of Fine Arts",
+        "type": "museum",
+        "interests": ["Art", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Mount Royal Observatory",
+        "type": "sightseeing",
+        "interests": ["Scenery", "City"],
+        "ageRange": "adults",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "La Ronde Amusement Park",
+        "type": "theme park",
+        "interests": ["Amusement Parks", "Adventure"],
+        "ageRange": "kids, teens, adults",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Pointe-à-Callière Museum",
+        "type": "museum",
+        "interests": ["History", "Sightseeing"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Montreal Botanical Garden",
+        "type": "nature",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Plateau Mont-Royal",
+        "type": "city",
+        "interests": ["Urban Life", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Underground City",
+        "type": "city",
+        "interests": ["Shopping", "Urban Life", "Sightseeing"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Montreal Science Centre",
+        "type": "science",
+        "interests": ["Science", "Technology", "Culture"],
+        "ageRange": "kids, teens, adults",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Lachine Canal",
+        "type": "outdoor",
+        "interests": ["Cycling", "Kayaking", "Nature"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Theatre du Nouveau Monde",
+        "type": "arts",
+        "interests": ["Performing Arts", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$$",
+        "groupType": "all"
+      }
     ]
   },
   {
@@ -269,21 +1720,158 @@
     "city": "Rio de Janeiro",
     "cityImage": "https://images.unsplash.com/photo-1589394760151-b4c9890765fe?q=80&w=1748&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "activities": [
-      { "name": "Christ the Redeemer", "type": "sightseeing", "interests": ["Culture", "Sightseeing"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Copacabana Beach", "type": "outdoor", "interests": ["Sightseeing", "Relax"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Sugarloaf Mountain", "type": "adventure", "interests": ["Adventure", "Nature"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Maracanã Stadium Tour", "type": "sightseeing", "interests": ["Sports", "Sightseeing"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-      { "name": "Selarón Steps", "type": "sightseeing", "interests": ["Art", "Sightseeing"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Tijuca Forest Jeep Tour", "type": "adventure", "interests": ["Adventure", "Nature"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Rio de Janeiro Botanical Garden", "type": "nature", "interests": ["Nature", "Relax"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Lapa Arches", "type": "sightseeing", "interests": ["Sightseeing", "Art"], "ageRange": "adults", "budget": "$", "groupType": "friends" },
-      { "name": "Pedra do Telegrafo Hike", "type": "adventure", "interests": ["Adventure", "Nature"], "ageRange": "teens, adults", "budget": "$", "groupType": "all" },
-      { "name": "Museum of Tomorrow", "type": "museum", "interests": ["Culture", "Sightseeing"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-      { "name": "Santa Teresa Tram Tour", "type": "sightseeing", "interests": ["Sightseeing", "Culture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Samba School Experience", "type": "culture", "interests": ["Culture", "Art"], "ageRange": "adults", "budget": "$$", "groupType": "friends" },
-      { "name": "Parque Lage", "type": "outdoor", "interests": ["Nature", "Art"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Rio Scenarium Nightclub", "type": "nightlife", "interests": ["Sightseeing", "City"], "ageRange": "adults", "budget": "$$", "groupType": "friends" },
-      { "name": "Hippie Fair in Ipanema", "type": "shopping", "interests": ["Culture", "City"], "ageRange": "all ages", "budget": "$", "groupType": "all" }
+      {
+        "name": "Christ the Redeemer",
+        "type": "sightseeing",
+        "interests": ["Culture", "Sightseeing"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Copacabana Beach",
+        "type": "outdoor",
+        "interests": ["Sightseeing", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Sugarloaf Mountain",
+        "type": "adventure",
+        "interests": ["Adventure", "Nature"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Maracanã Stadium Tour",
+        "type": "sightseeing",
+        "interests": ["Sports", "Sightseeing"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Selarón Steps",
+        "type": "sightseeing",
+        "interests": ["Art", "Sightseeing"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Tijuca Forest Jeep Tour",
+        "type": "adventure",
+        "interests": ["Adventure", "Nature"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Rio de Janeiro Botanical Garden",
+        "type": "nature",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Lapa Arches",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "Art"],
+        "ageRange": "adults",
+        "budget": "$",
+        "groupType": "friends"
+      },
+      {
+        "name": "Pedra do Telegrafo Hike",
+        "type": "adventure",
+        "interests": ["Adventure", "Nature"],
+        "ageRange": "teens, adults",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Museum of Tomorrow",
+        "type": "museum",
+        "interests": ["Culture", "Sightseeing"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Santa Teresa Tram Tour",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Samba School Experience",
+        "type": "culture",
+        "interests": ["Culture", "Art"],
+        "ageRange": "adults",
+        "budget": "$$",
+        "groupType": "friends"
+      },
+      {
+        "name": "Parque Lage",
+        "type": "outdoor",
+        "interests": ["Nature", "Art"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Rio Scenarium Nightclub",
+        "type": "nightlife",
+        "interests": ["Nightlife", "Music"],
+        "ageRange": "adults",
+        "budget": "$$",
+        "groupType": "friends"
+      },
+      {
+        "name": "Hippie Fair in Ipanema",
+        "type": "shopping",
+        "interests": ["Culture", "City"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Rio de Janeiro Planetarium",
+        "type": "science",
+        "interests": ["Science", "Education"],
+        "ageRange": "kids, teens, adults",
+        "budget": "$$",
+        "groupType": "family"
+      },
+      {
+        "name": "AquaRio (Rio de Janeiro Aquarium)",
+        "type": "indoor",
+        "interests": ["Marine Life", "Education"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Pedra Bonita Hike",
+        "type": "adventure",
+        "interests": ["Adventure", "Nature"],
+        "ageRange": "teens, adults",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Museum of Image and Sound",
+        "type": "museum",
+        "interests": ["Culture", "Media"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      }
     ]
   },
   {
@@ -291,21 +1879,158 @@
     "city": "São Paulo",
     "cityImage": "https://images.unsplash.com/photo-1523214496-759e60a282d6?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "activities": [
-        { "name": "Ibirapuera Park", "type": "outdoor", "interests": ["Nature", "Relax"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-        { "name": "Museum of Art of São Paulo", "type": "museum", "interests": ["Art", "Culture"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-        { "name": "Municipal Market", "type": "shopping", "interests": ["Gastronomy", "City"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-        { "name": "Avenida Paulista", "type": "sightseeing", "interests": ["Urban Life", "Sightseeing"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-        { "name": "Liberdade District", "type": "sightseeing", "interests": ["Culture", "Gastronomy"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-        { "name": "Football Museum", "type": "museum", "interests": ["Sports", "Culture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-        { "name": "Pinacoteca do Estado", "type": "museum", "interests": ["Art", "Culture"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-        { "name": "São Paulo Zoo", "type": "outdoor", "interests": ["Nature", "Adventure"], "ageRange": "all ages", "budget": "$$", "groupType": "family, friends" },
-        { "name": "São Paulo Cathedral", "type": "sightseeing", "interests": ["Architecture", "Relax"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-        { "name": "Pátio do Colégio", "type": "sightseeing", "interests": ["History", "Culture"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-        { "name": "São Paulo Cultural Center", "type": "culture", "interests": ["Culture", "Art"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-        { "name": "Vila Madalena Neighborhood", "type": "sightseeing", "interests": ["Urban Life", "Art"], "ageRange": "adults", "budget": "$$", "groupType": "friends" },
-        { "name": "São Paulo Aquarium", "type": "indoor", "interests": ["Nature", "Education"], "ageRange": "all ages", "budget": "$$", "groupType": "family, friends" },
-        { "name": "São Paulo Municipal Theater", "type": "performing arts", "interests": ["Culture", "Sightseeing"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-        { "name": "Batman Alley", "type": "sightseeing", "interests": ["Art", "Urban Life"], "ageRange": "all ages", "budget": "$", "groupType": "all" }
+      {
+        "name": "Ibirapuera Park",
+        "type": "outdoor",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Museum of Art of São Paulo (MASP)",
+        "type": "museum",
+        "interests": ["Art", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Municipal Market",
+        "type": "shopping",
+        "interests": ["Gastronomy", "City"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Avenida Paulista",
+        "type": "sightseeing",
+        "interests": ["Urban Life", "Sightseeing"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Liberdade District",
+        "type": "sightseeing",
+        "interests": ["Culture", "Gastronomy"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Football Museum",
+        "type": "museum",
+        "interests": ["Sports", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Pinacoteca do Estado",
+        "type": "museum",
+        "interests": ["Art", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "São Paulo Zoo",
+        "type": "outdoor",
+        "interests": ["Nature", "Adventure"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "São Paulo Cathedral",
+        "type": "sightseeing",
+        "interests": ["Architecture", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Pátio do Colégio",
+        "type": "sightseeing",
+        "interests": ["History", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "São Paulo Cultural Center",
+        "type": "culture",
+        "interests": ["Culture", "Art"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Vila Madalena Neighborhood",
+        "type": "sightseeing",
+        "interests": ["Urban Life", "Art"],
+        "ageRange": "adults",
+        "budget": "$$",
+        "groupType": "friends"
+      },
+      {
+        "name": "São Paulo Aquarium",
+        "type": "indoor",
+        "interests": ["Nature", "Education"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "São Paulo Municipal Theater",
+        "type": "performing arts",
+        "interests": ["Culture", "Sightseeing"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Batman Alley",
+        "type": "sightseeing",
+        "interests": ["Art", "Urban Life"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Liberdade Japanese Garden",
+        "type": "nature",
+        "interests": ["Nature", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Centro Cultural Banco do Brasil (CCBB)",
+        "type": "culture",
+        "interests": ["Culture", "Art"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Escadaria do Patápio",
+        "type": "sightseeing",
+        "interests": ["Urban Art", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$",
+        "groupType": "friends"
+      },
+      {
+        "name": "São Paulo Botanical Garden",
+        "type": "nature",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      }
     ]
   },
   {
@@ -313,21 +2038,166 @@
     "city": "Salvador",
     "cityImage": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "activities": [
-      { "name": "El Boquerón National Park", "type": "outdoor", "interests": ["Nature", "Adventure"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "San Salvador Volcano", "type": "adventure", "interests": ["Adventure", "Nature"], "ageRange": "teens, adults", "budget": "$$", "groupType": "solo, friends" },
-      { "name": "Joyas de Cerén Archaeological Site", "type": "historical", "interests": ["History", "Culture"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "El Tunco Beach", "type": "outdoor", "interests": ["Beach", "Relax"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Ruta de las Flores", "type": "road trip", "interests": ["Sightseeing", "Nature"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Coatepeque Lake", "type": "outdoor", "interests": ["Nature", "Relax"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Suchitoto Colonial Town", "type": "sightseeing", "interests": ["Culture", "History"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Santa Ana Volcano", "type": "adventure", "interests": ["Adventure", "Nature"], "ageRange": "teens, adults", "budget": "$$", "groupType": "solo, friends" },
-      { "name": "Playa El Espino", "type": "outdoor", "interests": ["Beach", "Relax", "Nature"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Juayua Food Festival", "type": "gastronomy", "interests": ["Gastronomy", "Culture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Cerro Verde National Park", "type": "outdoor", "interests": ["Nature", "Adventure"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Tazumal Archaeological Site", "type": "historical", "interests": ["History", "Culture"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "El Imposible National Park", "type": "outdoor", "interests": ["Nature", "Adventure"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Santa Ana Colonial Church", "type": "sightseeing", "interests": ["Architecture", "Culture"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Cihuatan Archaeological Site", "type": "historical", "interests": ["History", "Culture"], "ageRange": "all ages", "budget": "$", "groupType": "all" }
+      {
+        "name": "El Boquerón National Park",
+        "type": "outdoor",
+        "interests": ["Nature", "Adventure"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "San Salvador Volcano",
+        "type": "adventure",
+        "interests": ["Adventure", "Nature"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "solo, friends"
+      },
+      {
+        "name": "Joyas de Cerén Archaeological Site",
+        "type": "historical",
+        "interests": ["History", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "El Tunco Beach",
+        "type": "outdoor",
+        "interests": ["Beach", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Ruta de las Flores",
+        "type": "road trip",
+        "interests": ["Sightseeing", "Nature"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Coatepeque Lake",
+        "type": "outdoor",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Suchitoto Colonial Town",
+        "type": "sightseeing",
+        "interests": ["Culture", "History"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Santa Ana Volcano",
+        "type": "adventure",
+        "interests": ["Adventure", "Nature"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "solo, friends"
+      },
+      {
+        "name": "Playa El Espino",
+        "type": "outdoor",
+        "interests": ["Beach", "Relax", "Nature"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Juayua Food Festival",
+        "type": "gastronomy",
+        "interests": ["Gastronomy", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Cerro Verde National Park",
+        "type": "outdoor",
+        "interests": ["Nature", "Adventure"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Tazumal Archaeological Site",
+        "type": "historical",
+        "interests": ["History", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "El Imposible National Park",
+        "type": "outdoor",
+        "interests": ["Nature", "Adventure"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Santa Ana Colonial Church",
+        "type": "sightseeing",
+        "interests": ["Architecture", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Cihuatan Archaeological Site",
+        "type": "historical",
+        "interests": ["History", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "La Libertad Boardwalk",
+        "type": "outdoor",
+        "interests": ["Beach", "Sightseeing"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Parque de Diversiones",
+        "type": "theme park",
+        "interests": ["Amusement", "Family Fun"],
+        "ageRange": "kids, teens, adults",
+        "budget": "$$",
+        "groupType": "family"
+      },
+      {
+        "name": "El Salvador del Mundo Monument",
+        "type": "sightseeing",
+        "interests": ["Culture", "Sightseeing"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "National Theater of San Salvador",
+        "type": "performing arts",
+        "interests": ["Culture", "Performing Arts"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Lake Ilopango",
+        "type": "outdoor",
+        "interests": ["Nature", "Adventure"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, friends"
+      }
     ]
   },
   {
@@ -335,21 +2205,190 @@
     "city": "Moscow",
     "cityImage": "https://images.unsplash.com/photo-1523509080324-9183f313dc50?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "activities": [
-      { "name": "Red Square", "type": "sightseeing", "interests": ["Sightseeing", "History", "Architecture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Kremlin Tour", "type": "sightseeing", "interests": ["Sightseeing", "History", "Culture"], "ageRange": "adults", "budget": "$$$", "groupType": "couple, friends" },
-      { "name": "Bolshoi Theatre", "type": "culture", "interests": ["Culture", "Arts", "Theatre"], "ageRange": "adults", "budget": "$$$", "groupType": "couple, friends" },
-      { "name": "St. Basil's Cathedral", "type": "sightseeing", "interests": ["Sightseeing", "Architecture", "History"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Tretyakov Gallery", "type": "museum", "interests": ["Art", "History"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-      { "name": "Gorky Park", "type": "outdoor", "interests": ["Nature", "Sports"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Moscow Metro Tour", "type": "sightseeing", "interests": ["Sightseeing", "History"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Pushkin Museum of Fine Arts", "type": "museum", "interests": ["Art", "History"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-      { "name": "Russian Circus", "type": "entertainment", "interests": ["Culture", "Entertainment"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Izmailovsky Market", "type": "shopping", "interests": ["Culture", "Shopping"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "VDNKh Exhibition Center", "type": "exhibition", "interests": ["Sightseeing", "Culture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Sparrow Hills (Vorobyovy Gory)", "type": "outdoor", "interests": ["Sightseeing", "Nature"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Moscow State University", "type": "educational", "interests": ["Sightseeing", "Education"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Novodevichy Convent", "type": "historical", "interests": ["Sightseeing", "History"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Moscow Zoo", "type": "outdoor", "interests": ["Nature", "Animals"], "ageRange": "all ages", "budget": "$$", "groupType": "all" }
+      {
+        "name": "Red Square",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "History", "Architecture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Kremlin Tour",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "History", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$$",
+        "groupType": "couple, friends"
+      },
+      {
+        "name": "Bolshoi Theatre",
+        "type": "culture",
+        "interests": ["Culture", "Arts", "Theatre"],
+        "ageRange": "teens, adults",
+        "budget": "$$$",
+        "groupType": "couple, friends"
+      },
+      {
+        "name": "St. Basil's Cathedral",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "Architecture", "History"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Tretyakov Gallery",
+        "type": "museum",
+        "interests": ["Art", "History"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Gorky Park",
+        "type": "outdoor",
+        "interests": ["Nature", "Sports"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Moscow Metro Tour",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "History"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Pushkin Museum of Fine Arts",
+        "type": "museum",
+        "interests": ["Art", "History"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Russian Circus",
+        "type": "entertainment",
+        "interests": ["Culture", "Entertainment"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Izmailovsky Market",
+        "type": "shopping",
+        "interests": ["Culture", "Shopping"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "VDNKh Exhibition Center",
+        "type": "exhibition",
+        "interests": ["Sightseeing", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Sparrow Hills (Vorobyovy Gory)",
+        "type": "outdoor",
+        "interests": ["Sightseeing", "Nature"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Moscow State University",
+        "type": "educational",
+        "interests": ["Sightseeing", "Education"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Novodevichy Convent",
+        "type": "historical",
+        "interests": ["Sightseeing", "History"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Moscow Zoo",
+        "type": "outdoor",
+        "interests": ["Nature", "Animals"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Tsaritsyno Park",
+        "type": "outdoor",
+        "interests": ["Nature", "History"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Gorky Central Park for Culture and Leisure",
+        "type": "outdoor",
+        "interests": ["Nature", "Sports", "Family Fun"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Sokolniki Park",
+        "type": "outdoor",
+        "interests": ["Nature", "Sports"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Central Children's Store (Detsky Mir)",
+        "type": "shopping",
+        "interests": ["Shopping", "Family Fun"],
+        "ageRange": "kids, teens, adults",
+        "budget": "$$",
+        "groupType": "family"
+      },
+      {
+        "name": "Moscow Planetarium",
+        "type": "educational",
+        "interests": ["Science", "Education"],
+        "ageRange": "kids, teens, adults",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Moscow Oceanarium",
+        "type": "indoor",
+        "interests": ["Marine Life", "Education"],
+        "ageRange": "kids, teens, adults",
+        "budget": "$$",
+        "groupType": "family"
+      },
+      {
+        "name": "Museon Park",
+        "type": "outdoor",
+        "interests": ["Art", "Sculptures"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Moscow Children's Musical Theatre",
+        "type": "performing arts",
+        "interests": ["Theatre", "Family Fun"],
+        "ageRange": "kids, teens",
+        "budget": "$$",
+        "groupType": "family"
+      }
     ]
   },
   {
@@ -357,42 +2396,349 @@
     "city": "St. Petersburg",
     "cityImage": "https://images.unsplash.com/photo-1558682325-7cf48d328e34?q=80&w=1906&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "activities": [
-      { "name": "Hermitage Museum", "type": "museum", "interests": ["Art", "History"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-      { "name": "Peterhof Palace", "type": "sightseeing", "interests": ["History", "Architecture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Church of the Savior on Spilled Blood", "type": "sightseeing", "interests": ["Architecture", "History"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Russian Ballet Show", "type": "culture", "interests": ["Arts", "Culture"], "ageRange": "adults", "budget": "$$$", "groupType": "couple, friends" },
-      { "name": "Nevsky Prospekt", "type": "shopping", "interests": ["Shopping", "Urban Life"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Catherine Palace", "type": "sightseeing", "interests": ["History", "Architecture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Mariinsky Theatre", "type": "culture", "interests": ["Arts", "Music"], "ageRange": "adults", "budget": "$$$", "groupType": "couple, friends" },
-      { "name": "Russian Vodka Museum", "type": "museum", "interests": ["Culture", "History"], "ageRange": "adults", "budget": "$$", "groupType": "all" },
-      { "name": "Summer Garden", "type": "sightseeing", "interests": ["Nature", "Relax"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "St. Isaac's Cathedral", "type": "sightseeing", "interests": ["Architecture", "History"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Fabergé Museum", "type": "museum", "interests": ["Art", "History"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-      { "name": "Pavlovsk Palace", "type": "sightseeing", "interests": ["History", "Architecture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "New Holland Island", "type": "sightseeing", "interests": ["Urban Life", "Culture"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Yusupov Palace", "type": "sightseeing", "interests": ["History", "Architecture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Vasilyevsky Island", "type": "sightseeing", "interests": ["History", "Architecture"], "ageRange": "all ages", "budget": "$", "groupType": "all" }
+      {
+        "name": "Hermitage Museum",
+        "type": "museum",
+        "interests": ["Art", "History"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Peterhof Palace",
+        "type": "sightseeing",
+        "interests": ["History", "Architecture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Church of the Savior on Spilled Blood",
+        "type": "sightseeing",
+        "interests": ["Architecture", "History"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Russian Ballet Show",
+        "type": "culture",
+        "interests": ["Art", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$$",
+        "groupType": "couple, friends"
+      },
+      {
+        "name": "Nevsky Prospekt",
+        "type": "shopping",
+        "interests": ["Shopping", "Urban Life"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Catherine Palace",
+        "type": "sightseeing",
+        "interests": ["History", "Sightseeing"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Mariinsky Theatre",
+        "type": "culture",
+        "interests": ["Art", "Music"],
+        "ageRange": "teens, adults",
+        "budget": "$$$",
+        "groupType": "couple, friends"
+      },
+      {
+        "name": "Russian Vodka Museum",
+        "type": "museum",
+        "interests": ["Culture", "History"],
+        "ageRange": "adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Summer Garden",
+        "type": "sightseeing",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "St. Isaac's Cathedral",
+        "type": "sightseeing",
+        "interests": ["Architecture", "History"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Fabergé Museum",
+        "type": "museum",
+        "interests": ["Art", "Sightseeing"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Pavlovsk Palace",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "Architecture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "New Holland Island",
+        "type": "sightseeing",
+        "interests": ["Urban Life", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Yusupov Palace",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "Architecture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Vasilyevsky Island",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "Architecture"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "St. Petersburg Zoo",
+        "type": "outdoor",
+        "interests": ["Animals", "Family Fun"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family"
+      },
+      {
+        "name": "Planetarium-1",
+        "type": "educational",
+        "interests": ["Science", "Education", "Culture"],
+        "ageRange": "kids, teens, adults",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Leningrad Siege Memorial",
+        "type": "historical",
+        "interests": ["Sightseeing", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Russian Museum of Ethnography",
+        "type": "museum",
+        "interests": ["Culture", "Sightseeing"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Peter and Paul Fortress",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "Architecture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Divo Ostrov Amusement Park",
+        "type": "entertainment",
+        "interests": ["Family Fun", "Amusement"],
+        "ageRange": "kids, teens, adults",
+        "budget": "$$",
+        "groupType": "family, friends"
+      }
     ]
   },
   {
     "countryId": 7,
     "city": "Paris",
     "cityImage": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1773&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "activities": [             { "name": "Eiffel Tower", "type": "sightseeing", "interests": ["Sightseeing", "Architecture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-        { "name": "Louvre Museum", "type": "museum", "interests": ["Art", "Culture"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-        { "name": "Seine River Cruise", "type": "leisure", "interests": ["Sightseeing", "Relax"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-        { "name": "Montmartre", "type": "sightseeing", "interests": ["Culture", "City"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-        { "name": "Versailles Palace", "type": "sightseeing", "interests": ["Sightseeing", "History"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-        { "name": "Notre-Dame Cathedral", "type": "sightseeing", "interests": ["Sightseeing", "History"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-        { "name": "Sainte-Chapelle", "type": "sightseeing", "interests": ["Sightseeing", "History"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-        { "name": "Musée d'Orsay", "type": "museum", "interests": ["Art", "History"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-        { "name": "Champs-Élysées", "type": "sightseeing", "interests": ["Sightseeing", "City"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-        { "name": "Palais Garnier", "type": "culture", "interests": ["Art", "Culture"], "ageRange": "teens, adults", "budget": "$$$", "groupType": "couple, friends" },
-        { "name": "Père Lachaise Cemetery", "type": "sightseeing", "interests": ["Sightseeing", "Nature"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-        { "name": "Luxembourg Gardens", "type": "outdoor", "interests": ["Nature", "Relax"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-        { "name": "Centre Pompidou", "type": "museum", "interests": ["Art", "Culture"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-        { "name": "Rodin Museum", "type": "museum", "interests": ["Art", "History"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-        { "name": "Île de la Cité", "type": "sightseeing", "interests": ["Sightseeing", "History"], "ageRange": "all ages", "budget": "$$", "groupType": "all" }
+    "activities": [
+      {
+        "name": "Eiffel Tower",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "Architecture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Louvre Museum",
+        "type": "museum",
+        "interests": ["Art", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Seine River Cruise",
+        "type": "leisure",
+        "interests": ["Sightseeing", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Montmartre",
+        "type": "sightseeing",
+        "interests": ["Culture", "City"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Versailles Palace",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "History"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Notre-Dame Cathedral",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "History"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Sainte-Chapelle",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "History"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Musée d'Orsay",
+        "type": "museum",
+        "interests": ["Art", "History"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Champs-Élysées",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "City"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Palais Garnier",
+        "type": "culture",
+        "interests": ["Art", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$$",
+        "groupType": "couple, friends"
+      },
+      {
+        "name": "Père Lachaise Cemetery",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "Nature"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Luxembourg Gardens",
+        "type": "outdoor",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Centre Pompidou",
+        "type": "museum",
+        "interests": ["Art", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Rodin Museum",
+        "type": "museum",
+        "interests": ["Art", "History"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Île de la Cité",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "History"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Disneyland Paris",
+        "type": "entertainment",
+        "interests": ["Family Fun", "Amusement", "Adventure"],
+        "ageRange": "kids, teens, adults",
+        "budget": "$$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Parc des Buttes-Chaumont",
+        "type": "outdoor",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Musée de l'Orangerie",
+        "type": "museum",
+        "interests": ["Art", "History"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Paris Aquarium",
+        "type": "indoor",
+        "interests": ["Nature", "Education"],
+        "ageRange": "kids, teens, adults",
+        "budget": "$$",
+        "groupType": "family"
+      },
+      {
+        "name": "La Villette",
+        "type": "cultural complex",
+        "interests": ["Science", "Entertainment"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Opera Bastille",
+        "type": "culture",
+        "interests": ["Music", "Theatre"],
+        "ageRange": "teens, adults",
+        "budget": "$$$",
+        "groupType": "couple, friends"
+      }
     ]
   },
   {
@@ -400,43 +2746,381 @@
     "city": "Nice",
     "cityImage": "https://images.unsplash.com/photo-1485716797159-8b39d572960d?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "activities": [
-        { "name": "Promenade des Anglais", "type": "sightseeing", "interests": ["Sightseeing", "Nature"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-        { "name": "Musée Matisse", "type": "museum", "interests": ["Art", "Culture"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-        { "name": "Old Town (Vieux Nice)", "type": "sightseeing", "interests": ["Sightseeing", "City"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-        { "name": "Castle Hill (Colline du Château)", "type": "sightseeing", "interests": ["Sightseeing", "Adventure"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-        { "name": "Cours Saleya Market", "type": "shopping", "interests": ["Gastronomy", "City"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-        { "name": "Promenade du Paillon", "type": "outdoor", "interests": ["Nature", "Relax"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-        { "name": "Russian Orthodox Cathedral", "type": "sightseeing", "interests": ["Sightseeing", "Culture"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-        { "name": "Musée d'Art Moderne et d'Art Contemporain", "type": "museum", "interests": ["Art", "Culture"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-        { "name": "Beach Promenade", "type": "outdoor", "interests": ["Sightseeing", "Nature"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-        { "name": "Château de Nice", "type": "sightseeing", "interests": ["Sightseeing", "History"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-        { "name": "Parc de la Colline du Château", "type": "outdoor", "interests": ["Nature", "Adventure"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-        { "name": "Opera de Nice", "type": "culture", "interests": ["Art", "Culture"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-        { "name": "Palais Lascaris", "type": "museum", "interests": ["Art", "History"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-        { "name": "Villa Ephrussi de Rothschild", "type": "sightseeing", "interests": ["Sightseeing", "Gastronomy"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-        { "name": "Marc Chagall National Museum", "type": "museum", "interests": ["Art", "Culture"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" }
+      {
+        "name": "Promenade des Anglais",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "Nature"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Musée Matisse",
+        "type": "museum",
+        "interests": ["Art", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Old Town (Vieux Nice)",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "City"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Castle Hill (Colline du Château)",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "Adventure"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Cours Saleya Market",
+        "type": "shopping",
+        "interests": ["Gastronomy", "City"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Promenade du Paillon",
+        "type": "outdoor",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Russian Orthodox Cathedral",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Musée d'Art Moderne et d'Art Contemporain",
+        "type": "museum",
+        "interests": ["Art", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Beach Promenade",
+        "type": "outdoor",
+        "interests": ["Sightseeing", "Nature"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Château de Nice",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "History"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Parc de la Colline du Château",
+        "type": "outdoor",
+        "interests": ["Nature", "Adventure"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Opéra de Nice",
+        "type": "culture",
+        "interests": ["Art", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Palais Lascaris",
+        "type": "museum",
+        "interests": ["Art", "History"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Villa Ephrussi de Rothschild",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "Gastronomy"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Marc Chagall National Museum",
+        "type": "museum",
+        "interests": ["Art", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Nice Aquarium",
+        "type": "indoor",
+        "interests": ["Nature", "Education"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Parc Phoenix",
+        "type": "outdoor",
+        "interests": ["Nature", "Education"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Nice Carnival",
+        "type": "festival",
+        "interests": ["Culture", "Entertainment"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Église Notre-Dame du Port",
+        "type": "sightseeing",
+        "interests": ["History", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Parc de la Villa Arson",
+        "type": "outdoor",
+        "interests": ["Nature", "Art"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Atelier de la Photographie",
+        "type": "culture",
+        "interests": ["Art", "Photography"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Escape Room Nice",
+        "type": "entertainment",
+        "interests": ["Adventure", "Puzzle"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "friends, family"
+      },
+      {
+        "name": "Nice Ice Rink",
+        "type": "sports",
+        "interests": ["Sports", "Family"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Avenue Jean Médecin",
+        "type": "shopping",
+        "interests": ["Shopping", "City"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      }
     ]
   },
-  { 
+  {
     "countryId": 8,
     "city": "London",
     "cityImage": "https://images.unsplash.com/photo-1486299267070-83823f5448dd?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "activities": [
-      { "name": "British Museum", "type": "museum", "interests": ["Art", "History"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-      { "name": "Tower of London", "type": "sightseeing", "interests": ["Culture", "Architecture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "West End Theatre Show", "type": "culture", "interests": ["Arts", "Performing Arts"], "ageRange": "adults", "budget": "$$$", "groupType": "couple, friends" },
-      { "name": "Buckingham Palace", "type": "sightseeing", "interests": ["History", "Culture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "London Eye", "type": "adventure", "interests": ["Sightseeing", "City"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Hyde Park", "type": "outdoor", "interests": ["Nature", "Relax"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Madame Tussauds", "type": "entertainment", "interests": ["Culture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Natural History Museum", "type": "museum", "interests": ["Nature", "Science"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Covent Garden", "type": "shopping", "interests": ["City", "Culture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Thames River Cruise", "type": "leisure", "interests": ["Nature", "Relaxation"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Tate Modern", "type": "museum", "interests": ["Art", "Modern Art"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-      { "name": "St. Paul's Cathedral", "type": "sightseeing", "interests": ["Culture", "Architecture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Camden Market", "type": "shopping", "interests": ["City"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Victoria and Albert Museum", "type": "museum", "interests": ["Art", "Design"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-      { "name": "St. James's Park", "type": "outdoor", "interests": ["Nature", "Relax"], "ageRange": "all ages", "budget": "$", "groupType": "all" }
+      {
+        "name": "British Museum",
+        "type": "museum",
+        "interests": ["Art", "History"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Tower of London",
+        "type": "sightseeing",
+        "interests": ["Culture", "Architecture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "West End Theatre Show",
+        "type": "culture",
+        "interests": ["Arts", "Performing Arts"],
+        "ageRange": "adults",
+        "budget": "$$$",
+        "groupType": "couple, friends"
+      },
+      {
+        "name": "Buckingham Palace",
+        "type": "sightseeing",
+        "interests": ["History", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "London Eye",
+        "type": "adventure",
+        "interests": ["Sightseeing", "City"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Hyde Park",
+        "type": "outdoor",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Madame Tussauds",
+        "type": "entertainment",
+        "interests": ["Culture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Natural History Museum",
+        "type": "museum",
+        "interests": ["Nature", "Science"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Covent Garden",
+        "type": "shopping",
+        "interests": ["City", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Thames River Cruise",
+        "type": "leisure",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Tate Modern",
+        "type": "museum",
+        "interests": ["Art", "Modern Art"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "St. Paul's Cathedral",
+        "type": "sightseeing",
+        "interests": ["Culture", "Architecture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Camden Market",
+        "type": "shopping",
+        "interests": ["City", "Sightseeing"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Victoria and Albert Museum",
+        "type": "museum",
+        "interests": ["Art", "Design"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "St. James's Park",
+        "type": "outdoor",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Shakespeare's Globe Theatre",
+        "type": "culture",
+        "interests": ["Theatre", "History"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "couple, friends"
+      },
+      {
+        "name": "Science Museum",
+        "type": "museum",
+        "interests": ["Science", "Education"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "London Zoo",
+        "type": "outdoor",
+        "interests": ["Animals", "Nature"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Kew Gardens",
+        "type": "outdoor",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Camden Town",
+        "type": "shopping",
+        "interests": ["Markets", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "The Shard Observation Deck",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "City"],
+        "ageRange": "all ages",
+        "budget": "$$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Natural History Museum Ice Rink",
+        "type": "sports",
+        "interests": ["Culture", "Family"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, friends"
+      }
     ]
   },
   {
@@ -444,21 +3128,166 @@
     "city": "Edinburgh",
     "cityImage": "https://images.unsplash.com/photo-1557096002-7f215e6b5dcf?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "activities": [
-    { "name": "Edinburgh Castle", "type": "sightseeing", "interests": ["History", "Architecture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-    { "name": "Royal Mile", "type": "sightseeing", "interests": ["History", "Culture"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-    { "name": "Arthur's Seat Hike", "type": "outdoor", "interests": ["Nature", "Adventure"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-    { "name": "National Museum of Scotland", "type": "museum", "interests": ["History", "Culture"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-    { "name": "Scottish Whisky Experience", "type": "culinary", "interests": ["Gastronomy", "Culture"], "ageRange": "adults", "budget": "$$", "groupType": "couple, friends" },
-    { "name": "Edinburgh Zoo", "type": "outdoor", "interests": ["Animals", "Nature"], "ageRange": "all ages", "budget": "$$", "groupType": "family, friends" },
-    { "name": "Mary King's Close", "type": "sightseeing", "interests": ["History", "Culture"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-    { "name": "Holyrood Palace", "type": "sightseeing", "interests": ["History", "Culture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-    { "name": "Ghost Tour of Edinburgh", "type": "adventure", "interests": ["Adventure", "History"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-    { "name": "Edinburgh Dungeon", "type": "adventure", "interests": ["Adventure", "History"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-    { "name": "Edinburgh Literary Pub Tour", "type": "culture", "interests": ["Culture", "Nightlife"], "ageRange": "adults", "budget": "$$", "groupType": "couple, friends" },
-    { "name": "Royal Yacht Britannia", "type": "sightseeing", "interests": ["History", "Culture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-    { "name": "Calton Hill", "type": "sightseeing", "interests": ["Views", "Photography"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-    { "name": "Scott Monument", "type": "sightseeing", "interests": ["History", "Architecture"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-    { "name": "National Galleries of Scotland", "type": "museum", "interests": ["Art", "Culture"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" }
+      {
+        "name": "Edinburgh Castle",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "Architecture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Royal Mile",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Arthur's Seat Hike",
+        "type": "outdoor",
+        "interests": ["Nature", "Adventure"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "National Museum of Scotland",
+        "type": "museum",
+        "interests": ["Sightseeing", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Scottish Whisky Experience",
+        "type": "culinary",
+        "interests": ["Gastronomy", "Culture"],
+        "ageRange": "adults",
+        "budget": "$$",
+        "groupType": "couple, friends"
+      },
+      {
+        "name": "Edinburgh Zoo",
+        "type": "outdoor",
+        "interests": ["Animals", "Nature"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Mary King's Close",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Holyrood Palace",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Ghost Tour of Edinburgh",
+        "type": "adventure",
+        "interests": ["Adventure", "Sightseeing"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Edinburgh Dungeon",
+        "type": "adventure",
+        "interests": ["Adventure", "Sightseeing"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Edinburgh Literary Pub Tour",
+        "type": "culture",
+        "interests": ["Culture", "Nightlife"],
+        "ageRange": "adults",
+        "budget": "$$",
+        "groupType": "couple, friends"
+      },
+      {
+        "name": "Royal Yacht Britannia",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Calton Hill",
+        "type": "sightseeing",
+        "interests": ["Views", "Photography"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Scott Monument",
+        "type": "sightseeing",
+        "interests": ["Sightseeing", "Architecture"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "National Galleries of Scotland",
+        "type": "museum",
+        "interests": ["Art", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Edinburgh International Book Festival",
+        "type": "culture",
+        "interests": ["Literature", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "couple, friends, solo"
+      },
+      {
+        "name": "Camera Obscura and World of Illusions",
+        "type": "entertainment",
+        "interests": ["Entertainment", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "The Royal Botanic Garden Edinburgh",
+        "type": "outdoor",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Dynamic Earth",
+        "type": "museum",
+        "interests": ["Culture", "Education"],
+        "ageRange": "children, teens",
+        "budget": "$$",
+        "groupType": "family"
+      },
+      {
+        "name": "The Stand Comedy Club",
+        "type": "entertainment",
+        "interests": ["Comedy", "Nightlife", "Relax"],
+        "ageRange": "adults",
+        "budget": "$$",
+        "groupType": "friends, couples"
+      }
     ]
   },
   {
@@ -466,43 +3295,389 @@
     "city": "New York City",
     "cityImage": "https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "activities": [
-      { "name": "Central Park", "type": "park", "interests": ["Nature", "Relax"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Statue of Liberty", "type": "sightseeing", "interests": ["History", "Culture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Times Square", "type": "sightseeing", "interests": ["City", "Culture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Broadway Show", "type": "culture", "interests": ["Culture"], "ageRange": "adults", "budget": "$$$", "groupType": "couple, friends" },
-      { "name": "Metropolitan Museum of Art", "type": "museum", "interests": ["Art", "Culture"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-      { "name": "Empire State Building", "type": "sightseeing", "interests": ["Architecture", "City"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "High Line Park", "type": "park", "interests": ["Nature", "Urban"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Museum of Modern Art (MoMA)", "type": "museum", "interests": ["Art"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-      { "name": "Brooklyn Bridge", "type": "sightseeing", "interests": ["Architecture", "City"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Central Park Zoo", "type": "outdoor", "interests": ["Nature"], "ageRange": "all ages", "budget": "$$", "groupType": "family, friends" },
-      { "name": "Fifth Avenue Shopping", "type": "shopping", "interests": ["City"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "American Museum of Natural History", "type": "museum", "interests": ["Nature", "Culture"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-      { "name": "Yankee Stadium Tour", "type": "sports", "interests": ["Sports"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Central Park Horse Carriage Ride", "type": "adventure", "interests": ["Nature"], "ageRange": "all ages", "budget": "$$", "groupType": "couple" },
-      { "name": "New York Botanical Garden", "type": "outdoor", "interests": ["Nature", "Relax"], "ageRange": "all ages", "budget": "$$", "groupType": "all" }
-  ]
+      {
+        "name": "Central Park",
+        "type": "park",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Statue of Liberty",
+        "type": "sightseeing",
+        "interests": ["History", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Times Square",
+        "type": "sightseeing",
+        "interests": ["City", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Broadway Show",
+        "type": "culture",
+        "interests": ["Culture"],
+        "ageRange": "adults",
+        "budget": "$$$",
+        "groupType": "couple, friends"
+      },
+      {
+        "name": "Metropolitan Museum of Art",
+        "type": "museum",
+        "interests": ["Art", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Empire State Building",
+        "type": "sightseeing",
+        "interests": ["Architecture", "City"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "High Line Park",
+        "type": "park",
+        "interests": ["Nature", "Urban"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Museum of Modern Art (MoMA)",
+        "type": "museum",
+        "interests": ["Art"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Brooklyn Bridge",
+        "type": "sightseeing",
+        "interests": ["Architecture", "City"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Central Park Zoo",
+        "type": "outdoor",
+        "interests": ["Nature"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Fifth Avenue Shopping",
+        "type": "shopping",
+        "interests": ["City"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "American Museum of Natural History",
+        "type": "museum",
+        "interests": ["Nature", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Yankee Stadium Tour",
+        "type": "sports",
+        "interests": ["Sports"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Central Park Horse Carriage Ride",
+        "type": "adventure",
+        "interests": ["Nature", "Sightseeing"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "couple, family"
+      },
+      {
+        "name": "New York Botanical Garden",
+        "type": "outdoor",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Intrepid Sea, Air & Space Museum",
+        "type": "museum",
+        "interests": ["History", "Sightseeing"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Chelsea Market",
+        "type": "shopping",
+        "interests": ["Food", "City"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "New York Public Library",
+        "type": "sightseeing",
+        "interests": ["Architecture", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Top of the Rock Observation Deck",
+        "type": "sightseeing",
+        "interests": ["City Views", "City"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Met Cloisters",
+        "type": "museum",
+        "interests": ["Art", "History"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Brooklyn Museum",
+        "type": "museum",
+        "interests": ["Art", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Jazz Club in Harlem",
+        "type": "culture",
+        "interests": ["Music", "Nightlife"],
+        "ageRange": "adults",
+        "budget": "$$",
+        "groupType": "couple, friends"
+      },
+      {
+        "name": "KidZania New York",
+        "type": "entertainment",
+        "interests": ["City", "Fun"],
+        "ageRange": "kids",
+        "budget": "$$",
+        "groupType": "family"
+      },
+      {
+        "name": "Escape Room Adventure",
+        "type": "adventure",
+        "interests": ["Challenge", "Teamwork"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "friends"
+      },
+      {
+        "name": "Coney Island Amusement Park",
+        "type": "entertainment",
+        "interests": ["City", "Amusement"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Broadway Backstage Tour",
+        "type": "culture",
+        "interests": ["Sightseeing", "Behind the Scenes"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      }
+    ]
   },
   {
     "countryId": 9,
     "city": "Los Angeles",
     "cityImage": "https://images.unsplash.com/photo-1597982087634-9884f03198ce?q=80&w=2988&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "activities": [
-    { "name": "Hollywood Walk of Fame", "type": "sightseeing", "interests": ["Culture", "History"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-    { "name": "Santa Monica Pier", "type": "sightseeing", "interests": ["Nature", "City"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-    { "name": "Getty Center", "type": "museum", "interests": ["Art", "Architecture"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-    { "name": "Universal Studios", "type": "entertainment", "interests": ["Adventure", "Movies"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-    { "name": "Griffith Observatory", "type": "science", "interests": ["Nature", "Science"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-    { "name": "Venice Beach", "type": "outdoor", "interests": ["Nature", "Relax"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-    { "name": "The Getty Villa", "type": "museum", "interests": ["History", "Art"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-    { "name": "Sunset Boulevard", "type": "sightseeing", "interests": ["City", "Nightlife"], "ageRange": "adults", "budget": "$$", "groupType": "friends" },
-    { "name": "Los Angeles County Museum of Art (LACMA)", "type": "museum", "interests": ["Art", "Culture"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-    { "name": "Runyon Canyon Park", "type": "park", "interests": ["Nature", "Adventure"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-    { "name": "Griffith Park", "type": "park", "interests": ["Nature", "Relax"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-    { "name": "Staples Center", "type": "sports", "interests": ["Sports", "City"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-    { "name": "The Broad Museum", "type": "museum", "interests": ["Art", "Modern Art"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-    { "name": "Rodeo Drive", "type": "shopping", "interests": ["Gastronomy", "City"], "ageRange": "adults", "budget": "$$$", "groupType": "friends" },
-    { "name": "Runyon Canyon Yoga Hike", "type": "fitness", "interests": ["Relax", "Nature"], "ageRange": "adults", "budget": "$", "groupType": "friends" }
+      {
+        "name": "Hollywood Walk of Fame",
+        "type": "sightseeing",
+        "interests": ["Culture", "History"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Santa Monica Pier",
+        "type": "sightseeing",
+        "interests": ["Nature", "City"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Getty Center",
+        "type": "museum",
+        "interests": ["Art", "Architecture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Universal Studios",
+        "type": "entertainment",
+        "interests": ["Adventure", "Movies"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Griffith Observatory",
+        "type": "science",
+        "interests": ["Nature", "Science"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Venice Beach",
+        "type": "outdoor",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "The Getty Villa",
+        "type": "museum",
+        "interests": ["History", "Art"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Sunset Boulevard",
+        "type": "sightseeing",
+        "interests": ["City", "Nightlife"],
+        "ageRange": "adults",
+        "budget": "$$",
+        "groupType": "friends"
+      },
+      {
+        "name": "Los Angeles County Museum of Art (LACMA)",
+        "type": "museum",
+        "interests": ["Art", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Runyon Canyon Park",
+        "type": "park",
+        "interests": ["Nature", "Adventure"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Griffith Park",
+        "type": "park",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Staples Center",
+        "type": "sports",
+        "interests": ["Sports", "City"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "The Broad Museum",
+        "type": "museum",
+        "interests": ["Art", "Modern Art"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Rodeo Drive",
+        "type": "shopping",
+        "interests": ["Gastronomy", "City"],
+        "ageRange": "adults",
+        "budget": "$$$",
+        "groupType": "friends"
+      },
+      {
+        "name": "Runyon Canyon Yoga Hike",
+        "type": "fitness",
+        "interests": ["Relax", "Nature"],
+        "ageRange": "adults",
+        "budget": "$",
+        "groupType": "friends"
+      },
+      {
+        "name": "Los Angeles Aquarium",
+        "type": "entertainment",
+        "interests": ["Animals", "Education"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "The Hollywood Bowl",
+        "type": "entertainment",
+        "interests": ["Music", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Griffith Park Carousel",
+        "type": "entertainment",
+        "interests": ["Fun", "Family"],
+        "ageRange": "kids, family",
+        "budget": "$",
+        "groupType": "family"
+      },
+      {
+        "name": "Santa Monica Beach Volleyball",
+        "type": "sports",
+        "interests": ["Sports", "Beach"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "friends"
+      },
+      {
+        "name": "LACMA's Urban Light Installation",
+        "type": "sightseeing",
+        "interests": ["Art", "Photography"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Hollywood Bowl Concert",
+        "type": "culture",
+        "interests": ["Music", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      }
     ]
   },
   {
@@ -510,23 +3685,158 @@
     "city": "Washington D.C.",
     "cityImage": "https://images.unsplash.com/photo-1637034199786-5942ff56b480?q=80&w=3164&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "activities": [
-      { "name": "National Mall", "type": "park", "interests": ["Nature", "Sightseeing"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "Smithsonian Museums", "type": "museum", "interests": ["Art", "History", "Culture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "White House", "type": "sightseeing", "interests": ["History", "Culture", "Sightseeing"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Capitol Hill", "type": "sightseeing", "interests": ["History", "Culture", "Sightseeing"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "National Zoo", "type": "park", "interests": ["Nature", "Adventure", "Animals"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "National Gallery of Art", "type": "museum", "interests": ["Art", "Culture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Georgetown Historic District", "type": "sightseeing", "interests": ["History", "Culture", "City"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "National Air and Space Museum", "type": "museum", "interests": ["Science", "Adventure"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "Library of Congress", "type": "library", "interests": ["History", "Culture", "City"], "ageRange": "adults", "budget": "$$", "groupType": "all" },
-      { "name": "National Museum of African American History and Culture", "type": "museum", "interests": ["History", "Culture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "National Portrait Gallery", "type": "museum", "interests": ["Art", "Culture"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "United States Holocaust Memorial Museum", "type": "museum", "interests": ["History", "Culture"], "ageRange": "teens, adults", "budget": "$$", "groupType": "all" },
-      { "name": "Lincoln Memorial", "type": "sightseeing", "interests": ["History", "Culture", "Sightseeing"], "ageRange": "all ages", "budget": "$", "groupType": "all" },
-      { "name": "National Museum of Natural History", "type": "museum", "interests": ["Science", "Nature"], "ageRange": "all ages", "budget": "$$", "groupType": "all" },
-      { "name": "National Archives Museum", "type": "museum", "interests": ["History", "Government"], "ageRange": "all ages", "budget": "$$", "groupType": "all" }
+      {
+        "name": "National Mall",
+        "type": "park",
+        "interests": ["Nature", "Sightseeing"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Smithsonian Museums",
+        "type": "museum",
+        "interests": ["Art", "History", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "White House",
+        "type": "sightseeing",
+        "interests": ["History", "Culture", "Sightseeing"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Capitol Hill",
+        "type": "sightseeing",
+        "interests": ["History", "Culture", "Sightseeing"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "National Zoo",
+        "type": "park",
+        "interests": ["Nature", "Adventure", "Animals"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "National Gallery of Art",
+        "type": "museum",
+        "interests": ["Art", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Georgetown Historic District",
+        "type": "sightseeing",
+        "interests": ["History", "Culture", "City"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "National Air and Space Museum",
+        "type": "museum",
+        "interests": ["Culture", "Adventure"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "family, friends"
+      },
+      {
+        "name": "Library of Congress",
+        "type": "library",
+        "interests": ["History", "Culture", "City"],
+        "ageRange": "adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "National Museum of African American History and Culture",
+        "type": "museum",
+        "interests": ["History", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "National Portrait Gallery",
+        "type": "museum",
+        "interests": ["Art", "Culture"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "United States Holocaust Memorial Museum",
+        "type": "museum",
+        "interests": ["History", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Lincoln Memorial",
+        "type": "sightseeing",
+        "interests": ["History", "Culture", "Sightseeing"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "National Museum of Natural History",
+        "type": "museum",
+        "interests": ["Culture", "Nature"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "National Archives Museum",
+        "type": "museum",
+        "interests": ["History", "Government"],
+        "ageRange": "all ages",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "The Wharf",
+        "type": "entertainment",
+        "interests": ["Dining", "Nightlife", "Gastronomy"],
+        "ageRange": "adults",
+        "budget": "$$",
+        "groupType": "couple, friends"
+      },
+      {
+        "name": "Georgetown Waterfront Park",
+        "type": "outdoor",
+        "interests": ["Nature", "Relax"],
+        "ageRange": "all ages",
+        "budget": "$",
+        "groupType": "all"
+      },
+      {
+        "name": "Hirshhorn Museum and Sculpture Garden",
+        "type": "museum",
+        "interests": ["Art", "Culture"],
+        "ageRange": "teens, adults",
+        "budget": "$$",
+        "groupType": "all"
+      },
+      {
+        "name": "Kennedy Center for the Performing Arts",
+        "type": "culture",
+        "interests": ["Art", "Music"],
+        "ageRange": "adults",
+        "budget": "$$$",
+        "groupType": "couple, friends"
+      }
     ]
   }
 ]
-
-

@@ -19,12 +19,21 @@ const DateSelector = () => {
   const dispatch = useDispatch();
 
   const today = new Date();
-  today.setHours(0, 0, 0, 0);
+  today.setUTCHours(0, 0, 0, 0);
+
+  const adjustDateForLocal = (date) => {
+    const localDate = new Date(date);
+    const timezoneOffsetMinutes = localDate.getTimezoneOffset();
+    localDate.setMinutes(localDate.getMinutes() - timezoneOffsetMinutes);
+    localDate.setUTCHours(0, 0, 0, 0);
+    return localDate;
+  };
 
   const handleArrivalDateChange = (date) => {
+    const adjustedDate = adjustDateForLocal(date);
     if (
-      date < today ||
-      (dateOfDeparture && date >= new Date(dateOfDeparture))
+      adjustedDate < today ||
+      (dateOfDeparture && adjustedDate >= new Date(dateOfDeparture))
     ) {
       setError({
         ...error,
@@ -32,19 +41,23 @@ const DateSelector = () => {
       });
     } else {
       setError({ ...error, arrival: "" });
-      dispatch(setDateOfArrival(date));
+      dispatch(setDateOfArrival(adjustedDate));
     }
   };
 
   const handleDepartureDateChange = (date) => {
-    if (date <= today || (dateOfArrival && date <= new Date(dateOfArrival))) {
+    const adjustedDate = adjustDateForLocal(date);
+    if (
+      adjustedDate <= today ||
+      (dateOfArrival && adjustedDate <= new Date(dateOfArrival))
+    ) {
       setError({
         ...error,
         departure: "Invalid Departure date",
       });
     } else {
       setError({ ...error, departure: "" });
-      dispatch(setDateOfDeparture(date));
+      dispatch(setDateOfDeparture(adjustedDate));
     }
   };
 

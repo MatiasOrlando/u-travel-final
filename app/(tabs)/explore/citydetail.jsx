@@ -9,11 +9,35 @@ import Interests from "@/components/Interests";
 import TravelingCompany from "@/components/TravelingCompany";
 import AgeTravelers from "@/components/AgeTravelers";
 import DateSelector from "@/components/DateSelector";
+import ButtonPrimary from "@/components/ButtonPrimary";
+import { useSelector } from "react-redux";
+import { filteredActivities } from "@/utils/filteringRules";
 
 const CityDetail = () => {
   const { id } = useLocalSearchParams();
   const { data: selectedCity, isLoading } = useGetCityByIdQuery(id);
   const [cityDisplay, setCityDisplay] = useState({});
+
+  //Redux Filter Values
+  const dateOfArrival = useSelector(
+    (state) => state.datesPicker.value.dateOfArrival
+  );
+  const dateOfDeparture = useSelector(
+    (state) => state.datesPicker.value.dateOfDeparture
+  );
+  const minAge = useSelector((state) => state.ageRangeFilter.ageValues.minAge);
+  const maxAge = useSelector((state) => state.ageRangeFilter.ageValues.maxAge);
+
+  const sliderBudgetValue = useSelector(
+    (state) => state.budgetFilter.budgetValue
+  );
+  const travelerCompany = useSelector(
+    (state) => state.travelersCompanyFilter.value
+  );
+
+  const travelerInterests = useSelector(
+    (state) => state.interestsFilter.travelerInterests
+  );
 
   useEffect(() => {
     if (!isLoading && selectedCity) {
@@ -21,6 +45,16 @@ const CityDetail = () => {
       setCityDisplay({ city, cityImage });
     }
   }, [id, selectedCity]);
+
+  const filterActivitiesResults = () => {
+    return filteredActivities(selectedCity.activities, {
+      budget: sliderBudgetValue,
+      travelingCompany: travelerCompany,
+      interests: travelerInterests,
+      minAge: minAge,
+      maxAge: maxAge,
+    });
+  };
 
   return (
     <View style={styles.container}>
@@ -49,9 +83,15 @@ const CityDetail = () => {
             <FilterCard>
               <AgeTravelers />
             </FilterCard>
-            <FilterCard style={{ marginBottom: 250 }}>
+            <FilterCard>
               <Interests />
             </FilterCard>
+            <View style={styles.viewResultsContainer}>
+              <ButtonPrimary
+                title="View results"
+                handlePress={filterActivitiesResults}
+              />
+            </View>
           </View>
         </ScrollView>
       </View>
@@ -104,5 +144,10 @@ const styles = StyleSheet.create({
     width: "55%",
     left: 0,
     paddingVertical: 5,
+  },
+  viewResultsContainer: {
+    marginBottom: 230,
+    marginTop: 30,
+    alignItems: "center",
   },
 });
