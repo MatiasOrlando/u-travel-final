@@ -1,13 +1,23 @@
-import { StyleSheet, Text, View, ScrollView, Image } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  ScrollView,
+  Image,
+  Platform,
+  StatusBar,
+} from "react-native";
 import React from "react";
 import { colorsDefault } from "@/constants/Colors";
 import { useSelector } from "react-redux";
 import Counter from "@/components/Counter";
+import { router } from "expo-router";
+import ButtonPrimary from "@/components/ButtonPrimary";
+import { AntDesign } from "@expo/vector-icons";
 
 const BookingConfirmation = () => {
   const { localId } = useSelector((state) => state.auth.value);
   const { dateOfArrival } = useSelector((state) => state.datesPicker.value);
-  console.log(dateOfArrival);
 
   return (
     <View style={styles.container}>
@@ -21,7 +31,21 @@ const BookingConfirmation = () => {
           source={require("../../../assets/images/order-confirmed.png")}
         />
         <View style={styles.imgContainer}>
-          <Text>Booking successfully confirmed</Text>
+          <Text
+            style={{
+              fontSize: 22,
+              textAlign: "center",
+              color: colorsDefault.brown.default,
+              marginBottom: 5,
+            }}
+          >
+            Booking successfully confirmed
+          </Text>
+          <AntDesign
+            name="checkcircleo"
+            size={24}
+            color={colorsDefault.brown.default}
+          />
         </View>
         <ScrollView style={styles.filterOptionsContainer}>
           <View style={styles.scrollContent}>
@@ -32,7 +56,7 @@ const BookingConfirmation = () => {
                 reservations are now confirmed.
               </Text>
               <Text style={styles.orderConfirmationText}>
-                Order Confirmation: {localId && localId.slice(-5)}
+                Order Confirmation: {localId && `#${localId.slice(-5)}`}
               </Text>
               <Text style={styles.wonderfulTripText}>
                 Have a wonderful trip!
@@ -40,6 +64,14 @@ const BookingConfirmation = () => {
             </View>
             <View>
               <Counter dateOfArrival={dateOfArrival} />
+            </View>
+            <View
+              style={{ marginTop: 20, width: "100%", alignItems: "center" }}
+            >
+              <ButtonPrimary
+                title="Check my bookings"
+                handlePress={() => router.push("/bookings")}
+              />
             </View>
           </View>
         </ScrollView>
@@ -62,13 +94,15 @@ const styles = StyleSheet.create({
     alignItems: "center",
     width: "100%",
     position: "relative",
+    paddingHorizontal: 60,
+    marginTop: Platform.OS === "ios" ? StatusBar.currentHeight || 80 : 200,
   },
   imgHome: {
     position: "absolute",
     height: 115,
     width: 100,
     zIndex: 50,
-    top: 100,
+    top: 120,
     left: 40,
   },
   imgHome2: {
@@ -76,12 +110,12 @@ const styles = StyleSheet.create({
     height: 150,
     width: 100,
     zIndex: 50,
-    top: 80,
+    top: 100,
     right: 40,
   },
   filterOptionsContainer: {
     position: "absolute",
-    top: 170,
+    top: 200,
     left: 0,
     right: 0,
     backgroundColor: "white",

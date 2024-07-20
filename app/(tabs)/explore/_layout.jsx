@@ -3,6 +3,7 @@ import React from "react";
 import { Stack } from "expo-router";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
+import { colorsDefault } from "@/constants/Colors";
 
 const _layout = () => {
   return (
@@ -25,7 +26,7 @@ const _layout = () => {
         options={{
           headerTitle: "",
           headerLeft: () => (
-            <Pressable onPress={router.back}>
+            <Pressable onPress={router.back} style={styles.btnNavigation}>
               <Ionicons name="arrow-back" size={24} color="black" />
             </Pressable>
           ),
@@ -44,8 +45,22 @@ const _layout = () => {
           headerTransparent: true,
         }}
       />
+      <Stack.Screen
+        name="bookingconfirmation"
+        options={{
+          headerShown: false,
+        }}
+      />
     </Stack>
   );
 };
 
 export default _layout;
+
+const styles = StyleSheet.create({
+  btnNavigation: {
+    backgroundColor: colorsDefault.secondary,
+    borderRadius: "100%",
+    padding: 1,
+  },
+});

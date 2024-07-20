@@ -7,7 +7,7 @@ import ButtonPrimary from "@/components/ButtonPrimary";
 import { en, registerTranslation } from "react-native-paper-dates";
 import { useDB } from "@/hooks/useDB";
 import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { setUser } from "@/features/Auth/AuthSlice";
 
 registerTranslation("en", en);

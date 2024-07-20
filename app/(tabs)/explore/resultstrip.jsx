@@ -32,11 +32,17 @@ const ResultsTrip = () => {
     sliderBudgetValue
   );
 
+  // totalPrice acitvities
+  const totalPrice = activitiesWithRandomPricesIncluded.reduce(
+    (acc, el) => acc + el.price,
+    0
+  );
+
   const confirmBookingOrder = () => {
     triggerPostBookingOrder({
       itinerary: activitiesWithRandomPricesIncluded,
       user,
-      total: sliderBudgetValue,
+      total: totalPrice,
       localId,
     });
     router.push("/explore/bookingconfirmation");
@@ -82,7 +88,7 @@ const ResultsTrip = () => {
                   <View style={styles.footerContainer}>
                     <View style={{ marginBottom: 15 }}>
                       <Text style={{ fontWeight: "700" }}>
-                        Total: ${sliderBudgetValue}
+                        Total: ${totalPrice}
                       </Text>
                     </View>
                     <ButtonPrimary
