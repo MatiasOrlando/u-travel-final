@@ -60,7 +60,7 @@ export default function Bookings() {
           >
             {isLoading ? (
               <Text>Loading...</Text>
-            ) : (
+            ) : userBookings?.length > 0 ? (
               <FlatList
                 data={userBookings}
                 renderItem={({
@@ -93,7 +93,7 @@ export default function Bookings() {
                                 flexDirection: "row",
                                 alignItems: "center",
                               }}
-                              key={index}
+                              key={`${experience}-${index}`}
                             >
                               <Text style={styles.bullet}>•</Text>
                               <Text>{experience.activity.name}</Text>
@@ -114,12 +114,19 @@ export default function Bookings() {
                     </FilterCard>
                   </Pressable>
                 )}
-                keyExtractor={({ total }) => total.toString()}
+                keyExtractor={(item, index) => `${index}-${item.city}`}
                 showsVerticalScrollIndicator={false}
                 contentContainerStyle={{
                   paddingBottom: 100,
                 }}
               />
+            ) : (
+              <View style={styles.noOptionsContainer}>
+                <Link href={"/explore"} style={styles.centerText}>
+                  You have not made any reservations yet. Please click here to
+                  start booking...
+                </Link>
+              </View>
             )}
           </View>
         </View>
@@ -199,5 +206,15 @@ const styles = StyleSheet.create({
   footerContainer: {
     marginVertical: 30,
     alignItems: "center",
+  },
+  noOptionsContainer: {
+    justifyContent: "center",
+    alignItems: "center",
+    paddingHorizontal: 50,
+    height: 200,
+    gap: 10,
+  },
+  centerText: {
+    textAlign: "center",
   },
 });

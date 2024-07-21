@@ -137,6 +137,7 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: 60,
     borderTopRightRadius: 60,
     height: "100%",
+    paddingHorizontal: 3,
   },
   filterOptionsTitle: {
     textAlign: "center",

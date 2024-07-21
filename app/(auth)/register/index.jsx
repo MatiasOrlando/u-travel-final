@@ -11,14 +11,15 @@ import { EvilIcons } from "@expo/vector-icons";
 import { setUser } from "@/features/Auth/AuthSlice";
 import { useDispatch } from "react-redux";
 import { Formik } from "formik";
-import { signUpSchema } from "@/validations/signUpScheme";
+import { useDB } from "@/hooks/useDB";
+import { signUpSchema } from "@/validations/signUpSchema";
 
 const Register = () => {
   const [isModalVisible, setModalVisible] = useState(false);
   const [visiblePassword, setVisiblePassword] = useState(false);
   const [visibleConfirmedPassword, setVisibleConfirmedPassword] =
     useState(false);
-
+  const { insertSession } = useDB();
   const [
     triggerSignUp,
     { isError, error, isLoading, isSuccess: isSuccessSignUp, data },
@@ -28,17 +29,26 @@ const Register = () => {
 
   useEffect(() => {
     if (isSuccessSignUp && data) {
-      dispatch(
-        setUser({
+      try {
+        insertSession({
           email: data.email,
-          idToken: data.idToken,
           localId: data.localId,
-        })
-      );
-      setModalVisible(true);
-      router.push("/(tabs)/explore");
+          token: data.idToken,
+        });
+        dispatch(
+          setUser({
+            email: data.email,
+            idToken: data.idToken,
+            localId: data.localId,
+          })
+        );
+        setModalVisible(true);
+        router.push("/(tabs)/explore");
+      } catch (error) {
+        console.error(error);
+      }
     }
-  }, [isError, error, isSuccessSignUp, data]);
+  }, [isSuccessSignUp, data, isLoading]);
 
   const handleSubmit = async (values) => {
     try {

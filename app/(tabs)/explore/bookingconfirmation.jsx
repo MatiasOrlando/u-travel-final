@@ -68,13 +68,25 @@ const BookingConfirmation = () => {
               <Counter dateOfArrival={dateOfArrival} />
             </View>
             <View
-              style={{ marginTop: 20, width: "100%", alignItems: "center" }}
+              style={{
+                marginTop: 20,
+                width: "100%",
+                alignItems: "center",
+                gap: 25,
+              }}
             >
+              <ButtonPrimary
+                title="Keep exploring"
+                handlePress={() => {
+                  removeAllFilters();
+                  router.replace("/explore");
+                }}
+              />
               <ButtonPrimary
                 title="Check my bookings"
                 handlePress={() => {
                   removeAllFilters();
-                  router.push("/bookings");
+                  router.replace("/bookings");
                 }}
               />
             </View>

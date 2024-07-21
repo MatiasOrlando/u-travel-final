@@ -66,7 +66,7 @@ const ResultsTrip = () => {
             orderDate: formattedDate,
             city: citySelected.city,
           });
-          router.push("/explore/bookingconfirmation");
+          router.replace("/explore/bookingconfirmation");
           dispatch(clearCitySelected());
         }
       } catch (error) {

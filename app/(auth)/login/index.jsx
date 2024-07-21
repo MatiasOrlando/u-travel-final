@@ -10,8 +10,8 @@ import { setUser } from "@/features/Auth/AuthSlice";
 import { useDispatch } from "react-redux";
 import { AntDesign } from "@expo/vector-icons";
 import { useDB } from "@/hooks/useDB";
-import { signInSchema } from "@/validations/signInScheme";
 import { Formik } from "formik";
+import { signInSchema } from "@/validations/signInSchema";
 
 const SignIn = () => {
   const [isModalVisible, setModalVisible] = useState(false);
@@ -34,23 +34,19 @@ const SignIn = () => {
           localId: data.localId,
           token: data.idToken,
         });
+        dispatch(
+          setUser({
+            email: data.email,
+            idToken: data.idToken,
+            localId: data.localId,
+          })
+        );
+        router.push("/(tabs)/explore");
       } catch (error) {
         console.error(error);
       }
-      dispatch(
-        setUser({
-          email: data.email,
-          idToken: data.idToken,
-          localId: data.localId,
-        })
-      );
-      router.push("/(tabs)/explore");
     }
   }, [isError, isLoading, isSuccessSignIn, error, data]);
-
-  const handlePasswordVisibility = () => {
-    setVisiblePassword(!visiblePassword);
-  };
 
   const handleSubmit = async (values) => {
     try {
@@ -62,6 +58,10 @@ const SignIn = () => {
     } catch (error) {
       console.error(error);
     }
+  };
+
+  const handlePasswordVisibility = () => {
+    setVisiblePassword(!visiblePassword);
   };
 
   return (
