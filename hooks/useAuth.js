@@ -3,7 +3,7 @@ import { useDB } from "./useDB";
 import { setUser } from "@/features/Auth/AuthSlice";
 import { router } from "expo-router";
 
-export const useAuth = (navigation = "") => {
+export const useAuth = () => {
   const dispatch = useDispatch();
   const { getSession } = useDB();
 
@@ -19,7 +19,9 @@ export const useAuth = (navigation = "") => {
             idToken: userData.token,
           })
         );
-        router.replace(`/${navigation}`);
+        return true;
+      } else {
+        return false;
       }
     } catch (error) {
       console.error(error);

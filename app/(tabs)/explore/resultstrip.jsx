@@ -15,8 +15,10 @@ import { priceAssignationPerActivity } from "@/utils/priceActivitiesAssignation"
 import ButtonPrimary from "@/components/ButtonPrimary";
 import { usePostBookingOrderMutation } from "@/services/shopServices";
 import { router } from "expo-router";
+import { useAuth } from "@/hooks/useAuth";
 
 const ResultsTrip = () => {
+  const authUser = useAuth();
   const resultsItinerary = useSelector(
     (state) => state.resultsFilteredActivitiesData.resultsFilteredActivities
   );
@@ -39,13 +41,24 @@ const ResultsTrip = () => {
   );
 
   const confirmBookingOrder = () => {
-    triggerPostBookingOrder({
-      itinerary: activitiesWithRandomPricesIncluded,
-      user,
-      total: totalPrice,
-      localId,
-    });
-    router.push("/explore/bookingconfirmation");
+    (async () => {
+      try {
+        const validUser = await authUser();
+        if (!validUser) {
+          alert("You must log in to confirm your Booking");
+        } else {
+          triggerPostBookingOrder({
+            itinerary: activitiesWithRandomPricesIncluded,
+            user,
+            total: totalPrice,
+            localId,
+          });
+          router.push("/explore/bookingconfirmation");
+        }
+      } catch (error) {
+        console.error(error);
+      }
+    })();
   };
 
   return (

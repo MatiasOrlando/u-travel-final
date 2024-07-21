@@ -5,17 +5,14 @@ import { useDispatch, useSelector } from "react-redux";
 import ButtonPrimary from "@/components/ButtonPrimary";
 import { useRouter } from "expo-router";
 import { useDB } from "@/hooks/useDB";
-import {
-  clearUser,
-  setUser,
-  setIsAuthenticated,
-} from "@/features/Auth/AuthSlice";
+import { clearUser } from "@/features/Auth/AuthSlice";
+import { useAuth } from "@/hooks/useAuth";
 
 const Profile = () => {
   const { user } = useSelector((state) => state.auth.value);
   const [statusBarHeight, setStatusBarHeight] = useState(0);
-
-  const { getSession, truncateSessionTable } = useDB();
+  const authUser = useAuth();
+  const { truncateSessionTable } = useDB();
   const dispatch = useDispatch();
   const router = useRouter();
 
@@ -28,25 +25,13 @@ const Profile = () => {
   useEffect(() => {
     (async () => {
       try {
-        const session = await getSession();
-        if (session) {
-          const userData = session;
-          dispatch(
-            setUser({
-              email: userData.email,
-              localId: userData.localId,
-              idToken: userData.token,
-            })
-          );
-          dispatch(setIsAuthenticated(true));
-        } else {
+        const validUser = await authUser();
+        if (!validUser) {
           alert("You must log in to enter your profile section");
-          dispatch(setIsAuthenticated(false));
           router.replace("/");
         }
       } catch (error) {
         console.error(error);
-        dispatch(setIsAuthenticated(false));
       }
     })();
   }, []);
@@ -55,7 +40,6 @@ const Profile = () => {
     try {
       truncateSessionTable();
       dispatch(clearUser());
-      dispatch(setIsAuthenticated(false));
       router.replace("/");
     } catch (error) {
       console.error(error);

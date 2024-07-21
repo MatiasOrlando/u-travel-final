@@ -13,13 +13,14 @@ registerTranslation("en", en);
 
 export default function HomeScreen() {
   const { initDB } = useDB();
-  const authUser = useAuth("explore");
+  const authUser = useAuth();
 
   useEffect(() => {
     initDB();
     (async () => {
       try {
-        await authUser();
+        const validUser = await authUser();
+        if (validUser) router.replace(`/explore`);
       } catch (error) {
         console.error(error);
       }
