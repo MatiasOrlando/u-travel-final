@@ -14,10 +14,12 @@ import Counter from "@/components/Counter";
 import { router } from "expo-router";
 import ButtonPrimary from "@/components/ButtonPrimary";
 import { AntDesign } from "@expo/vector-icons";
+import { useClearFilters } from "@/hooks/useClearFilters";
 
 const BookingConfirmation = () => {
   const { localId } = useSelector((state) => state.auth.value);
   const { dateOfArrival } = useSelector((state) => state.datesPicker.value);
+  const removeAllFilters = useClearFilters();
 
   return (
     <View style={styles.container}>
@@ -70,7 +72,10 @@ const BookingConfirmation = () => {
             >
               <ButtonPrimary
                 title="Check my bookings"
-                handlePress={() => router.push("/bookings")}
+                handlePress={() => {
+                  removeAllFilters();
+                  router.push("/bookings");
+                }}
               />
             </View>
           </View>

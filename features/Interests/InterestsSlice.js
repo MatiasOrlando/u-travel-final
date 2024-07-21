@@ -31,8 +31,12 @@ export const interestsSlice = createSlice({
         );
       }
     },
+    clearTravelerInterests: (state) => {
+      state.travelerInterests = [];
+    },
   },
 });
 
-export const { setTravelerInterests } = interestsSlice.actions;
+export const { setTravelerInterests, clearTravelerInterests } =
+  interestsSlice.actions;
 export default interestsSlice.reducer;

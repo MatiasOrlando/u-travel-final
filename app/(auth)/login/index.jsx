@@ -10,8 +10,10 @@ import { setUser } from "@/features/Auth/AuthSlice";
 import { useDispatch } from "react-redux";
 import { AntDesign } from "@expo/vector-icons";
 import { useDB } from "@/hooks/useDB";
+import { signInSchema } from "@/validations/signInScheme";
+import { Formik } from "formik";
 
-const index = () => {
+const SignIn = () => {
   const [isModalVisible, setModalVisible] = useState(false);
   const [visiblePassword, setVisiblePassword] = useState(false);
   const [
@@ -20,24 +22,11 @@ const index = () => {
   ] = useSignInMutation();
 
   const dispatch = useDispatch();
-
-  const [formData, setFormData] = useState({
-    email: "",
-    password: "",
-  });
-
   const { insertSession } = useDB();
-
-  const handleChange = (key, value) => {
-    setFormData({
-      ...formData,
-      [key]: value,
-    });
-  };
 
   useEffect(() => {
     if (isError) {
-      setModalVisible(!isModalVisible);
+      setModalVisible(true);
     } else if (isSuccessSignIn && !isLoading) {
       try {
         insertSession({
@@ -57,18 +46,17 @@ const index = () => {
       );
       router.push("/(tabs)/explore");
     }
-  }, [isError, isLoading, isSuccessSignIn, error]);
+  }, [isError, isLoading, isSuccessSignIn, error, data]);
 
-  const handleSubmit = async () => {
-    if (!formData.email || !formData.password) {
-      alert("Email and password are required");
-      return;
-    }
+  const handlePasswordVisibility = () => {
+    setVisiblePassword(!visiblePassword);
+  };
 
+  const handleSubmit = async (values) => {
     try {
       await triggerSignIn({
-        email: formData.email,
-        password: formData.password,
+        email: values.email,
+        password: values.password,
         returnSecureToken: true,
       });
     } catch (error) {
@@ -76,70 +64,87 @@ const index = () => {
     }
   };
 
-  const handlePasswordVisibility = () => {
-    setVisiblePassword(!visiblePassword);
-  };
-
   return (
-    <View style={styles.signInContainer}>
-      <View style={styles.signInFormContainer}>
-        <FormInput
-          label="E-mail"
-          color={colorsDefault.brown.default}
-          icon={
-            <AntDesign
-              name="user"
-              size={24}
+    <Formik
+      initialValues={{ email: "", password: "" }}
+      validationSchema={signInSchema}
+      onSubmit={handleSubmit}
+    >
+      {({
+        handleChange,
+        handleBlur,
+        handleSubmit,
+        values,
+        errors,
+        touched,
+      }) => (
+        <View style={styles.signInContainer}>
+          <View style={styles.signInFormContainer}>
+            <FormInput
+              label="E-mail"
               color={colorsDefault.brown.default}
+              icon={
+                <AntDesign
+                  name="user"
+                  size={24}
+                  color={colorsDefault.brown.default}
+                />
+              }
+              value={values.email}
+              onChangeValue={handleChange("email")}
+              onBlur={handleBlur("email")}
+              error={touched.email && errors.email}
             />
-          }
-          onChangeValue={(value) => {
-            handleChange("email", value);
-          }}
-        />
-        <FormInput
-          label="Password"
-          color={colorsDefault.brown.default}
-          icon={
-            <AntDesign
-              name={!visiblePassword ? "lock1" : "unlock"}
-              size={24}
+            <FormInput
+              label="Password"
               color={colorsDefault.brown.default}
-              onPress={handlePasswordVisibility}
+              icon={
+                <AntDesign
+                  name={!visiblePassword ? "lock1" : "unlock"}
+                  size={24}
+                  color={colorsDefault.brown.default}
+                  onPress={handlePasswordVisibility}
+                />
+              }
+              additionalText="Forgot password?"
+              value={values.password}
+              onChangeValue={handleChange("password")}
+              onBlur={handleBlur("password")}
+              secureTextEntry={!visiblePassword}
+              error={touched.password && errors.password}
             />
-          }
-          additionalText="Forgot password?"
-          onChangeValue={(value) => handleChange("password", value)}
-          secureTextEntry={!visiblePassword}
-        />
-      </View>
-      <View style={styles.signInButtonContainer}>
-        <ButtonPrimary
-          title="Sign In"
-          handlePress={handleSubmit}
-          disabled={isLoading}
-        />
-      </View>
-      <View style={styles.signInSignUpContainer}>
-        <View>
-          <Text style={styles.signInSignUpText}>Don't have an account?</Text>
+          </View>
+          <View style={styles.signInButtonContainer}>
+            <ButtonPrimary
+              title="Sign In"
+              handlePress={handleSubmit}
+              disabled={isLoading}
+            />
+          </View>
+          <View style={styles.signInSignUpContainer}>
+            <View>
+              <Text style={styles.signInSignUpText}>
+                Don't have an account?
+              </Text>
+            </View>
+            <View style={styles.signInSignUpLinkContainer}>
+              <Link href="/register">
+                <Text style={styles.signInSignUpLink}>Sign up</Text>
+              </Link>
+            </View>
+          </View>
+          <CustomModal
+            isModalVisible={isModalVisible}
+            setModalVisible={setModalVisible}
+            isSuccessSignIn={isSuccessSignIn}
+          />
         </View>
-        <View style={styles.signInSignUpLinkContainer}>
-          <Link href="/register">
-            <Text style={styles.signInSignUpLink}>Sign up</Text>
-          </Link>
-        </View>
-      </View>
-      <CustomModal
-        isModalVisible={isModalVisible}
-        setModalVisible={setModalVisible}
-        isSuccessSignIn={isSuccessSignIn}
-      />
-    </View>
+      )}
+    </Formik>
   );
 };
 
-export default index;
+export default SignIn;
 
 const styles = StyleSheet.create({
   signInContainer: {

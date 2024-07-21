@@ -24,6 +24,7 @@
     "expo-sqlite": "^14.0.4",
     "expo-status-bar": "~1.12.1",
     "expo-web-browser": "^13.0.3",
+    "formik": "^2.4.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.74.3",

@@ -3,7 +3,7 @@ import { baseUrl } from "../database/realtimeDatabase";
 
 export const shopApi = createApi({
   reducerPath: "shopApi",
-  tagTypes: ["profileImageGet", "locationGet"],
+  tagTypes: ["profileImageGet", "locationGet", "bookingsGet"],
   baseQuery: fetchBaseQuery({ baseUrl }),
   endpoints: (builder) => ({
     getCountries: builder.query({
@@ -68,6 +68,15 @@ export const shopApi = createApi({
         method: "POST",
         body: order,
       }),
+      invalidatesTags: ["bookingsGet"],
+    }),
+    getBookingsByUser: builder.query({
+      query: (user) => `orders.json?orderBy="user"&equalTo="${user}"`,
+      transformResponse: (res) => {
+        const transformedResponse = Object.values(res);
+        return transformedResponse;
+      },
+      providesTags: ["bookingsGet"],
     }),
   }),
 });
@@ -82,4 +91,5 @@ export const {
   useGetLocationQuery,
   usePostLocationMutation,
   usePostBookingOrderMutation,
+  useGetBookingsByUserQuery,
 } = shopApi;

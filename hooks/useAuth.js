@@ -19,12 +19,13 @@ export const useAuth = () => {
             idToken: userData.token,
           })
         );
-        return true;
+        return userData;
       } else {
         return false;
       }
     } catch (error) {
       console.error(error);
+      return null;
     }
   };
 

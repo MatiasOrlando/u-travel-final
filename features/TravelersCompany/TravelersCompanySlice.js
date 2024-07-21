@@ -15,8 +15,13 @@ export const travelersCompanySlice = createSlice({
       state.value.travelersCompany = payload.travelersCompany;
       state.value.travelersCompanyId = payload.travelersCompanyId;
     },
+    clearTravelersCompany: (state) => {
+      state.value.travelersCompany = "";
+      state.value.travelersCompanyId = null;
+    },
   },
 });
 
-export const { setTravelersCompany } = travelersCompanySlice.actions;
+export const { setTravelersCompany, clearTravelersCompany } =
+  travelersCompanySlice.actions;
 export default travelersCompanySlice.reducer;

@@ -63,7 +63,7 @@ const ImageSelector = () => {
       dispatch(setCameraImage(image));
       await triggerPostImage({ image, localId });
     } catch (error) {
-      console.log(error);
+      console.error(error);
     }
   };
 

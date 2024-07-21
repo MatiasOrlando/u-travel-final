@@ -8,7 +8,7 @@ import {
   FlatList,
   Pressable,
 } from "react-native";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { colorsDefault } from "@/constants/Colors";
 import FilterCard from "@/components/FilterCard";
 import { priceAssignationPerActivity } from "@/utils/priceActivitiesAssignation";
@@ -16,9 +16,14 @@ import ButtonPrimary from "@/components/ButtonPrimary";
 import { usePostBookingOrderMutation } from "@/services/shopServices";
 import { router } from "expo-router";
 import { useAuth } from "@/hooks/useAuth";
+import { clearCitySelected } from "@/features/CitySelection/CitySelectionSlice";
 
 const ResultsTrip = () => {
   const authUser = useAuth();
+  const dispatch = useDispatch();
+  const citySelected = useSelector(
+    (state) => state.citySelectedData.citySelected
+  );
   const resultsItinerary = useSelector(
     (state) => state.resultsFilteredActivitiesData.resultsFilteredActivities
   );
@@ -34,11 +39,17 @@ const ResultsTrip = () => {
     sliderBudgetValue
   );
 
-  // totalPrice acitvities
+  // totalPrice acitivities
   const totalPrice = activitiesWithRandomPricesIncluded.reduce(
     (acc, el) => acc + el.price,
     0
   );
+
+  const date = new Date();
+  const day = date.getDate().toString().padStart(2, "0");
+  const month = (date.getMonth() + 1).toString().padStart(2, "0");
+  const year = date.getFullYear().toString();
+  const formattedDate = `${day}/${month}/${year}`;
 
   const confirmBookingOrder = () => {
     (async () => {
@@ -52,8 +63,11 @@ const ResultsTrip = () => {
             user,
             total: totalPrice,
             localId,
+            orderDate: formattedDate,
+            city: citySelected.city,
           });
           router.push("/explore/bookingconfirmation");
+          dispatch(clearCitySelected());
         }
       } catch (error) {
         console.error(error);

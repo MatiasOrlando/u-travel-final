@@ -11,8 +11,11 @@ export const budgetFilterSlice = createSlice({
     setBudgetValue: (state, { payload }) => {
       state.budgetValue = payload;
     },
+    clearBudgetValue: (state) => {
+      state.budgetValue = 500;
+    },
   },
 });
 
-export const { setBudgetValue } = budgetFilterSlice.actions;
+export const { setBudgetValue, clearBudgetValue } = budgetFilterSlice.actions;
 export default budgetFilterSlice.reducer;

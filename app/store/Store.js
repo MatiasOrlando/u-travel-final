@@ -9,6 +9,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import { setupListeners } from "@reduxjs/toolkit/query";
 import interestsSlice from "@/features/Interests/InterestsSlice";
 import filteredActivitiesSlice from "@/features/FilteredActivities/FilteredActivitesSlice";
+import citySelectedSlice from "@/features/CitySelection/CitySelectionSlice";
 
 const store = configureStore({
   reducer: {
@@ -19,6 +20,7 @@ const store = configureStore({
     ageRangeFilter: ageRangeSlice,
     interestsFilter: interestsSlice,
     resultsFilteredActivitiesData: filteredActivitiesSlice,
+    citySelectedData: citySelectedSlice,
     [shopApi.reducerPath]: shopApi.reducer,
     [authApi.reducerPath]: authApi.reducer,
   },

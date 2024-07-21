@@ -17,8 +17,12 @@ export const ageRangeSlice = createSlice({
     setMaxAge: (state, { payload }) => {
       state.ageValues.maxAge = payload;
     },
+    clearAges: (state) => {
+      state.ageValues.minAge = 6;
+      state.ageValues.maxAge = 6;
+    },
   },
 });
 
-export const { setMinAge, setMaxAge } = ageRangeSlice.actions;
+export const { setMinAge, setMaxAge, clearAges } = ageRangeSlice.actions;
 export default ageRangeSlice.reducer;

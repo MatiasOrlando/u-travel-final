@@ -13,14 +13,19 @@ import ButtonPrimary from "@/components/ButtonPrimary";
 import { useDispatch, useSelector } from "react-redux";
 import { filteredActivities } from "@/utils/filteringRules";
 import { setResultsFilteredActivities } from "@/features/FilteredActivities/FilteredActivitesSlice";
+import { setCitySelected } from "@/features/CitySelection/CitySelectionSlice";
+import { useClearFilters } from "@/hooks/useClearFilters";
 
 const CityDetail = () => {
   const { id } = useLocalSearchParams();
   const { data: selectedCity, isLoading } = useGetCityByIdQuery(id);
-  const [cityDisplay, setCityDisplay] = useState({});
   const dispatch = useDispatch();
+  const removeAllFilters = useClearFilters();
 
   //Redux Filter Values
+  const citySelected = useSelector(
+    (state) => state.citySelectedData.citySelected
+  );
   const minAge = useSelector((state) => state.ageRangeFilter.ageValues.minAge);
   const maxAge = useSelector((state) => state.ageRangeFilter.ageValues.maxAge);
 
@@ -37,8 +42,7 @@ const CityDetail = () => {
 
   useEffect(() => {
     if (!isLoading && selectedCity) {
-      const { city, cityImage } = selectedCity;
-      setCityDisplay({ city, cityImage });
+      dispatch(setCitySelected(selectedCity));
     }
   }, [id, selectedCity]);
 
@@ -54,7 +58,11 @@ const CityDetail = () => {
       }
     );
     dispatch(setResultsFilteredActivities(resultsFilteredActivities));
-    router.push("/explore/resultstrip");
+    router.push(`/explore/resultstrip/`);
+  };
+
+  const clearAllFilters = () => {
+    removeAllFilters();
   };
 
   return (
@@ -63,10 +71,10 @@ const CityDetail = () => {
         <View style={styles.imgContainer}>
           <Image
             style={styles.imgHome}
-            source={{ uri: cityDisplay?.cityImage }}
+            source={{ uri: citySelected?.cityImage }}
           />
           <View style={styles.cityTagContainer}>
-            <Text style={styles.cityTag}>{cityDisplay?.city}</Text>
+            <Text style={styles.cityTag}>{citySelected?.city}</Text>
           </View>
         </View>
         <ScrollView style={styles.filterOptionsContainer}>
@@ -88,6 +96,11 @@ const CityDetail = () => {
               <Interests />
             </FilterCard>
             <View style={styles.viewResultsContainer}>
+              <ButtonPrimary
+                title="Remove all filters"
+                handlePress={clearAllFilters}
+                style={{ backgroundColor: colorsDefault.vanilla.dark }}
+              />
               <ButtonPrimary
                 title="View results"
                 handlePress={filterActivitiesResults}
@@ -150,5 +163,6 @@ const styles = StyleSheet.create({
     marginBottom: 230,
     marginTop: 30,
     alignItems: "center",
+    gap: 20,
   },
 });

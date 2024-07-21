@@ -17,10 +17,14 @@ export const datesTravelSlice = createSlice({
     setDateOfDeparture: (state, { payload }) => {
       state.value.dateOfDeparture = payload;
     },
+    clearDates: (state) => {
+      state.value.dateOfArrival = null;
+      state.value.dateOfDeparture = null;
+    },
   },
 });
 
-export const { setDateOfArrival, setDateOfDeparture } =
+export const { setDateOfArrival, setDateOfDeparture, clearDates } =
   datesTravelSlice.actions;
 
 export default datesTravelSlice.reducer;
