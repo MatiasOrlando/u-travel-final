@@ -48,7 +48,7 @@ const Register = () => {
         console.error(error);
       }
     }
-  }, [isSuccessSignUp, data, isLoading]);
+  }, [isSuccessSignUp, data, isLoading, isError, error]);
 
   const handleSubmit = async (values) => {
     try {
@@ -72,8 +72,9 @@ const Register = () => {
 
   return (
     <ScrollView
+      style={{ height: "100%", marginBottom: 20 }}
       showsVerticalScrollIndicator={false}
-      style={{ marginBottom: 20 }}
+      keyboardShouldPersistTaps="handled"
     >
       <Formik
         initialValues={{
