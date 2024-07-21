@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     flexDirection: "row",
-    marginTop: 40,
+    marginTop: 30,
   },
   timeBlock: {
     marginHorizontal: 10,

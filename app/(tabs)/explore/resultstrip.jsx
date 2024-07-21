@@ -7,6 +7,7 @@ import {
   Text,
   FlatList,
   Pressable,
+  Platform,
 } from "react-native";
 import { useDispatch, useSelector } from "react-redux";
 import { colorsDefault } from "@/constants/Colors";
@@ -17,6 +18,7 @@ import { usePostBookingOrderMutation } from "@/services/shopServices";
 import { router } from "expo-router";
 import { useAuth } from "@/hooks/useAuth";
 import { clearCitySelected } from "@/features/CitySelection/CitySelectionSlice";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const ResultsTrip = () => {
   const authUser = useAuth();
@@ -51,6 +53,15 @@ const ResultsTrip = () => {
   const year = date.getFullYear().toString();
   const formattedDate = `${day}/${month}/${year}`;
 
+  const bookingData = {
+    itinerary: activitiesWithRandomPricesIncluded,
+    user,
+    total: totalPrice,
+    localId,
+    orderDate: formattedDate,
+    city: citySelected.city,
+  };
+
   const confirmBookingOrder = () => {
     (async () => {
       try {
@@ -68,6 +79,23 @@ const ResultsTrip = () => {
           });
           router.replace("/explore/bookingconfirmation");
           dispatch(clearCitySelected());
+
+          // Async storage for user's bookings
+          try {
+            const existingBookings = await AsyncStorage.getItem("userBookings");
+            let bookings = [];
+
+            if (existingBookings) {
+              bookings = JSON.parse(existingBookings);
+            }
+
+            await AsyncStorage.setItem(
+              "userBookings",
+              JSON.stringify([...bookings, bookingData])
+            );
+          } catch (error) {
+            console.error(error);
+          }
         }
       } catch (error) {
         console.error(error);
@@ -87,7 +115,7 @@ const ResultsTrip = () => {
           <View style={styles.centerAlign}>
             <Text style={styles.itineraryTitle}>¡My Ideal Itinerary!</Text>
           </View>
-          <View>
+          <View style={{ height: "100%" }}>
             {activitiesWithRandomPricesIncluded.length > 0 ? (
               <FlatList
                 data={activitiesWithRandomPricesIncluded}
@@ -148,9 +176,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   resultsContainer: {
-    height: 500,
+    height: Platform.OS === "ios" ? 500 : 600,
   },
   resultsTripImage: {
+    marginTop: Platform.OS === "ios" ? "" : 50,
     height: 150,
     width: 370,
   },

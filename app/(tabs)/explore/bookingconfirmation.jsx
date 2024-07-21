@@ -112,7 +112,7 @@ const styles = StyleSheet.create({
     width: "100%",
     position: "relative",
     paddingHorizontal: 60,
-    marginTop: Platform.OS === "ios" ? StatusBar.currentHeight || 80 : 200,
+    marginTop: Platform.OS === "ios" ? 80 : 60,
   },
   imgHome: {
     position: "absolute",
@@ -148,7 +148,7 @@ const styles = StyleSheet.create({
   filterOptionsTitle: {
     textAlign: "center",
     paddingTop: 20,
-    fontSize: 20,
+    fontSize: 24,
     color: colorsDefault.brown.default,
   },
   centeredText: {
@@ -161,8 +161,9 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },
   wonderfulTripText: {
-    marginTop: 20,
+    marginTop: 25,
     textAlign: "center",
+    fontSize: 22,
     color: colorsDefault.brown.default,
   },
 });

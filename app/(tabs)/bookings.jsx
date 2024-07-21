@@ -13,11 +13,13 @@ import { useGetBookingsByUserQuery } from "@/services/shopServices";
 import { useAuth } from "@/hooks/useAuth";
 import { Link, useRouter } from "expo-router";
 import FilterCard from "@/components/FilterCard";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export default function Bookings() {
   const authUser = useAuth();
   const router = useRouter();
   const [validUser, setValidUser] = useState(null);
+  const [userBookingsData, setUserBookingsData] = useState([]);
 
   useEffect(() => {
     (async () => {
@@ -28,6 +30,21 @@ export default function Bookings() {
           router.replace("/");
         } else {
           setValidUser(user);
+
+          // Retrieve user's bookings from AsyncStorage
+          try {
+            const storedDataBookings =
+              (await AsyncStorage.getItem("userBookings")) ?? [];
+            if (storedDataBookings.length) {
+              const parsedData = JSON.parse(storedDataBookings);
+              const userBookingsByEmail = parsedData.filter(
+                (booking) => booking.user === user.email
+              );
+              setUserBookingsData(userBookingsByEmail);
+            }
+          } catch (error) {
+            console.error(error);
+          }
         }
       } catch (error) {
         console.error(error);
@@ -41,6 +58,9 @@ export default function Bookings() {
       skip: !validUser,
     }
   );
+
+  const bookingsToDisplay =
+    userBookings?.length > 0 ? userBookings : userBookingsData;
 
   return (
     <View style={styles.container}>
@@ -62,7 +82,7 @@ export default function Bookings() {
               <Text>Loading...</Text>
             ) : userBookings?.length > 0 ? (
               <FlatList
-                data={userBookings}
+                data={bookingsToDisplay}
                 renderItem={({
                   item: { itinerary, total, orderDate, city },
                   index,

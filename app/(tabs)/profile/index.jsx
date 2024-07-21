@@ -7,20 +7,14 @@ import { useRouter } from "expo-router";
 import { useDB } from "@/hooks/useDB";
 import { clearUser } from "@/features/Auth/AuthSlice";
 import { useAuth } from "@/hooks/useAuth";
+import FilterCard from "@/components/FilterCard";
 
 const Profile = () => {
   const { user } = useSelector((state) => state.auth.value);
-  const [statusBarHeight, setStatusBarHeight] = useState(0);
   const authUser = useAuth();
   const { truncateSessionTable } = useDB();
   const dispatch = useDispatch();
   const router = useRouter();
-
-  useEffect(() => {
-    if (Platform.OS === "android" && StatusBar.currentHeight) {
-      setStatusBarHeight(StatusBar.currentHeight);
-    }
-  }, []);
 
   useEffect(() => {
     (async () => {
@@ -51,7 +45,9 @@ const Profile = () => {
     <View
       style={[
         styles.container,
-        { marginTop: Platform.OS === "ios" ? 80 : statusBarHeight || 200 },
+        {
+          marginTop: Platform.OS === "ios" ? 80 : StatusBar.currentHeight + 30,
+        },
       ]}
     >
       <View
@@ -82,10 +78,16 @@ const Profile = () => {
           <ButtonPrimary title="Sign Out" handlePress={handleSignOut} />
         </View>
         {user && (
-          <View style={{ width: "100%", paddingHorizontal: 60, gap: 20 }}>
-            <Text style={styles.userInfo}>Username: {user.split("@")[0]}</Text>
-            <Text style={styles.userInfo}>Email: {user}</Text>
-          </View>
+          <FilterCard>
+            <View style={{ width: "100%", paddingHorizontal: 20, gap: 20 }}>
+              <Text style={styles.userInfo}>
+                Username:{" "}
+                {user.split("@")[0].charAt(0).toUpperCase() +
+                  user.split("@")[0].slice(1)}
+              </Text>
+              <Text style={styles.userInfo}>Email: {user}</Text>
+            </View>
+          </FilterCard>
         )}
       </View>
     </View>

@@ -60,7 +60,7 @@ export default _layout;
 const styles = StyleSheet.create({
   btnNavigation: {
     backgroundColor: colorsDefault.secondary,
-    borderRadius: "100%",
+    borderRadius: 100,
     padding: 1,
   },
 });
