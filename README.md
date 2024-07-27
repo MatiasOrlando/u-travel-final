@@ -36,7 +36,7 @@ EN:
 
 User Registration and Login: Users can create an account, register, and log in through Firebase for secure authentication and personalized experience. Data persistence is managed with SQLite to ensure user information is saved and retrieved efficiently.
 
-Profile Management: Within the app, users have access to a profile section where they can set their address using Expo Location and add or edit their profile picture using Expo Image Picker. 
+Profile Management: Within the app, users have access to a profile section where they can set their address using Expo Location and add or edit their profile picture using Expo Image Picker.
 
 Destination Selection: Users can browse a limited catalog of countries and select the one they would like to visit. Within each country, they can choose from available cities to further narrow down their destination preferences.
 
@@ -54,7 +54,7 @@ Bookings Management: The user's confirmed bookings are persisted within their ac
 
 ES:
 
-### Mayor Variedad de Actividades: 
+### Mayor Variedad de Actividades:
 
 Para ofrecer a los usuarios una gama más amplia de opciones, se esta trabajando en aumentar la variedad de actividades disponibles en cada ciudad. Actualmente, la cantidad limitada de actividades por ciudad puede afectar la diversidad de opciones ofrecidas. Mantente atento a las actualizaciones mientras ampliamos nuestro catálogo de actividades para incluir experiencias más diversas y ajustadas a tus preferencias.
 
@@ -68,7 +68,7 @@ Actualmente, el filtro de precio está limitado a filtrar por rangos de precio e
 
 EN:
 
-### Enhanced Variety of Activities: 
+### Enhanced Variety of Activities:
 
 To provide users with a wider range of options, we are working on increasing the variety of activities available in each city. Currently, the limited number of activities per city may affect the diversity of options offered. Stay tuned for updates as we expand our activity catalog to include more diverse experiences and better match your preferences.
 
@@ -76,9 +76,27 @@ To provide users with a wider range of options, we are working on increasing the
 
 Explore Sightseeing, Outdoor, Adventure, Food, Nature, and City Activities based on countries selection: Once a country is selected, users will soon be able to scroll through a variety of cards offering activities in categories such as sightseeing, outdoor, adventure, food, nature, and city experiences. This feature is currently under construction and will be available in a future update.
 
-### Price Filtering: 
+### Price Filtering:
 
 Currently, the price filter is limited to filtering by specific price ranges. This means that if a user sets the filter to the highest range, only high-priced activities are displayed. Similarly, setting the filter to the middle range will only show activities within that price range, without including also lower priced options. An enhancement to offer a more comprehensive filtering system, displaying a broader range of activities based on selected price criteria, is coming soon.
+
+<br>
+
+## Libraries
+
+<ul>
+<li>React-native-paper-dates: Date picker library used to select dates of arrival and departure</li>
+<li>React-native-snap-carousel: Carousel library to display different cities based on country selection</li>
+<li>Formik & Yup: Libraries used for Forms validations.</li>
+<li>Redux Toolkit: Manage & control Store state's flow</li>
+<li>React-native-keyboard-aware-scroll-view: Library used to control the visibility of the content when keyboard is open</li>
+<li>Expo Image Picker: Library used to allow the add or edit of user's profile picture</li>
+<li>Expo Location: Library used to allow the user to set it's location address</li>
+<li>Expo SQlite: Library used to handle user's data persistance across the app</li>
+<li>Expo Router: Library used to handle navigation across the app</li>
+<li>Patch package: Library used to create a patch for the snap carousel's node_modules files (Proptype errors)</li>
+<li>Async storage: Library used to persist User's bookings on the device</li>
+</ul>
 
 <br>
 
