@@ -14,7 +14,7 @@ By means of filters criteria such as budget, travel dates, travel companions (so
 
 <br>
 
-## Features:
+## Features
 
 ES:
 
