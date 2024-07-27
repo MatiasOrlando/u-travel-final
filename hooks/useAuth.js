@@ -1,7 +1,6 @@
 import { useDispatch } from "react-redux";
 import { useDB } from "./useDB";
 import { setUser } from "@/features/Auth/AuthSlice";
-import { router } from "expo-router";
 
 export const useAuth = () => {
   const dispatch = useDispatch();

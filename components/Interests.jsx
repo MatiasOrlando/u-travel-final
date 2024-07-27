@@ -3,7 +3,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setTravelerInterests } from "@/features/Interests/InterestsSlice";
 
-const Interests = () => {
+const Interests = ({ errorInterests }) => {
   const travelerInterests = useSelector(
     (state) => state.interestsFilter.travelerInterests
   );
@@ -29,36 +29,41 @@ const Interests = () => {
   };
 
   return (
-    <View style={styles.interestsMainContainer}>
-      <Text style={styles.mainText}>Interests</Text>
-      <View style={styles.interestsContainer}>
-        {userInterests.map((el, index) => (
-          <Pressable
-            key={index}
-            onPress={() => handlePress(el, index)}
-            style={[
-              styles.gridItem,
-              {
-                backgroundColor: travelerInterests.some(
-                  (interest) => interest.index === index
-                )
-                  ? "#74AD8C"
-                  : "transparent",
-              },
-            ]}
-          >
-            <View style={styles.itemContent}>
-              <Image
-                source={imageInterestsMap[el]}
-                style={styles.icon}
-                resizeMode="contain"
-              />
-              <Text>{el}</Text>
-            </View>
-          </Pressable>
-        ))}
+    <>
+      <View style={styles.interestsMainContainer}>
+        <Text style={styles.mainText}>Interests</Text>
+        <View style={styles.interestsContainer}>
+          {userInterests.map((el, index) => (
+            <Pressable
+              key={index}
+              onPress={() => handlePress(el, index)}
+              style={[
+                styles.gridItem,
+                {
+                  backgroundColor: travelerInterests.some(
+                    (interest) => interest.index === index
+                  )
+                    ? "#74AD8C"
+                    : "transparent",
+                },
+              ]}
+            >
+              <View style={styles.itemContent}>
+                <Image
+                  source={imageInterestsMap[el]}
+                  style={styles.icon}
+                  resizeMode="contain"
+                />
+                <Text>{el}</Text>
+              </View>
+            </Pressable>
+          ))}
+        </View>
       </View>
-    </View>
+      {travelerInterests.length < 3 && errorInterests && (
+        <Text style={styles.errorText}>{errorInterests}</Text>
+      )}
+    </>
   );
 };
 
@@ -96,5 +101,9 @@ const styles = StyleSheet.create({
     fontSize: 18,
     textAlign: "left",
     width: "100%",
+  },
+  errorText: {
+    color: "red",
+    fontSize: 12,
   },
 });

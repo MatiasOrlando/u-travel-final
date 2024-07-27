@@ -7,7 +7,7 @@ import {
   setDateOfDeparture,
 } from "@/features/DatesTravel/DatesTravelSlice";
 
-const DateSelector = () => {
+const DateSelector = ({ errorDateOfArrival, errorDateOfDeparture }) => {
   const dateOfArrival = useSelector(
     (state) => state.datesPicker.value.dateOfArrival
   );
@@ -64,38 +64,54 @@ const DateSelector = () => {
   return (
     <View style={{ paddingVertical: 10 }}>
       <Text style={styles.mainText}>Dates</Text>
-      <View style={{ justifyContent: "center", flexDirection: "row", gap: 10 }}>
-        <View style={{ width: "50%", minHeight: 65 }}>
-          <DatePickerInput
-            label="Arrival"
-            value={dateOfArrival}
-            onChange={handleArrivalDateChange}
-            inputMode="start"
-            style={{ backgroundColor: "white", height: 50 }}
-            locale="en"
-          />
-          <Text style={styles.errorText}>{error.arrival || " "}</Text>
-        </View>
+      <View>
         <View
-          style={{
-            width: "50%",
-            alignItems: "flex-start",
-            minHeight: 65,
-            justifyContent: "flex-start",
-          }}
+          style={{ justifyContent: "center", flexDirection: "row", gap: 10 }}
         >
-          <DatePickerInput
-            label="Departure"
-            value={dateOfDeparture}
-            onChange={handleDepartureDateChange}
-            inputMode="start"
+          <View style={{ width: "50%", minHeight: 65 }}>
+            <DatePickerInput
+              label="Arrival"
+              value={dateOfArrival}
+              onChange={handleArrivalDateChange}
+              inputMode="start"
+              style={{ backgroundColor: "white", height: 50 }}
+              locale="en"
+            />
+            <Text style={styles.errorText}>{error.arrival || " "}</Text>
+          </View>
+          <View
             style={{
-              backgroundColor: "white",
-              height: 50,
+              width: "50%",
+              alignItems: "flex-start",
+              minHeight: 65,
+              justifyContent: "flex-start",
             }}
-            locale="en"
-          />
-          <Text style={styles.errorText}>{error.departure || " "}</Text>
+          >
+            <DatePickerInput
+              label="Departure"
+              value={dateOfDeparture}
+              onChange={handleDepartureDateChange}
+              inputMode="start"
+              style={{
+                backgroundColor: "white",
+                height: 50,
+              }}
+              locale="en"
+            />
+            <Text style={styles.errorText}>{error.departure || ""}</Text>
+          </View>
+        </View>
+        <View>
+          {!dateOfArrival && errorDateOfArrival && (
+            <View>
+              <Text style={styles.errorText}>{errorDateOfArrival}</Text>
+            </View>
+          )}
+          {!dateOfDeparture && errorDateOfDeparture && (
+            <View>
+              <Text style={styles.errorText}>{errorDateOfDeparture}</Text>
+            </View>
+          )}
         </View>
       </View>
     </View>

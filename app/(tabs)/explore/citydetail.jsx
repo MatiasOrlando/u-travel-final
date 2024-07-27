@@ -21,8 +21,21 @@ const CityDetail = () => {
   const { data: selectedCity, isLoading } = useGetCityByIdQuery(id);
   const dispatch = useDispatch();
   const removeAllFilters = useClearFilters();
+  const [error, setError] = useState({
+    errorDateOfArrival: "",
+    errorDateOfDeparture: "",
+    errorTravelingCompany: "",
+    errorMaxAge: "",
+    errorInterests: "",
+  });
 
   //Redux Filter Values
+  const dateOfArrival = useSelector(
+    (state) => state.datesPicker.value.dateOfArrival
+  );
+  const dateOfDeparture = useSelector(
+    (state) => state.datesPicker.value.dateOfDeparture
+  );
   const citySelected = useSelector(
     (state) => state.citySelectedData.citySelected
   );
@@ -47,6 +60,30 @@ const CityDetail = () => {
   }, [id, selectedCity]);
 
   const filterActivitiesResults = () => {
+    let errors = { ...error };
+
+    errors.errorDateOfArrival = !dateOfArrival
+      ? "Please select a date of arrival"
+      : "";
+    errors.errorDateOfDeparture = !dateOfDeparture
+      ? "Please select a date of departure"
+      : "";
+    errors.errorTravelingCompany = !travelerCompany.travelersCompany
+      ? "Please select a valid traveling group"
+      : "";
+    errors.errorMaxAge =
+      maxAge < minAge ? "Maximum age must be greater than minimum age" : "";
+    errors.errorInterests =
+      travelerInterests.length < 3
+        ? "Please select at least 3 travel interests"
+        : "";
+
+    setError(errors);
+    // If errors stop fn execution
+    if (Object.values(errors).some((error) => error !== "")) {
+      return;
+    }
+
     const resultsFilteredActivities = filteredActivities(
       selectedCity.activities,
       {
@@ -62,6 +99,13 @@ const CityDetail = () => {
   };
 
   const clearAllFilters = () => {
+    setError({
+      errorDateOfArrival: "",
+      errorDateOfDeparture: "",
+      errorTravelingCompany: "",
+      errorMaxAge: "",
+      errorInterests: "",
+    });
     removeAllFilters();
   };
 
@@ -83,17 +127,19 @@ const CityDetail = () => {
               Create my ideal itinerary
             </Text>
             <FilterCard>
-              <DateSelector />
-            </FilterCard>
-            <RangeSliderCustom />
-            <FilterCard>
-              <TravelingCompany />
+              <DateSelector {...error} />
             </FilterCard>
             <FilterCard>
-              <AgeTravelers />
+              <RangeSliderCustom />
             </FilterCard>
             <FilterCard>
-              <Interests />
+              <TravelingCompany {...error} />
+            </FilterCard>
+            <FilterCard>
+              <AgeTravelers {...error} />
+            </FilterCard>
+            <FilterCard>
+              <Interests {...error} />
             </FilterCard>
             <View style={styles.viewResultsContainer}>
               <ButtonPrimary

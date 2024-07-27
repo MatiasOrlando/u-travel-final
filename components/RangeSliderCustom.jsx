@@ -12,7 +12,7 @@ const RangeSliderCustom = () => {
   );
   const dispatch = useDispatch();
   return (
-    <FilterCard>
+    <>
       <Text style={styles.mainText}>My Budget</Text>
       <View style={styles.rangeContainer}>
         <Slider
@@ -31,7 +31,7 @@ const RangeSliderCustom = () => {
         />
         <Text style={styles.priceRange}>{`$500 - $${sliderBudgetValue}`}</Text>
       </View>
-    </FilterCard>
+    </>
   );
 };
 

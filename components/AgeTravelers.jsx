@@ -4,7 +4,7 @@ import { colorsDefault } from "@/constants/Colors";
 import { setMaxAge, setMinAge } from "@/features/AgeRange/AgeRangeSlice";
 import { useDispatch, useSelector } from "react-redux";
 
-const AgeTravelers = () => {
+const AgeTravelers = ({ errorMaxAge }) => {
   const minAge = useSelector((state) => state.ageRangeFilter.ageValues.minAge);
   const maxAge = useSelector((state) => state.ageRangeFilter.ageValues.maxAge);
   const dispatch = useDispatch();
@@ -79,6 +79,9 @@ const AgeTravelers = () => {
           <Text style={styles.ageController}>+</Text>
         </Pressable>
       </View>
+      {minAge > maxAge && errorMaxAge && (
+        <Text style={styles.errorText}>{errorMaxAge}</Text>
+      )}
     </View>
   );
 };
@@ -107,5 +110,10 @@ const styles = StyleSheet.create({
   },
   ageController: {
     fontSize: 20,
+  },
+  errorText: {
+    color: "red",
+    fontSize: 12,
+    marginTop: 10,
   },
 });
