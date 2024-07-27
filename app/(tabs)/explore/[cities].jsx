@@ -58,6 +58,7 @@ const CityPage = () => {
             onChangeValue={setSearchTerm}
             icon={<TabBarIcon name="search" size={24} />}
             placeholder="Search a city..."
+            placeholderTextColor={"#A9A9A9"}
           />
         </View>
         <CustomCarousel

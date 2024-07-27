@@ -33,6 +33,7 @@ const Explore = () => {
           onChangeValue={setSearchTerm}
           icon={<TabBarIcon name="search" size={24} />}
           placeholder="Search a country..."
+          placeholderTextColor={"#A9A9A9"}
         />
         <FlatList
           data={countriesData}
