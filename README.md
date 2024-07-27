@@ -89,7 +89,7 @@ Currently, the price filter is limited to filtering by specific price ranges. Th
 <li>React-native-snap-carousel: Carousel library to display different cities based on country selection</li>
 <li>Formik & Yup: Libraries used for Forms validations.</li>
 <li>Redux Toolkit: Manage & control Store state's flow</li>
-<li>React-native-keyboard-aware-scroll-view: Library used to control the visibility of the content when keyboard is open</li>
+<li>React-native-keyboard-aware-scroll-view: Library used to control the visibility of the content when keyboard is open.</li>
 <li>Expo Image Picker: Library used to allow the add or edit of user's profile picture</li>
 <li>Expo Location: Library used to allow the user to set it's location address</li>
 <li>Expo SQlite: Library used to handle user's data persistance across the app</li>
