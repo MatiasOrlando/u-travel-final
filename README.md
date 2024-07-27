@@ -1,21 +1,23 @@
 # U-TRAVEL 
 
-Travel-centered app that allows users to create an account, register, and log in through Firebase. Users can choose from a limited catalog of countries and select the city they would like to visit.
+Travel-centered app designed to create the perfect itinerary based on user-selected filters. Users can create an account, choose from a curated catalog of countries and select the city they wish to visit.
 
-Based on filters criteria such as budget, travel dates, travel companions (solo, couple, family, friends), age range of travelers, and interests (art, adventure, gastronomy, culture, nature, sports, and relaxation),
-
-The app proposes activities and experiences that best match the user's selected filters.
+By means of filters criteria such as budget, travel dates, travel companions (solo, couple, family, friends), age range of travelers, and interests (art, adventure, gastronomy, culture, nature, etc), the app recommends activities and experiences that best match the user's preferences.
 
 Features:
+User Registration and Login: Users can create an account, register, and log in through Firebase for secure authentication and personalized experience.
 
-User Registration and Login: Users can create an account, register, and log in through Firebase for a personalized experience.
+Profile Management: Within the app, users have access to a profile section where they can set their address using Expo Location and add or edit their profile picture using Expo Image Picker. Data persistence is managed with SQLite to ensure user information is saved and retrieved efficiently.
 
-Choose Destination: Users can select from a limited catalog of countries and cities they would like to visit.
+Destination Selection: Users can browse a limited catalog of countries and select the one they would like to visit. Within each country, they can choose from available cities to further narrow down their destination preferences.
 
-Search and Display Activities: Users can filter and search for activities based on their budget, travel dates, travel companions, age range, and interests.
+Activity Filtering: After selecting a city, users can apply various filter criteria such as budget, travel dates, travel companions (solo, couple, family, friends), age range of travelers, and interests (art, adventure, gastronomy, culture, nature, sports, and relaxation). This helps in tailoring the activities and experiences that best match their preferences.
 
-Personalized Activity Recommendations: Based on the selected filters, the app proposes activities and experiences that best match the user’s preferences.
+Personalized Itinerary and Activity Proposals: Based on the selected filters, the app generates a proposed itinerary with activities that align with the user's interests. Users can review these suggestions and proceed to confirm their bookings.
 
+Booking Confirmation and Countdown: Once a booking is confirmed, the app creates a countdown timer displaying the remaining months and days until the activity. This booking is then added to the user's list of bookings.
+
+Bookings Management: The user's confirmed bookings are persisted within their account using Async Storage, ensuring that all information is retained across sessions and available for review at any time.
 
 <br>
 
