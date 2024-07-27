@@ -2,7 +2,7 @@ import { StyleSheet, View, FlatList, Pressable } from "react-native";
 import React, { useEffect, useState } from "react";
 import FormInput from "@/components/FormInput";
 import { colorsDefault } from "@/constants/Colors";
-import { TabBarIcon } from "@/components/navigation/TabBarIcon";
+import { TabBarIcon } from "@/components/TabBarIcon";
 import CardCountry from "@/components/CardCountry";
 import { router } from "expo-router";
 import { useGetCountriesQuery } from "@/services/shopServices";

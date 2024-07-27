@@ -12,7 +12,7 @@ import React, { useEffect, useState } from "react";
 import { useLocalSearchParams } from "expo-router";
 import FormInput from "@/components/FormInput";
 import { colorsDefault } from "@/constants/Colors";
-import { TabBarIcon } from "@/components/navigation/TabBarIcon";
+import { TabBarIcon } from "@/components/TabBarIcon";
 import CustomCarousel from "@/components/MyCarousel";
 import CityAttractions from "@/components/CityAttractions";
 import {
