@@ -30,6 +30,8 @@ Bookings Management: The user's confirmed bookings are persisted within their ac
 
 Explore Sightseeing, Outdoor, Adventure, Food, Nature, and City Activities based on countries selection: Once a country is selected, users will soon be able to scroll through a variety of cards offering activities in categories such as sightseeing, outdoor, adventure, food, nature, and city experiences. This feature is currently under construction and will be available in a future update.
 
+Price Filtering: Currently, the price filter is limited to filtering by specific price ranges. This means that if a user sets the filter to the highest range, only high-priced activities are displayed. Similarly, setting the filter to the middle range will only show activities within that price range, without including also lower priced options. An enhancement to offer a more comprehensive filtering system, displaying a broader range of activities based on selected price criteria, is coming soon.
+
 <br>
 
 ## Installation :hammer:
