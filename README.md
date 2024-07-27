@@ -4,7 +4,8 @@ Travel-centered app designed to create the perfect itinerary based on user-selec
 
 By means of filters criteria such as budget, travel dates, travel companions (solo, couple, family, friends), age range of travelers, and interests (art, adventure, gastronomy, culture, nature, etc), the app recommends activities and experiences that best match the user's preferences.
 
-Features:
+## Features:
+
 User Registration and Login: Users can create an account, register, and log in through Firebase for secure authentication and personalized experience.
 
 Profile Management: Within the app, users have access to a profile section where they can set their address using Expo Location and add or edit their profile picture using Expo Image Picker. Data persistence is managed with SQLite to ensure user information is saved and retrieved efficiently.
