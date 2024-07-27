@@ -54,6 +54,10 @@ Bookings Management: The user's confirmed bookings are persisted within their ac
 
 ES:
 
+### Mayor Variedad de Actividades: 
+
+Para ofrecer a los usuarios una gama más amplia de opciones, se esta trabajando en aumentar la variedad de actividades disponibles en cada ciudad. Actualmente, la cantidad limitada de actividades por ciudad puede afectar la diversidad de opciones ofrecidas. Mantente atento a las actualizaciones mientras ampliamos nuestro catálogo de actividades para incluir experiencias más diversas y ajustadas a tus preferencias.
+
 ### Resumen de Experiencias por Países:
 
 Explora Actividades de Turismo, Aire Libre, Aventura, Comida, Naturaleza y Ciudad según la selección de países: Una vez que se selecciona un país, los usuarios pronto podrán desplazarse a través de una variedad de tarjetas que ofrecen actividades en categorías como turismo, aire libre, aventura, comida, naturaleza y experiencias urbanas. Esta función está actualmente en construcción y estará disponible en una actualización futura.
@@ -63,6 +67,10 @@ Explora Actividades de Turismo, Aire Libre, Aventura, Comida, Naturaleza y Ciuda
 Actualmente, el filtro de precio está limitado a filtrar por rangos de precio específicos. Esto significa que si un usuario ajusta el filtro al rango más alto, solo se mostrarán las actividades de alto precio. De manera similar, ajustar el filtro al rango medio solo mostrará actividades dentro de ese rango de precio, sin incluir opciones de precios más bajos. Próximamente se implementará una mejora para ofrecer un sistema de filtrado más completo, que permita mostrar una gama más amplia de actividades basadas en los criterios de precio seleccionados.
 
 EN:
+
+### Enhanced Variety of Activities: 
+
+To provide users with a wider range of options, we are working on increasing the variety of activities available in each city. Currently, the limited number of activities per city may affect the diversity of options offered. Stay tuned for updates as we expand our activity catalog to include more diverse experiences and better match your preferences.
 
 ### Countries experiences summary:
 
