@@ -2,7 +2,6 @@ import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import Slider from "@react-native-community/slider";
 import { colorsDefault } from "@/constants/Colors";
-import FilterCard from "./FilterCard";
 import { useSelector, useDispatch } from "react-redux";
 import { setBudgetValue } from "../features/BudgetFilter/BudgetFilterSlice";
 

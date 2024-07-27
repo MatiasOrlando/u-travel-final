@@ -10,7 +10,7 @@ const AgeTravelers = ({ errorMaxAge }) => {
   const dispatch = useDispatch();
 
   const isValidAge = (value) => {
-    // Verificar si el valor es un número válido o está vacío
+    // Check if value is a valid number or it's empty
     return /^\d*$/.test(value);
   };
 

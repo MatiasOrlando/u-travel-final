@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View, Platform, StatusBar } from "react-native";
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import ImageSelector from "@/components/ImageSelector";
 import { useDispatch, useSelector } from "react-redux";
 import ButtonPrimary from "@/components/ButtonPrimary";

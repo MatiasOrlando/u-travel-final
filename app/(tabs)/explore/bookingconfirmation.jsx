@@ -5,7 +5,6 @@ import {
   ScrollView,
   Image,
   Platform,
-  StatusBar,
 } from "react-native";
 import React from "react";
 import { colorsDefault } from "@/constants/Colors";
