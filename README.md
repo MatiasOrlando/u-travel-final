@@ -16,6 +16,24 @@ By means of filters criteria such as budget, travel dates, travel companions (so
 
 ## Features:
 
+ES:
+
+Registro y Inicio de Sesión de Usuario: Los usuarios pueden crear una cuenta, registrarse e iniciar sesión a través de Firebase para una autenticación segura y una experiencia personalizada. La persistencia de datos se maneja con SQLite para garantizar que la información del usuario se guarde y se recupere de manera eficiente.
+
+Gestión del Perfil: Dentro de la aplicación, los usuarios tienen acceso a una sección de perfil donde pueden establecer su dirección utilizando Expo Location y agregar o editar su foto de perfil mediante Expo Image Picker.
+
+Selección de Destino: Los usuarios pueden explorar un catálogo limitado de países y seleccionar el que desean visitar. Dentro de cada país, pueden elegir entre las ciudades disponibles para afinar aún más sus preferencias de destino.
+
+Filtrado de Actividades: Después de seleccionar una ciudad, los usuarios pueden aplicar varios criterios de filtro como presupuesto, fechas de viaje, compañeros de viaje (solo, pareja, familia, amigos), rango de edad de los viajeros e intereses (arte, aventura, gastronomía, cultura, naturaleza, deportes, relajación, etc.). Esto ayuda a adaptar las actividades y experiencias que mejor se ajusten a sus preferencias.
+
+Itinerario Personalizado y Propuestas de Actividades: Basado en los filtros seleccionados, la aplicación genera un itinerario propuesto con actividades que se alinean con los intereses del usuario. Los usuarios pueden revisar estas sugerencias y proceder a confirmar sus reservas.
+
+Confirmación de Reserva y Cuenta Regresiva: Una vez confirmada una reserva, la aplicación crea un temporizador de cuenta regresiva que muestra los meses y días restantes hasta la actividad. Esta reserva se añade a la lista de reservas del usuario.
+
+Gestión de Reservas: Las reservas confirmadas del usuario se mantienen dentro de su cuenta utilizando Async Storage, asegurando que toda la información se conserve entre sesiones y esté disponible para su revisión en cualquier momento.
+
+EN:
+
 User Registration and Login: Users can create an account, register, and log in through Firebase for secure authentication and personalized experience. Data persistence is managed with SQLite to ensure user information is saved and retrieved efficiently.
 
 Profile Management: Within the app, users have access to a profile section where they can set their address using Expo Location and add or edit their profile picture using Expo Image Picker. 
