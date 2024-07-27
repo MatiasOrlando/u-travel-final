@@ -28,7 +28,7 @@ Bookings Management: The user's confirmed bookings are persisted within their ac
 
 ### Countries experiences summary:
 
-Explore Sightseeing, Outdoor, Adventure, Food, Nature, and City Activities: Once a country is selected, users will soon be able to scroll through a variety of cards offering activities in categories such as sightseeing, outdoor, adventure, food, nature, and city experiences. This feature is currently under construction and will be available in a future update.]
+Explore Sightseeing, Outdoor, Adventure, Food, Nature, and City Activities based on countries selection: Once a country is selected, users will soon be able to scroll through a variety of cards offering activities in categories such as sightseeing, outdoor, adventure, food, nature, and city experiences. This feature is currently under construction and will be available in a future update.
 
 <br>
 
