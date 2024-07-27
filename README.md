@@ -1,5 +1,13 @@
 # U-TRAVEL :airplane:
 
+ES:
+
+Aplicación centrada en viajes diseñada para crear el itinerario perfecto basado en los filtros seleccionados por el usuario. Los usuarios pueden crear una cuenta, elegir de un catálogo seleccionado de países y seleccionar la ciudad que desean visitar.
+
+Mediante criterios de filtro como presupuesto, fechas de viaje, compañeros de viaje (solo, pareja, familia, amigos), rango de edad de los viajeros e intereses (arte, aventura, gastronomía, cultura, naturaleza, etc.), la aplicación recomienda actividades y experiencias que mejor se adapten a las preferencias del usuario, las cuales eventualmente pueden reservar.
+
+EN:
+
 Travel-centered app designed to create the perfect itinerary based on user-selected filters. Users can create an account, choose from a curated catalog of countries and select the city they wish to visit.
 
 By means of filters criteria such as budget, travel dates, travel companions (solo, couple, family, friends), age range of travelers, and interests (art, adventure, gastronomy, culture, nature, etc), the app recommends activities and experiences that best match the user's preferences which the user can eventually book.
