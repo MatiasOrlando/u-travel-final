@@ -1,4 +1,4 @@
-# U-TRAVEL 
+# U-TRAVEL :airplane:
 
 Travel-centered app designed to create the perfect itinerary based on user-selected filters. Users can create an account, choose from a curated catalog of countries and select the city they wish to visit.
 
