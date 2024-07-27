@@ -52,6 +52,18 @@ Bookings Management: The user's confirmed bookings are persisted within their ac
 
 ## Coming Soon
 
+ES:
+
+### Resumen de Experiencias por Países:
+
+Explora Actividades de Turismo, Aire Libre, Aventura, Comida, Naturaleza y Ciudad según la selección de países: Una vez que se selecciona un país, los usuarios pronto podrán desplazarse a través de una variedad de tarjetas que ofrecen actividades en categorías como turismo, aire libre, aventura, comida, naturaleza y experiencias urbanas. Esta función está actualmente en construcción y estará disponible en una actualización futura.
+
+### Filtrado por Precio:
+
+Actualmente, el filtro de precio está limitado a filtrar por rangos de precio específicos. Esto significa que si un usuario ajusta el filtro al rango más alto, solo se mostrarán las actividades de alto precio. De manera similar, ajustar el filtro al rango medio solo mostrará actividades dentro de ese rango de precio, sin incluir opciones de precios más bajos. Próximamente se implementará una mejora para ofrecer un sistema de filtrado más completo, que permita mostrar una gama más amplia de actividades basadas en los criterios de precio seleccionados.
+
+EN:
+
 ### Countries experiences summary:
 
 Explore Sightseeing, Outdoor, Adventure, Food, Nature, and City Activities based on countries selection: Once a country is selected, users will soon be able to scroll through a variety of cards offering activities in categories such as sightseeing, outdoor, adventure, food, nature, and city experiences. This feature is currently under construction and will be available in a future update.
