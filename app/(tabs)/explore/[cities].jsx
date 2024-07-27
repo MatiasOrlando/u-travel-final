@@ -6,7 +6,6 @@ import {
   Image,
   Platform,
   StatusBar,
-  ScrollView,
 } from "react-native";
 import React, { useEffect, useState } from "react";
 import { useLocalSearchParams } from "expo-router";
@@ -19,6 +18,7 @@ import {
   useGetCitiesByCountryIdQuery,
   useGetCountryByIdQuery,
 } from "@/services/shopServices";
+import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 
 const CityPage = () => {
   const { id } = useLocalSearchParams();
@@ -47,7 +47,11 @@ const CityPage = () => {
 
   return (
     <SafeAreaView>
-      <ScrollView contentContainerStyle={styles.container}>
+      <KeyboardAwareScrollView
+        keyboardShouldPersistTaps="handled"
+        contentContainerStyle={styles.container}
+        showsVerticalScrollIndicator={false}
+      >
         <View>
           <Image style={styles.image} source={{ uri: country.countryImage }} />
           <Text style={styles.countryText}>{country.country}</Text>
@@ -66,7 +70,7 @@ const CityPage = () => {
           searchTerm={searchTerm}
         />
         <CityAttractions cityActivities={cityActivities} />
-      </ScrollView>
+      </KeyboardAwareScrollView>
     </SafeAreaView>
   );
 };

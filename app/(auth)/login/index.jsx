@@ -12,6 +12,7 @@ import { AntDesign } from "@expo/vector-icons";
 import { useDB } from "@/hooks/useDB";
 import { Formik } from "formik";
 import { signInSchema } from "@/validations/signInSchema";
+import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 
 const SignIn = () => {
   const [isModalVisible, setModalVisible] = useState(false);
@@ -65,82 +66,84 @@ const SignIn = () => {
   };
 
   return (
-    <Formik
-      initialValues={{ email: "", password: "" }}
-      validationSchema={signInSchema}
-      onSubmit={handleSubmit}
-    >
-      {({
-        handleChange,
-        handleBlur,
-        handleSubmit,
-        values,
-        errors,
-        touched,
-      }) => (
-        <View style={styles.signInContainer}>
-          <View style={styles.signInFormContainer}>
-            <FormInput
-              label="E-mail"
-              color={colorsDefault.brown.default}
-              icon={
-                <AntDesign
-                  name="user"
-                  size={24}
-                  color={colorsDefault.brown.default}
-                />
-              }
-              value={values.email}
-              onChangeValue={handleChange("email")}
-              onBlur={handleBlur("email")}
-              error={touched.email && errors.email}
-            />
-            <FormInput
-              label="Password"
-              color={colorsDefault.brown.default}
-              icon={
-                <AntDesign
-                  name={!visiblePassword ? "lock1" : "unlock"}
-                  size={24}
-                  color={colorsDefault.brown.default}
-                  onPress={handlePasswordVisibility}
-                />
-              }
-              additionalText="Forgot password?"
-              value={values.password}
-              onChangeValue={handleChange("password")}
-              onBlur={handleBlur("password")}
-              secureTextEntry={!visiblePassword}
-              error={touched.password && errors.password}
-            />
-          </View>
-          <View style={styles.signInButtonContainer}>
-            <ButtonPrimary
-              title="Sign In"
-              handlePress={handleSubmit}
-              disabled={isLoading}
-            />
-          </View>
-          <View style={styles.signInSignUpContainer}>
-            <View>
-              <Text style={styles.signInSignUpText}>
-                Don't have an account?
-              </Text>
+    <KeyboardAwareScrollView keyboardShouldPersistTaps="handled">
+      <Formik
+        initialValues={{ email: "", password: "" }}
+        validationSchema={signInSchema}
+        onSubmit={handleSubmit}
+      >
+        {({
+          handleChange,
+          handleBlur,
+          handleSubmit,
+          values,
+          errors,
+          touched,
+        }) => (
+          <View style={styles.signInContainer}>
+            <View style={styles.signInFormContainer}>
+              <FormInput
+                label="E-mail"
+                color={colorsDefault.brown.default}
+                icon={
+                  <AntDesign
+                    name="user"
+                    size={24}
+                    color={colorsDefault.brown.default}
+                  />
+                }
+                value={values.email}
+                onChangeValue={handleChange("email")}
+                onBlur={handleBlur("email")}
+                error={touched.email && errors.email}
+              />
+              <FormInput
+                label="Password"
+                color={colorsDefault.brown.default}
+                icon={
+                  <AntDesign
+                    name={!visiblePassword ? "lock1" : "unlock"}
+                    size={24}
+                    color={colorsDefault.brown.default}
+                    onPress={handlePasswordVisibility}
+                  />
+                }
+                additionalText="Forgot password?"
+                value={values.password}
+                onChangeValue={handleChange("password")}
+                onBlur={handleBlur("password")}
+                secureTextEntry={!visiblePassword}
+                error={touched.password && errors.password}
+              />
             </View>
-            <View style={styles.signInSignUpLinkContainer}>
-              <Link href="/register">
-                <Text style={styles.signInSignUpLink}>Sign up</Text>
-              </Link>
+            <View style={styles.signInButtonContainer}>
+              <ButtonPrimary
+                title="Sign In"
+                handlePress={handleSubmit}
+                disabled={isLoading}
+              />
             </View>
+            <View style={styles.signInSignUpContainer}>
+              <View>
+                <Text style={styles.signInSignUpText}>
+                  Don't have an account?
+                </Text>
+              </View>
+              <View style={styles.signInSignUpLinkContainer}>
+                <Link href="/register">
+                  <Text style={styles.signInSignUpLink}>Sign up</Text>
+                </Link>
+              </View>
+            </View>
+            <CustomModal
+              isModalVisible={isModalVisible}
+              setModalVisible={setModalVisible}
+              isSuccessSignIn={isSuccessSignIn}
+            />
           </View>
-          <CustomModal
-            isModalVisible={isModalVisible}
-            setModalVisible={setModalVisible}
-            isSuccessSignIn={isSuccessSignIn}
-          />
-        </View>
-      )}
-    </Formik>
+        )}
+      </Formik>
+    </KeyboardAwareScrollView>
   );
 };
 
